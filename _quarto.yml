@@ -21,22 +21,22 @@ project:
     - "ParticlePhysics/en/book/index.qmd"
     - "ParticlePhysics/en/slides/index.qmd"
 
-lang: en
+lang: ru-RU
 
 website:
-  title: "Particle Physics"
+  title: "Физика элементарных частиц"
   site-url: "https://neutrinohit.github.io/particlephysics/"
   repo-url: "https://github.com/NeutrinoHit/particlephysics"
   navbar:
     left:
       - href: index.qmd
-        text: Particle Physics
+        text: Раздел
       - href: IntroParticlePhysicsBaikal/index.qmd
-        text: Baikal Intro
+        text: Мини-курс
       - href: ParticlePhysics/index.qmd
-        text: 16-Lecture Course
+        text: Введение в физику элементарных частиц
       - href: https://neutrinohit.github.io/lectures.html
-        text: All Lectures
+        text: Все лекции
   page-footer:
     left: "© NeutrinoHit"
     right: "Built with Quarto"

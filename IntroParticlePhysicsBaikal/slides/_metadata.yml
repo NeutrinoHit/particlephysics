@@ -9,7 +9,7 @@ format:
       - text: |
           <script data-external="1" data-context-home="../index.html" data-context-home-label="Mini-course" src="../../shared/reveal/neutrinohit-reveal-footer.js"></script>
       - ../../analytics/cloudflare-web-analytics.html
-    footer: "Introduction to Particle Physics · Baikal School · D. Naumov"
+    footer: "Introduction to Particle Physics · Mini-course · D. Naumov"
     embed-resources: false
     slide-number: true
     slide-level: 2

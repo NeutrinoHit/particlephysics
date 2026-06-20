@@ -1,6 +1,6 @@
 ---
 title: "Introduction to Particle Physics I: Particles, Fields, and Interactions"
-subtitle: "Baikal School · 75 min"
+subtitle: "Mini-course · 75 min"
 author: "Dmitry V. Naumov"
 institute: "Joint Institute for Nuclear Research"
 date: "June 2026"
@@ -695,7 +695,7 @@ This introduces:
 The physics model and detector model meet in the event prediction.
 :::
 
-## Baikal-Style Event Chain
+## Water-Cherenkov Event Chain
 
 ::: {.flow}
 ::: {}
@@ -715,7 +715,7 @@ event sample
 :::
 :::
 
-For Baikal it is especially important to distinguish:
+For large water-Cherenkov detectors it is especially important to distinguish:
 
 ::: {.compact}
 - long tracks from \(\nu_\mu\) charged-current events;
@@ -803,4 +803,3 @@ In the second lecture we assemble this into the Standard Model and see why neutr
 ::: {.muted}
 Bibliographic entries in `references.bib` are intentionally marked `TODO: verify` before final publication.
 :::
-

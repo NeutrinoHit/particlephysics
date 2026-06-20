@@ -1,6 +1,6 @@
 ---
 title: "Formula Sheet"
-subtitle: "Introduction to Particle Physics · Baikal School"
+subtitle: "Introduction to Particle Physics · Mini-course"
 lang: en
 format:
   html:
@@ -89,4 +89,3 @@ P_{\nu_\alpha\to\nu_\alpha}
 =
 1-P_{\nu_\alpha\to\nu_\beta}.
 $$
-

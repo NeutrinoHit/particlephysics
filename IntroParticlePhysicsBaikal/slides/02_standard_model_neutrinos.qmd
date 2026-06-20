@@ -1,6 +1,6 @@
 ---
 title: "Introduction to Particle Physics II: The Standard Model and Neutrinos"
-subtitle: "Baikal School · 75 min"
+subtitle: "Mini-course · 75 min"
 author: "Dmitry V. Naumov"
 institute: "Joint Institute for Nuclear Research"
 date: "June 2026"
@@ -400,7 +400,7 @@ The signature often has two parts:
 - a delayed signal from neutron capture.
 :::
 
-For Baikal School it is a useful example of how the interaction channel defines the event signature.
+For the mini-course it is a useful example of how the interaction channel defines the event signature.
 
 ## Neutrino-Nucleon Charged Current
 
@@ -655,7 +655,7 @@ Therefore different experiments are sensitive to different \(\Delta m^2\):
 - atmospheric neutrinos naturally scan a broad range of \(L/E\).
 :::
 
-## Atmospheric Neutrinos and Baikal Context
+## Atmospheric Neutrinos and Detector Scale
 
 For atmospheric neutrinos the baseline depends on zenith angle:
 
@@ -672,7 +672,7 @@ $$
 \text{oscillation at atmospheric } \Delta m^2.
 $$
 
-Baikal context: a large water volume turns rare interactions into tracks and cascades.
+Detector-scale point: a large water volume turns rare interactions into tracks and cascades.
 
 ## What Oscillations Prove
 
@@ -767,4 +767,3 @@ Control questions:
 ::: {.muted}
 Bibliographic entries in `references.bib` are intentionally marked `TODO: verify` before final publication.
 :::
-

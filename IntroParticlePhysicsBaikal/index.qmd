@@ -1,36 +1,42 @@
 ---
-title: "Introduction to Particle Physics"
-subtitle: "A two-lecture mini-course for Baikal School"
+title: "Мини-курс по физике элементарных частиц"
+subtitle: "Две вводные лекции"
 format:
   html:
     theme: cosmo
     toc: true
 ---
 
-This mini-course introduces the particle-physics language needed for neutrino and astroparticle experiments. It is not a derivation of the full Standard Model Lagrangian. The goal is to understand what particles are, how interactions are encoded, what experiments measure, and why neutrinos are both Standard Model particles and evidence for physics beyond its minimal form.
+Мини-курс вводит язык физики элементарных частиц, который нужен для
+нейтринных и астрофизических экспериментов. Это не вывод полного лагранжиана
+Стандартной модели. Цель — понять, что такое частицы, как описываются
+взаимодействия, что измеряют эксперименты и почему нейтрино одновременно
+являются частицами Стандартной модели и указанием на физику за ее минимальными
+пределами.
 
-## Lectures
+## Лекции
 
 1. [Particles, Fields, and Interactions](slides/01_particles_fields_interactions.html)
 2. [The Standard Model and Neutrinos](slides/02_standard_model_neutrinos.html)
 
-## Handouts
+## Раздаточные материалы
 
-- [Questions after Lecture 1](handouts/01_questions_particles_interactions.html)
-- [Questions after Lecture 2](handouts/02_questions_standard_model_neutrinos.html)
-- [Formula sheet](handouts/formula_sheet.html)
+- [Вопросы после лекции 1](handouts/01_questions_particles_interactions.html)
+- [Вопросы после лекции 2](handouts/02_questions_standard_model_neutrinos.html)
+- [Формулы](handouts/formula_sheet.html)
 
-## Notebooks
+## Ноутбуки
 
 - [Event rates and cross sections](notebooks/01_event_rates_and_cross_sections.ipynb)
 - [Decay law and lifetime](notebooks/02_decay_law_and_lifetime.ipynb)
 - [Neutrino oscillation probability](notebooks/03_neutrino_oscillation_probability.ipynb)
 
-The notebooks are pedagogical and use toy models. They are not precision calculations and do not replace a detector simulation.
+Ноутбуки учебные и используют toy-модели. Это не прецизионные расчеты и не
+замена детекторному моделированию.
 
-## Scope
+## Линия мини-курса
 
-The conceptual line is:
+Содержательная линия:
 
 $$
 \text{particles and quantum numbers}
@@ -47,4 +53,3 @@ $$
 \to
 \text{why minimal SM is incomplete}.
 $$
-

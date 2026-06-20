@@ -35,7 +35,7 @@ format:
     include-after-body:
       text: |
         <script data-external="1" data-context-home="../index.html" data-context-home-label="Particle Physics" src="../assets/reveal/neutrinohit-reveal-footer.js"></script>
-    footer: "Introduction to Particle Physics · Baikal School · D. Naumov"
+    footer: "Introduction to Particle Physics · Mini-course · D. Naumov"
     embed-resources: true
     slide-number: true
     slide-level: 2

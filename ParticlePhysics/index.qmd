@@ -1,5 +1,5 @@
 ---
-title: "Particle Physics Course"
+title: "Введение в физику элементарных частиц"
 toc: false
 ---
 
@@ -11,27 +11,28 @@ toc: false
 </style>
 
 <div class="course-index course-subpage">
-  <a class="course-back-link" href="../index.html">← Particle Physics section</a>
+  <a class="course-back-link" href="../index.html">← Раздел физики элементарных частиц</a>
 
   <section class="course-intro">
-    <p class="course-kicker">Course scaffold</p>
-    <h1>Particle Physics</h1>
+    <p class="course-kicker">Курс</p>
+    <h1>Введение в физику элементарных частиц</h1>
     <p>
-      Placeholder for the future 16-lecture course. The repository structure
-      is ready for Russian and English slides and book materials.
+      Заготовка для будущего большого курса. Ориентир — около 16 лекций,
+      но точное число можно менять по мере подготовки. Структура уже готова
+      для русских и английских слайдов и книжных материалов.
     </p>
   </section>
 
-  <section class="course-accordion" aria-label="Course scaffold">
+  <section class="course-accordion" aria-label="Материалы курса">
     <details class="course-row" open>
       <summary>
         <span class="course-row-kind">RU</span>
-        <span>Russian materials</span>
+        <span>Русские материалы</span>
       </summary>
       <div class="course-row-body">
         <div class="course-links">
-          <a href="ru/slides/">Slides</a>
-          <a href="ru/book/">Book</a>
+          <a href="ru/slides/">Слайды</a>
+          <a href="ru/book/">Книга</a>
         </div>
       </div>
     </details>
