@@ -1,0 +1,50 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - "assets/**"
+    - "shared/**"
+    - "analytics/**"
+    - "IntroParticlePhysicsBaikal/assets/**"
+    - "IntroParticlePhysicsBaikal/notebooks/**"
+    - "IntroParticlePhysicsBaikal/requirements.txt"
+    - "IntroParticlePhysicsBaikal/environment.yml"
+    - "IntroParticlePhysicsBaikal/references.bib"
+  render:
+    - "*.qmd"
+    - "IntroParticlePhysicsBaikal/index.qmd"
+    - "IntroParticlePhysicsBaikal/slides/*.qmd"
+    - "IntroParticlePhysicsBaikal/handouts/*.qmd"
+    - "ParticlePhysics/index.qmd"
+    - "ParticlePhysics/ru/book/index.qmd"
+    - "ParticlePhysics/ru/slides/index.qmd"
+    - "ParticlePhysics/en/book/index.qmd"
+    - "ParticlePhysics/en/slides/index.qmd"
+
+lang: en
+
+website:
+  title: "Particle Physics"
+  site-url: "https://neutrinohit.github.io/particlephysics/"
+  repo-url: "https://github.com/NeutrinoHit/particlephysics"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Particle Physics
+      - href: IntroParticlePhysicsBaikal/index.qmd
+        text: Baikal Intro
+      - href: ParticlePhysics/index.qmd
+        text: 16-Lecture Course
+      - href: https://neutrinohit.github.io/lectures.html
+        text: All Lectures
+  page-footer:
+    left: "© NeutrinoHit"
+    right: "Built with Quarto"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+    page-layout: full
+    include-after-body: analytics/cloudflare-web-analytics.html

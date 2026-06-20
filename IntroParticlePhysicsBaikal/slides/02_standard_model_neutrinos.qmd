@@ -1,0 +1,770 @@
+---
+title: "Introduction to Particle Physics II: The Standard Model and Neutrinos"
+subtitle: "Baikal School · 75 min"
+author: "Dmitry V. Naumov"
+institute: "Joint Institute for Nuclear Research"
+date: "June 2026"
+---
+
+# Orientation
+
+## Lecture Map
+
+::: {.timing}
+::: {.time}
+0-7 min
+:::
+::: {}
+What we take from Lecture 1.
+:::
+::: {.time}
+7-22 min
+:::
+::: {}
+The fermion content of the Standard Model.
+:::
+::: {.time}
+22-37 min
+:::
+::: {}
+Gauge structure: \(SU(3)_c\times SU(2)_L\times U(1)_Y\).
+:::
+::: {.time}
+37-50 min
+:::
+::: {}
+Weak interactions and neutrino processes.
+:::
+::: {.time}
+50-60 min
+:::
+::: {}
+The Higgs mechanism and masses.
+:::
+::: {.time}
+60-75 min
+:::
+::: {}
+Neutrino oscillations and the limits of the minimal SM.
+:::
+:::
+
+## What We Keep from Lecture 1
+
+We will use four ideas:
+
+::: {.compact}
+- particles are quanta of fields;
+- fermions and bosons differ by spin and statistics;
+- interactions are encoded in vertices and amplitudes;
+- experiments measure cross sections, decay rates, spectra, and event rates.
+:::
+
+::: {.takeaway}
+Now we assemble this language into a specific quantum field theory: the Standard Model.
+:::
+
+# Standard Model
+
+## What the Standard Model Is
+
+The Standard Model is not just a table of particles.
+
+It is a quantum field theory with:
+
+::: {.compact}
+- a set of matter fields;
+- gauge symmetry;
+- gauge interactions;
+- the Higgs field;
+- parameters for masses and mixings.
+:::
+
+Its predictions have been tested with high precision across a wide range of processes.
+
+## Not a Table, but a Structure
+
+A particle table answers "who is who."
+
+A theory answers:
+
+::: {.compact}
+- which fields exist;
+- how they transform under symmetries;
+- which interactions are allowed;
+- which masses appear after symmetry breaking;
+- which processes are forbidden or suppressed.
+:::
+
+Neutrinos enter this structure naturally, but their masses do not enter the minimal version.
+
+# Fermion Content
+
+## Three Generations
+
+Standard Model fermions are organized into three generations.
+
+Each generation contains:
+
+::: {.compact}
+- a charged lepton;
+- a neutrino;
+- an up-type quark;
+- a down-type quark.
+:::
+
+The generation pattern repeats, but particle masses differ dramatically.
+
+## Lepton Doublets
+
+Left-handed leptons enter weak doublets:
+
+$$
+\begin{pmatrix}
+\nu_e\\ e
+\end{pmatrix}_L,
+\quad
+\begin{pmatrix}
+\nu_\mu\\ \mu
+\end{pmatrix}_L,
+\quad
+\begin{pmatrix}
+\nu_\tau\\ \tau
+\end{pmatrix}_L.
+$$
+
+The charged current changes the upper and lower members of a doublet.
+
+This is why neutrino flavor is identified through the associated charged lepton.
+
+## Quark Doublets
+
+Left-handed quarks also enter weak doublets:
+
+$$
+\begin{pmatrix}
+u\\ d
+\end{pmatrix}_L,
+\quad
+\begin{pmatrix}
+c\\ s
+\end{pmatrix}_L,
+\quad
+\begin{pmatrix}
+t\\ b
+\end{pmatrix}_L.
+$$
+
+In the real theory, weak and mass bases for quarks are not identical.
+
+This leads to CKM mixing.
+
+## Charges Table
+
+| Particles | \(Q\) | Color | Interactions |
+|---|---:|---|---|
+| \(\nu_e,\nu_\mu,\nu_\tau\) | \(0\) | no | weak |
+| \(e,\mu,\tau\) | \(-1\) | no | EM, weak |
+| \(u,c,t\) | \(+2/3\) | yes | strong, EM, weak |
+| \(d,s,b\) | \(-1/3\) | yes | strong, EM, weak |
+
+This table already tells us which detector channels are possible.
+
+## Why Generations Are Puzzling
+
+The Standard Model describes generations but does not explain their origin.
+
+Open questions:
+
+::: {.compact}
+- Why three generations?
+- Why such different masses?
+- Why are quark and neutrino mixing patterns so different?
+- Why are neutrinos so light?
+:::
+
+These are not cosmetic questions. They point to the structure of flavor.
+
+# Gauge Structure
+
+## Gauge Symmetry Statement
+
+The Standard Model gauge group is:
+
+$$
+SU(3)_c \times SU(2)_L \times U(1)_Y.
+$$
+
+This compact expression states which local symmetries define the interactions.
+
+One does not need the full group theory machinery to extract the physical meaning.
+
+## \(SU(3)_c\)
+
+$$
+SU(3)_c
+\quad \Rightarrow \quad
+\text{QCD, gluons, color}.
+$$
+
+Quarks carry color charge.
+
+Gluons also carry color, so the strong interaction is nonlinear.
+
+This is one key difference between QCD and electrodynamics.
+
+## Color and Gluons
+
+Physical hadrons must be color singlets.
+
+Examples:
+
+$$
+q\bar q
+\quad\text{mesons},
+\qquad
+qqq
+\quad\text{baryons}.
+$$
+
+In detectors, color appears not as a visible color, but as hadronic showers, jets, and nuclear final states.
+
+## Confinement
+
+Confinement means that isolated colored particles are not observed as asymptotic states.
+
+For this introductory course:
+
+::: {.compact}
+- quarks and gluons are Standard Model fields;
+- free quarks do not exit the detector as isolated particles;
+- detectors see hadrons and their cascades.
+:::
+
+This matters for neutrino-nucleon scattering:
+
+$$
+\nu+N\to \ell+X.
+$$
+
+## Electroweak Group
+
+$$
+SU(2)_L \times U(1)_Y
+\quad \Rightarrow \quad
+\text{electroweak interaction}.
+$$
+
+Before symmetry breaking, the natural fields are not the familiar photon, \(W\), and \(Z\) in their final form.
+
+After electroweak symmetry breaking we observe:
+
+$$
+\gamma,\quad W^\pm,\quad Z.
+$$
+
+## Electroweak Symmetry Breaking
+
+Schematically:
+
+$$
+SU(2)_L \times U(1)_Y
+\to
+U(1)_{\rm EM}.
+$$
+
+Physical consequences:
+
+::: {.compact}
+- the photon remains massless;
+- \(W\) and \(Z\) become massive;
+- the weak interaction becomes short-range;
+- the electromagnetic interaction remains long-range.
+:::
+
+## Gauge Bosons Table
+
+| Interaction | Gauge bosons | Coupled charge | Key feature |
+|---|---|---|---|
+| Strong | \(g\) | color | confinement |
+| Electromagnetic | \(\gamma\) | electric charge | long range |
+| Weak charged current | \(W^\pm\) | weak isospin | changes doublet member |
+| Weak neutral current | \(Z\) | electroweak charge | no electric charge exchange |
+
+## Photon, W, Z
+
+Photon:
+
+$$
+m_\gamma=0,
+\qquad
+\text{long-range EM}.
+$$
+
+Weak bosons:
+
+$$
+m_W,\ m_Z \ne 0,
+\qquad
+\text{short-range weak interaction}.
+$$
+
+The masses of \(W\) and \(Z\) are why weak interactions are weak at low energies.
+
+## Weak Interaction Is Short Range
+
+Roughly, a mediator of mass \(M\) gives a range of order:
+
+$$
+R\sim \frac{1}{M}.
+$$
+
+Since \(W\) and \(Z\) are heavy, weak processes are rare at low energies.
+
+For neutrinos, this rarity is the detector problem.
+
+::: {.takeaway}
+Neutrinos pass through matter not because they are "small," but because their cross sections are small.
+:::
+
+# Weak Interaction and Neutrinos
+
+## Charged Current
+
+The charged current connects a neutrino and a charged lepton:
+
+$$
+\nu_\ell + W^- \leftrightarrow \ell^-.
+$$
+
+Equivalently for antiparticles:
+
+$$
+\bar\nu_\ell + W^+ \leftrightarrow \ell^+.
+$$
+
+The charged current provides the most flavor-specific signatures.
+
+## Neutral Current
+
+The neutral current is:
+
+$$
+\nu_\ell + Z \leftrightarrow \nu_\ell.
+$$
+
+It does not exchange electric charge.
+
+For detector topology this means:
+
+::: {.compact}
+- no final-state charged lepton is produced at the primary vertex;
+- flavor information is usually weaker;
+- the visible signal is often hadronic or electromagnetic recoil light.
+:::
+
+## Neutrino Examples
+
+Charged-current examples:
+
+$$
+\nu_e+n\to p+e^-,
+$$
+
+$$
+\bar\nu_e+p\to n+e^+,
+$$
+
+$$
+\nu_\mu+N\to\mu^-+X.
+$$
+
+Neutral-current example:
+
+$$
+\nu+N\to\nu+X.
+$$
+
+## Inverse Beta Decay
+
+$$
+\bar\nu_e+p\to n+e^+.
+$$
+
+This channel is especially important in MeV-scale detector physics.
+
+The signature often has two parts:
+
+::: {.compact}
+- a prompt signal from \(e^+\);
+- a delayed signal from neutron capture.
+:::
+
+For Baikal School it is a useful example of how the interaction channel defines the event signature.
+
+## Neutrino-Nucleon Charged Current
+
+For GeV-TeV energies:
+
+$$
+\nu_\mu+N\to\mu^-+X,
+\qquad
+\bar\nu_\mu+N\to\mu^++X.
+$$
+
+The final muon can produce a long track.
+
+The hadronic system \(X\) carries part of the energy and complicates reconstruction.
+
+## Neutral-Current Event
+
+Neutral-current process:
+
+$$
+\nu+N\to\nu+X.
+$$
+
+The final-state neutrino escapes with part of the energy.
+
+Therefore:
+
+::: {.compact}
+- reconstructed energy is not the full incoming neutrino energy;
+- flavor tagging is weak;
+- the event often appears cascade-like.
+:::
+
+## Event Topologies
+
+| Channel | Typical visible topology | Flavor information |
+|---|---|---|
+| \(\nu_\mu\) CC | long track + hadronic light | strong |
+| \(\nu_e\) CC | cascade-like | strong but topology-limited |
+| \(\nu_\tau\) CC | tau signatures at high energy | energy-dependent |
+| NC | cascade-like, missing energy | weak |
+
+This is an orientation table. Details depend on energy, medium, and reconstruction.
+
+## Interaction Length
+
+The mean interaction length is:
+
+$$
+L_{\rm int}
+\sim
+\frac{1}{n\sigma}.
+$$
+
+Here \(n\) is the target number density and \(\sigma\) is the cross section.
+
+A small cross section means an enormous interaction length.
+
+## Why Detectors Are Large
+
+The event count scales as:
+
+$$
+N_{\rm events}
+=
+\Phi\sigma N_{\rm target}T\epsilon.
+$$
+
+In neutrino physics one cannot simply make the source brighter.
+
+One needs:
+
+::: {.compact}
+- large volume;
+- long exposure;
+- low backgrounds;
+- stable reconstruction.
+:::
+
+# Higgs and Masses
+
+## Higgs Field and Vacuum Expectation Value
+
+The Higgs field has a nonzero vacuum expectation value:
+
+$$
+\langle H\rangle = \frac{v}{\sqrt{2}},
+\qquad
+v\simeq 246\ \mathrm{GeV}.
+$$
+
+This is a statement about the vacuum of the theory, not about mechanical friction in a medium.
+
+Without popular analogies: the spectrum of excitations changes after symmetry breaking.
+
+## W and Z Masses
+
+After electroweak symmetry breaking:
+
+::: {.compact}
+- \(W^\pm\) and \(Z\) get masses;
+- the photon remains massless;
+- the weak interaction becomes short-range;
+- the electromagnetic interaction remains long-range.
+:::
+
+This connects the symmetry structure to observable cross sections.
+
+## Fermion Masses and Yukawa Couplings
+
+For charged fermions:
+
+$$
+m_f=\frac{y_f v}{\sqrt{2}}.
+$$
+
+Here \(y_f\) is a Yukawa coupling.
+
+::: {.takeaway}
+The Standard Model describes fermion masses through Yukawa couplings, but it does not explain why those couplings have their observed values.
+:::
+
+## Mass Hierarchy
+
+Yukawa couplings differ by many orders of magnitude.
+
+The Standard Model takes this as a set of parameters.
+
+Examples of open questions:
+
+::: {.compact}
+- why \(m_t\) is close to the electroweak scale;
+- why \(m_e\) is much smaller;
+- why neutrino masses are even smaller;
+- why mixing in quark and lepton sectors is so different.
+:::
+
+## Minimal SM Neutrinos Are Massless
+
+In the minimal Standard Model:
+
+::: {.compact}
+- left-handed neutrino fields appear in lepton doublets;
+- no right-handed neutrino fields are included;
+- there is no Dirac mass term for neutrinos;
+- a Majorana mass term is absent in the minimal renormalizable SM field content.
+:::
+
+Consequence:
+
+$$
+m_{\nu_i}=0
+\quad
+\text{in the minimal SM}.
+$$
+
+# Neutrino Oscillations
+
+## Flavor and Mass States
+
+Flavor states are produced and detected through weak interactions.
+
+Mass states have definite masses and phase evolution.
+
+The relation is:
+
+$$
+|\nu_\alpha\rangle
+=
+\sum_i U_{\alpha i}^*
+|\nu_i\rangle.
+$$
+
+Here \(U\) is the PMNS mixing matrix.
+
+## Two-Flavor Oscillation Formula
+
+In the vacuum two-flavor approximation:
+
+$$
+P_{\nu_\alpha\to\nu_\beta}
+=
+\sin^2 2\theta\,
+\sin^2
+\left(
+1.27\,
+\frac{\Delta m^2[\mathrm{eV}^2]\,L[\mathrm{km}]}
+{E[\mathrm{GeV}]}
+\right).
+$$
+
+For survival probability:
+
+$$
+P_{\nu_\alpha\to\nu_\alpha}=1-P_{\nu_\alpha\to\nu_\beta}.
+$$
+
+## Survival Probability
+
+Equivalently:
+
+$$
+P_{\nu_\alpha\to\nu_\alpha}
+=
+1-
+\sin^2 2\theta\,
+\sin^2
+\left(
+1.27\,
+\frac{\Delta m^2[\mathrm{eV}^2]\,L[\mathrm{km}]}
+{E[\mathrm{GeV}]}
+\right).
+$$
+
+The oscillation phase is controlled by \(L/E\).
+
+## Toy Code Fragment
+
+This is a vacuum two-flavor toy calculation.
+
+```python
+import numpy as np
+from particle_intro.oscillations import two_flavor_survival_probability
+
+L_over_E = np.logspace(1, 5, 400)
+P = two_flavor_survival_probability(
+    L_km=L_over_E,
+    E_GeV=1.0,
+    dm2_eV2=2.5e-3,
+    theta=np.pi / 4,
+)
+```
+
+It does not include matter effects, full three-flavor mixing, or detector smearing.
+
+## \(L/E\) Dependence
+
+The positions of minima are controlled by the phase:
+
+$$
+\phi
+\simeq
+1.27
+\frac{\Delta m^2 L}{E}.
+$$
+
+Therefore different experiments are sensitive to different \(\Delta m^2\):
+
+::: {.compact}
+- short baselines probe larger \(\Delta m^2\);
+- long baselines probe smaller \(\Delta m^2\);
+- atmospheric neutrinos naturally scan a broad range of \(L/E\).
+:::
+
+## Atmospheric Neutrinos and Baikal Context
+
+For atmospheric neutrinos the baseline depends on zenith angle:
+
+::: {.compact}
+- down-going: tens of km;
+- through Earth: up to the Earth-diameter scale.
+:::
+
+At GeV energies this gives strong sensitivity to:
+
+$$
+\nu_\mu\to\nu_\tau
+\quad
+\text{oscillation at atmospheric } \Delta m^2.
+$$
+
+Baikal context: a large water volume turns rare interactions into tracks and cascades.
+
+## What Oscillations Prove
+
+Oscillations require:
+
+::: {.compact}
+- nonzero mass-squared differences;
+- mixing between flavor and mass states;
+- at least two different neutrino masses.
+:::
+
+They do not directly measure the absolute neutrino mass scale.
+
+::: {.takeaway}
+Neutrino oscillations are evidence for physics beyond the minimal SM with massless neutrinos.
+:::
+
+## Open Neutrino Questions
+
+Key questions:
+
+::: {.compact}
+- absolute neutrino mass scale;
+- mass ordering;
+- Dirac or Majorana nature;
+- CP violation in the lepton sector;
+- sterile neutrinos, if any;
+- connection to the origin of flavor.
+:::
+
+Not all of these questions can be answered by oscillation experiments alone.
+
+# Where the SM Ends
+
+## What the SM Does Not Explain
+
+| Fact | Why it is a problem |
+|---|---|
+| Neutrino masses | minimal SM gives massless neutrinos |
+| Dark matter | no suitable SM particle |
+| Baryon asymmetry | SM CP violation is not enough |
+| Fermion mass hierarchy | Yukawa pattern unexplained |
+| Gravity | not part of SM |
+| Strong CP problem | \(\theta_{\rm QCD}\) is extremely small |
+
+## SM as an Effective Theory
+
+The Standard Model is not a wrong theory.
+
+It is an extraordinarily precise effective theory within its domain of applicability.
+
+Neutrinos are especially valuable:
+
+::: {.compact}
+- they enter the SM through the weak interaction;
+- they are experimentally accessible through rare event rates;
+- their oscillations require extending the minimal SM.
+:::
+
+## Final Checkpoint
+
+After the two lectures, you should be able to connect:
+
+$$
+\text{SM fields}
+\to
+\text{allowed interactions}
+\to
+\text{cross sections and rates}
+\to
+\text{detector signatures}.
+$$
+
+Control questions:
+
+::: {.compact}
+- how a charged current differs from a neutral current;
+- why \(W,Z\) are massive while the photon is massless;
+- what neutrino oscillations prove;
+- why the minimal SM is incomplete.
+:::
+
+## Further Reading
+
+::: {.small}
+- Particle Data Group, *Review of Particle Physics*.
+- Quigg, *Gauge Theories of the Strong, Weak, and Electromagnetic Interactions*.
+- Gonzalez-Garcia and Maltoni, *Phenomenology with Massive Neutrinos*.
+- Formaggio and Zeller, *From eV to EeV: Neutrino Cross Sections Across Energy Scales*.
+:::
+
+::: {.muted}
+Bibliographic entries in `references.bib` are intentionally marked `TODO: verify` before final publication.
+:::
+

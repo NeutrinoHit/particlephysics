@@ -1,0 +1,33 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+
+lang: ru-RU
+
+website:
+  title: "Физика элементарных частиц: слайды"
+  site-url: "https://neutrinohit.github.io/particlephysics/ParticlePhysics/ru/slides/"
+  repo-url: "https://github.com/NeutrinoHit/particlephysics"
+
+format:
+  html:
+    theme: cosmo
+    toc: false
+    page-layout: full
+  revealjs:
+    theme: [black, ../../../shared/styles/neutrinohit-reveal.scss]
+    logo: ../../../shared/reveal/dvnlogo.png
+    html-math-method: mathjax
+    slide-number: true
+    toc: true
+    toc-depth: 1
+    toc-title: "План лекции"
+    width: 1280
+    height: 720
+    margin: 0.06
+    center: false
+    include-after-body:
+      text: |
+        <script data-external="1" data-context-home="index.html" data-context-home-label="Главная страница курса" src="../../../shared/reveal/neutrinohit-reveal-footer.js"></script>

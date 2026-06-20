@@ -1,0 +1,44 @@
+---
+title: "Questions after Lecture 1"
+subtitle: "Particles, Fields, and Interactions"
+lang: en
+format:
+  html:
+    theme: cosmo
+    toc: true
+---
+
+# Control Questions
+
+1. What is the difference between a particle and a field?
+2. Which quantum numbers are needed to describe an electron?
+3. Why do the photon and the electron belong to different classes of particles?
+4. What does a cross section mean?
+5. Why can a process be energetically allowed but physically forbidden or strongly suppressed?
+6. Why does a neutrino detector measure events rather than the incoming flux directly?
+
+# Additional Questions
+
+1. Why is a Feynman diagram not a literal particle trajectory?
+2. How is lifetime related to decay width?
+3. Which factors enter the toy event-rate formula?
+4. Where does the detector response function enter an event prediction?
+
+# Short Written Check
+
+Explain, using one example, the difference between:
+
+- a conservation law;
+- a kinematic threshold;
+- the absence or suppression of an interaction vertex.
+
+Use one of the processes:
+
+$$
+\bar\nu_e+p\to n+e^+,
+\qquad
+\nu_\mu+N\to\mu^-+X,
+\qquad
+\mu^-\to e^-+\gamma.
+$$
+

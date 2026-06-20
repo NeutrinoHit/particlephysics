@@ -1,0 +1,27 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Физика элементарных частиц"
+  author: "Дмитрий В. Наумов"
+  site-url: "https://neutrinohit.github.io/particlephysics/ParticlePhysics/ru/book/"
+  repo-url: "https://github.com/NeutrinoHit/particlephysics"
+  repo-subdir: "ParticlePhysics/ru/book"
+  search: true
+  chapters:
+    - index.qmd
+
+lang: ru-RU
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    number-sections: true
+    code-copy: true
+  pdf:
+    documentclass: scrbook
+    pdf-engine: lualatex
+    toc: true
+    number-sections: true

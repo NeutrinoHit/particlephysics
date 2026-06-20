@@ -1,0 +1,806 @@
+---
+title: "Introduction to Particle Physics I: Particles, Fields, and Interactions"
+subtitle: "Baikal School · 75 min"
+author: "Dmitry V. Naumov"
+institute: "Joint Institute for Nuclear Research"
+date: "June 2026"
+---
+
+# Orientation
+
+## Lecture Map
+
+::: {.timing}
+::: {.time}
+0-7 min
+:::
+::: {}
+Why the particle-physics language is needed in neutrino experiments.
+:::
+::: {.time}
+7-20 min
+:::
+::: {}
+A particle as a field quantum and a set of quantum numbers.
+:::
+::: {.time}
+20-32 min
+:::
+::: {}
+Fermions, bosons, leptons, quarks, gauge bosons, and the Higgs.
+:::
+::: {.time}
+32-47 min
+:::
+::: {}
+Interactions, vertices, amplitudes, and Feynman diagrams.
+:::
+::: {.time}
+47-60 min
+:::
+::: {}
+Cross sections, decay widths, and detector event rates.
+:::
+::: {.time}
+60-75 min
+:::
+::: {}
+Natural units, energy scales, and checkpoint questions.
+:::
+:::
+
+## Main Message
+
+::: {.takeaway}
+A particle is not a tiny ball. It is a quantum of a field with definite quantum numbers.
+:::
+
+An interaction is an allowed transition between quantum states.
+
+It is constrained by:
+
+::: {.compact}
+- symmetries;
+- conservation laws;
+- kinematics;
+- the existence of a nonzero interaction vertex.
+:::
+
+# Why Particle Physics
+
+## From Matter to Quarks and Leptons
+
+::: {.flow}
+::: {}
+matter
+:::
+::: {}
+atoms
+:::
+::: {}
+nuclei + electrons
+:::
+::: {}
+nucleons
+:::
+::: {}
+quarks + leptons
+:::
+:::
+
+This chain is useful, but incomplete: particle physics is not only another layer in a nested-doll picture.
+
+At this scale the language changes:
+
+$$
+\text{states},\quad
+\text{fields},\quad
+\text{amplitudes},\quad
+\text{symmetries},\quad
+\text{probabilities}.
+$$
+
+## More Than Composition
+
+Particle physics does not only ask "what is this object made of?"
+
+It gives a language for asking:
+
+::: {.compact}
+- which states can exist;
+- which transitions between states are allowed;
+- how probable a process is;
+- what an experiment actually measures;
+- which theory parameters enter observables.
+:::
+
+::: {.question}
+For neutrinos this is essential: the incoming particle is almost never observed directly.
+:::
+
+## What a Neutrino Telescope Sees
+
+::: {.flow}
+::: {}
+neutrino flux
+:::
+::: {}
+rare interaction
+:::
+::: {}
+charged particle or cascade
+:::
+::: {}
+Cherenkov light
+:::
+::: {}
+reconstructed event
+:::
+:::
+
+A neutrino telescope does not see the neutrino directly.
+
+It records secondary charged particles, cascades, and Cherenkov light.
+
+That is why we need to understand how flux becomes events.
+
+## Flux Is Not the Event Count
+
+Even if the flux \(\Phi\) is known, an experiment still needs:
+
+::: {.compact}
+- the interaction probability;
+- the number of targets;
+- the exposure time;
+- the detection efficiency;
+- the reconstruction response function.
+:::
+
+::: {.takeaway}
+A detector event is the end of a chain, not a direct image of the incoming neutrino.
+:::
+
+# Particle
+
+## Particle as a Quantum State
+
+In the modern language a particle is a state with well-defined quantum numbers.
+
+For a free particle one usually specifies:
+
+$$
+m,\quad s,\quad Q,\quad \tau,\quad
+\text{internal quantum numbers}.
+$$
+
+In QFT this state is interpreted as a quantum of the corresponding field.
+
+::: {.muted}
+"Elementary" means that no internal structure is resolved within the theory and energy range under discussion.
+:::
+
+## Quantum Numbers
+
+A minimal list of descriptors:
+
+::: {.compact}
+- \(m\): mass;
+- \(s\): spin;
+- \(Q\): electric charge;
+- color charge, if the particle participates in the strong interaction;
+- weak quantum numbers;
+- \(\tau\): lifetime, if the state is unstable;
+- the rule relating the particle to its antiparticle.
+:::
+
+Quantum numbers are not just table labels. They constrain possible processes.
+
+## Example: Electron
+
+$$
+e^-:
+\quad
+m_e = 0.511\ \mathrm{MeV},
+\quad
+s=\frac12,
+\quad
+Q=-1.
+$$
+
+The electron:
+
+::: {.compact}
+- is a lepton;
+- carries no color;
+- participates in electromagnetic and weak interactions;
+- is stable in ordinary matter because there is no lighter state with the same electric charge.
+:::
+
+## Example: Positron
+
+$$
+e^+:
+\quad
+m_{e^+}=m_e,
+\quad
+s=\frac12,
+\quad
+Q=+1.
+$$
+
+The positron is the electron antiparticle.
+
+::: {.takeaway}
+An antiparticle is not a particle with negative mass. It is a field excitation with opposite additive charges.
+:::
+
+## Antiparticles
+
+For a particle and its antiparticle:
+
+::: {.compact}
+- masses are equal;
+- spins are equal;
+- additive charges change sign;
+- electric charge changes sign;
+- color changes into anticolor.
+:::
+
+Examples:
+
+$$
+e^-\leftrightarrow e^+,\qquad
+p\leftrightarrow \bar p,\qquad
+\nu_\ell\leftrightarrow \bar\nu_\ell.
+$$
+
+## Spin
+
+Spin is an intrinsic angular momentum of a quantum state.
+
+It is not the rotation of a tiny rigid object.
+
+For classification the important distinction is integer versus half-integer spin:
+
+$$
+s=\frac12,\frac32,\ldots
+\quad\Rightarrow\quad
+\text{fermions},
+$$
+
+$$
+s=0,1,2,\ldots
+\quad\Rightarrow\quad
+\text{bosons}.
+$$
+
+# Fermions and Bosons
+
+## Fermions
+
+Fermions have half-integer spin and obey Fermi-Dirac statistics.
+
+The fundamental Standard Model fermions are:
+
+::: {.compact}
+- leptons: \(e,\mu,\tau,\nu_e,\nu_\mu,\nu_\tau\);
+- quarks: \(u,d,s,c,b,t\).
+:::
+
+Fermions obey the Pauli exclusion principle.
+
+This matters not only for atoms, but also for dense matter, decays, and phase space.
+
+## Bosons
+
+Bosons have integer spin and obey Bose-Einstein statistics.
+
+In the Standard Model:
+
+::: {.compact}
+- gauge bosons: \(\gamma, g, W^\pm, Z\);
+- Higgs boson: \(H\).
+:::
+
+Composite particles can also be bosons:
+
+$$
+\pi,\ K,\ \rho,\ \text{nuclei with integer total spin}.
+$$
+
+## A Useful but Dangerous Phrase
+
+One often says:
+
+::: {.question}
+"Fermions are matter; bosons are forces."
+:::
+
+This is a useful first orientation, but not a law.
+
+::: {.compact}
+- Mesons are bosons but are composite particles.
+- The Higgs is a boson, but not a "force" in the elementary-school sense.
+- Gauge bosons encode interactions, but a diagram is not a mechanical picture.
+:::
+
+## Particle Classes
+
+| Class | Spin | Examples | Comment |
+|---|---:|---|---|
+| Leptons | \(1/2\) | \(e,\mu,\tau,\nu_e,\nu_\mu,\nu_\tau\) | no color |
+| Quarks | \(1/2\) | \(u,d,s,c,b,t\) | color |
+| Gauge bosons | \(1\) | \(\gamma,g,W,Z\) | gauge interactions |
+| Higgs boson | \(0\) | \(H\) | electroweak symmetry breaking |
+
+## Leptons
+
+Leptons do not carry color charge.
+
+Charged leptons:
+
+$$
+e^-,\quad \mu^-,\quad \tau^-.
+$$
+
+Neutrinos:
+
+$$
+\nu_e,\quad \nu_\mu,\quad \nu_\tau.
+$$
+
+Neutrinos have \(Q=0\), so they do not participate in electromagnetic interactions.
+
+Their Standard Model access to detector physics is through the weak interaction.
+
+## Quarks
+
+Quarks carry color charge and participate in the strong interaction.
+
+Electric charges:
+
+$$
+Q_u=Q_c=Q_t=+\frac23,\qquad
+Q_d=Q_s=Q_b=-\frac13.
+$$
+
+Because of confinement, free quarks are not observed as isolated particles.
+
+Observable hadrons:
+
+::: {.compact}
+- baryons: \(qqq\), for example \(p,n\);
+- mesons: \(q\bar q\), for example \(\pi,K\).
+:::
+
+## Gauge Bosons
+
+Gauge bosons are associated with gauge interactions:
+
+| Boson | Interaction | Couples to |
+|---|---|---|
+| \(\gamma\) | electromagnetic | electric charge |
+| \(g\) | strong | color |
+| \(W^\pm\) | weak charged current | weak doublets |
+| \(Z\) | weak neutral current | electroweak charge |
+
+In the weak interaction, neutrinos play a central role because they have no strong or electromagnetic channel.
+
+## Higgs Boson
+
+The Higgs boson is a scalar:
+
+$$
+s=0.
+$$
+
+In this introductory sense it is not a "fifth force." It is tied to electroweak symmetry breaking.
+
+After symmetry breaking:
+
+::: {.compact}
+- \(W^\pm\) and \(Z\) become massive;
+- the photon remains massless;
+- fermion masses are parameterized by Yukawa couplings.
+:::
+
+# Interactions
+
+## Interaction as Transition Amplitude
+
+In QFT a process is described by a transition amplitude:
+
+$$
+i\to f,
+\qquad
+\mathcal M_{i\to f}.
+$$
+
+The probability is related not to the amplitude itself, but to its squared magnitude:
+
+$$
+\text{rate or cross section}
+\propto
+|\mathcal M|^2
+\times
+\text{phase space}.
+$$
+
+## What a Feynman Diagram Is
+
+A Feynman diagram is bookkeeping for amplitudes.
+
+It shows:
+
+::: {.compact}
+- external states of the process;
+- internal propagators;
+- allowed interaction vertices;
+- the order in coupling constants.
+:::
+
+::: {.takeaway}
+A Feynman diagram is not a photograph and not a literal particle trajectory.
+:::
+
+## Example: \(e^+e^-\to\mu^+\mu^-\)
+
+One simple amplitude is:
+
+$$
+e^+e^-
+\to
+\gamma^\ast/Z^\ast
+\to
+\mu^+\mu^-.
+$$
+
+What is checked:
+
+::: {.compact}
+- charge conservation;
+- energy-momentum conservation;
+- the existence of \(e e \gamma\) and \(\mu\mu\gamma\) vertices;
+- enough energy to produce \(\mu^+\mu^-\).
+:::
+
+## Example: Beta-Decay Language
+
+At the hadron level:
+
+$$
+n\to p+e^-+\bar\nu_e.
+$$
+
+At the quark level:
+
+$$
+d\to u+W^-,
+\qquad
+W^-\to e^-+\bar\nu_e.
+$$
+
+This is a weak charged-current process: electric charge is carried by \(W^\pm\).
+
+## Inverse Beta Decay
+
+An important detector channel:
+
+$$
+\bar\nu_e+p\to n+e^+.
+$$
+
+Here the neutrino flavor is tied to the charged lepton in the final state.
+
+The process is useful because the \(e^+\) gives a prompt signal, while neutron capture can give a delayed tag.
+
+::: {.muted}
+The details depend on medium and energy; the important point here is the process structure.
+:::
+
+## Neutrino-Nucleon Scattering
+
+At high energies one often writes:
+
+$$
+\nu_\mu+N\to\mu^-+X.
+$$
+
+Here:
+
+::: {.compact}
+- \(N\) is a nucleon or nucleus in the target;
+- \(X\) is the hadronic final state;
+- \(\mu^-\) carries information about the charged-current \(\nu_\mu\) interaction.
+:::
+
+A real analysis needs parton distributions, nuclear effects, and detector response.
+
+## Allowed Process
+
+::: {.takeaway}
+Allowed process \(\ne\) energy conservation only.
+:::
+
+A physically allowed process requires:
+
+$$
+\text{kinematics}
++\text{conservation laws}
++\text{quantum numbers}
++\text{nonzero vertex}.
+$$
+
+If one element is absent, the process is forbidden or strongly suppressed.
+
+## Conservation Laws
+
+In ordinary Standard Model processes one checks:
+
+::: {.compact}
+- energy-momentum conservation;
+- electric charge conservation;
+- color conservation;
+- baryon and lepton number in ordinary perturbative SM processes;
+- angular momentum;
+- flavor rules specified by the interaction.
+:::
+
+Not every process that looks possible is physically available.
+
+## Kinematic Thresholds
+
+Even if an interaction vertex exists, a process may not occur because of a threshold.
+
+Example:
+
+$$
+\bar\nu_e+p\to n+e^+.
+$$
+
+Enough energy is required to create the heavier final-state particles.
+
+In detector analysis the threshold determines which parts of the spectrum are accessible.
+
+## Example: \(\mu^-\to e^-+\gamma\)
+
+Energetically the process is possible:
+
+$$
+m_\mu > m_e.
+$$
+
+But this does not mean that it occurs with an observable probability.
+
+In the minimal SM without neutrino masses and flavor mixing there is no ordinary tree-level \(\mu^-\to e^-\gamma\) process.
+
+With neutrino masses it appears only at an extremely suppressed loop level.
+
+::: {.takeaway}
+"Energy allows it" does not mean "the process happens."
+:::
+
+# Cross Sections, Decays, Events
+
+## Decay Width and Lifetime
+
+For an unstable particle:
+
+$$
+P(t)=e^{-t/\tau},
+\qquad
+\Gamma=\frac{1}{\tau}.
+$$
+
+In units with \(\hbar=c=1\), lifetime and width have inverse dimensions.
+
+Large \(\Gamma\) means a short lifetime.
+
+Small \(\Gamma\) means a long-lived state.
+
+## Cross Section
+
+The cross section \(\sigma\) measures the effective probability of a scattering process.
+
+Dimension:
+
+$$
+[\sigma]=\text{area}.
+$$
+
+Intuitively:
+
+::: {.compact}
+- larger \(\sigma\) means a more probable process;
+- smaller \(\sigma\) requires a larger target or longer exposure;
+- \(\sigma\) depends on energy and process channel.
+:::
+
+## Simple Event-Rate Formula
+
+For a counting experiment:
+
+$$
+N_{\rm events}
+=
+\Phi\,
+\sigma\,
+N_{\rm target}\,
+T\,
+\epsilon.
+$$
+
+Where:
+
+::: {.compact}
+- \(\Phi\) is the flux;
+- \(\sigma\) is the cross section;
+- \(N_{\rm target}\) is the number of targets;
+- \(T\) is the exposure time;
+- \(\epsilon\) is the detection efficiency.
+:::
+
+## Toy Code Fragment
+
+This is a toy calculation, not a detector simulation.
+
+```python
+from particle_intro.event_rates import expected_events
+
+N = expected_events(
+    flux=1e10,
+    cross_section=1e-44,
+    n_targets=1e33,
+    exposure_time=3.15e7,
+    efficiency=0.8,
+)
+print(N)
+```
+
+The purpose of the code is to check scale, not to replace an analysis.
+
+## Differential Event Rate
+
+A real detector analysis is closer to:
+
+$$
+\frac{dN}{dE_{\rm rec}}
+=
+T
+\int dE_\nu\,
+\Phi(E_\nu)
+\sigma(E_\nu)
+R(E_{\rm rec},E_\nu)
+\epsilon(E_{\rm rec}).
+$$
+
+Here \(R(E_{\rm rec},E_\nu)\) is the response function.
+
+## Detector Response
+
+A detector does not measure the "true neutrino energy." It measures reconstructed quantities.
+
+This introduces:
+
+::: {.compact}
+- energy resolution;
+- angular resolution;
+- flavor or topology classification;
+- selection efficiency;
+- backgrounds;
+- migration between bins.
+:::
+
+::: {.takeaway}
+The physics model and detector model meet in the event prediction.
+:::
+
+## Baikal-Style Event Chain
+
+::: {.flow}
+::: {}
+\(\nu\)
+:::
+::: {}
+weak interaction
+:::
+::: {}
+track or cascade
+:::
+::: {}
+Cherenkov photons
+:::
+::: {}
+event sample
+:::
+:::
+
+For Baikal it is especially important to distinguish:
+
+::: {.compact}
+- long tracks from \(\nu_\mu\) charged-current events;
+- cascade-like events from \(\nu_e\), \(\nu_\tau\), and neutral-current channels;
+- reconstruction and selection effects.
+:::
+
+# Units and Scales
+
+## Natural Units
+
+In particle physics one usually uses:
+
+$$
+\hbar=c=1.
+$$
+
+Then:
+
+::: {.compact}
+- mass, energy, and momentum are measured in eV;
+- length and time are inverse to energy;
+- formulas become shorter, but dimensions still matter.
+:::
+
+A useful conversion:
+
+$$
+\hbar c \simeq 197.3\ \mathrm{MeV\,fm}.
+$$
+
+## Energy Scales
+
+| Scale | Typical domain |
+|---:|---|
+| eV | atomic physics |
+| keV | X-rays, low-energy processes |
+| MeV | nuclear physics, solar neutrinos |
+| GeV | hadrons, atmospheric neutrinos |
+| TeV | LHC, high-energy astroparticle physics |
+
+High energy is not the only way to search for new physics.
+
+In neutrino physics, long baselines, small masses, rare processes, and huge exposures are also essential.
+
+# Checkpoint
+
+## What Should Remain
+
+After this lecture you should be able to answer:
+
+::: {.compact}
+- what a particle is in the modern language;
+- how an electron differs from a photon, a neutrino, and a quark;
+- what it means for a process to be allowed;
+- why cross sections and decay widths are observables;
+- why a detector measures events rather than the neutrino flux itself.
+:::
+
+## Transition to Lecture 2
+
+We now have the language:
+
+$$
+\text{particles}
+\to
+\text{quantum numbers}
+\to
+\text{interactions}
+\to
+\text{cross sections and decays}.
+$$
+
+In the second lecture we assemble this into the Standard Model and see why neutrinos immediately point beyond its minimal version.
+
+## Further Reading
+
+::: {.small}
+- Griffiths, *Introduction to Elementary Particles*.
+- Peskin and Schroeder, *An Introduction to Quantum Field Theory*.
+- Particle Data Group, *Review of Particle Physics*.
+- Formaggio and Zeller, *From eV to EeV: Neutrino Cross Sections Across Energy Scales*.
+:::
+
+::: {.muted}
+Bibliographic entries in `references.bib` are intentionally marked `TODO: verify` before final publication.
+:::
+

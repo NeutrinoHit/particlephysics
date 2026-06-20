@@ -1,0 +1,9 @@
+---
+title: "Particle Physics · Slides"
+lang: en
+toc: false
+---
+
+# Particle Physics
+
+English slides scaffold for the future 16-lecture course.

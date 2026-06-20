@@ -1,0 +1,27 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Particle Physics"
+  author: "Dmitry V. Naumov"
+  site-url: "https://neutrinohit.github.io/particlephysics/ParticlePhysics/en/book/"
+  repo-url: "https://github.com/NeutrinoHit/particlephysics"
+  repo-subdir: "ParticlePhysics/en/book"
+  search: true
+  chapters:
+    - index.qmd
+
+lang: en
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    number-sections: true
+    code-copy: true
+  pdf:
+    documentclass: scrbook
+    pdf-engine: lualatex
+    toc: true
+    number-sections: true

@@ -1,0 +1,92 @@
+---
+title: "Formula Sheet"
+subtitle: "Introduction to Particle Physics · Baikal School"
+lang: en
+format:
+  html:
+    theme: cosmo
+    toc: true
+---
+
+# Counting Experiment
+
+$$
+N = \Phi \sigma N_{\rm target}T\epsilon
+$$
+
+Toy meaning only: this formula omits spectra, backgrounds, detector response, and uncertainty propagation.
+
+# Decay Width and Lifetime
+
+$$
+\Gamma = \frac{1}{\tau}
+$$
+
+For an exponential decay law:
+
+$$
+P(t)=e^{-t/\tau}.
+$$
+
+# Natural Units
+
+$$
+\hbar=c=1
+$$
+
+Useful conversion:
+
+$$
+\hbar c \simeq 197.3\ \mathrm{MeV\,fm}.
+$$
+
+# Standard Model Gauge Group
+
+$$
+SU(3)_c\times SU(2)_L\times U(1)_Y
+$$
+
+# Higgs Vacuum Expectation Value
+
+$$
+\langle H\rangle = \frac{v}{\sqrt{2}},
+\quad
+v\simeq 246\ \mathrm{GeV}
+$$
+
+# Fermion Masses
+
+$$
+m_f = \frac{y_fv}{\sqrt{2}}
+$$
+
+This parameterizes charged-fermion masses through Yukawa couplings; it does not explain the numerical pattern of those couplings.
+
+# Flavor and Mass States
+
+$$
+|\nu_\alpha\rangle=\sum_i U_{\alpha i}^*|\nu_i\rangle
+$$
+
+# Two-Flavor Oscillation Probability
+
+$$
+P_{\nu_\alpha\to\nu_\beta}
+=
+\sin^2 2\theta
+\sin^2
+\left(
+1.27
+\frac{\Delta m^2[\mathrm{eV}^2]L[\mathrm{km}]}
+{E[\mathrm{GeV}]}
+\right)
+$$
+
+Survival probability:
+
+$$
+P_{\nu_\alpha\to\nu_\alpha}
+=
+1-P_{\nu_\alpha\to\nu_\beta}.
+$$
+

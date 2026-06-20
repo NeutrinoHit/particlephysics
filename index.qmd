@@ -1,0 +1,82 @@
+---
+title: "Particle Physics"
+toc: false
+---
+
+```{=html}
+<style>
+  .quarto-title-block {
+    display: none;
+  }
+</style>
+
+<div class="course-index">
+  <header class="course-profile">
+    <img class="course-profile-photo" src="assets/naumov-portrait.jpg" alt="Dmitry V. Naumov">
+    <div class="course-profile-copy">
+      <p class="course-kicker">Particle Physics</p>
+      <h1>Courses and Mini-Courses</h1>
+      <p>
+        NeutrinoHit materials on particle physics: Baikal School introductory
+        mini-course now, and a future bilingual 16-lecture course with slides
+        and book materials.
+      </p>
+      <nav class="course-profile-links" aria-label="Section links">
+        <a href="https://neutrinohit.github.io/">NeutrinoHit</a>
+        <a href="https://neutrinohit.github.io/lectures.html">All lectures</a>
+        <a href="https://t.me/NeutrinoHit">Telegram</a>
+        <a href="https://www.youtube.com/@dmitrynaumov6099/">YouTube</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="course-intro">
+    <h2>Section Materials</h2>
+    <p>
+      This repository is the main home for particle-physics courses in the
+      NeutrinoHit structure. Common site/reveal assets are synced from
+      neutrinohit-map; each course keeps its own local Quarto configuration.
+    </p>
+  </section>
+
+  <section class="course-accordion" aria-label="Particle physics materials">
+    <details class="course-row" open>
+      <summary>
+        <span class="course-row-kind">Mini-course</span>
+        <span>Introduction to Particle Physics · Baikal School</span>
+      </summary>
+      <div class="course-row-body">
+        <p>
+          A two-lecture English mini-course: particles, fields, interactions,
+          Standard Model structure, weak interaction, and neutrinos.
+        </p>
+        <div class="course-links">
+          <a href="IntroParticlePhysicsBaikal/">Open mini-course</a>
+          <a href="IntroParticlePhysicsBaikal/slides/01_particles_fields_interactions.html">Lecture 1</a>
+          <a href="IntroParticlePhysicsBaikal/slides/02_standard_model_neutrinos.html">Lecture 2</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="course-row">
+      <summary>
+        <span class="course-row-kind">Course</span>
+        <span>Particle Physics</span>
+      </summary>
+      <div class="course-row-body">
+        <p>
+          Scaffold for a future 16-lecture bilingual course. Content will be
+          added later; the RU/EN slides and book directories are already in place.
+        </p>
+        <div class="course-links">
+          <a href="ParticlePhysics/">Open course scaffold</a>
+          <a href="ParticlePhysics/ru/slides/">RU slides</a>
+          <a href="ParticlePhysics/en/slides/">EN slides</a>
+          <a href="ParticlePhysics/ru/book/">RU book</a>
+          <a href="ParticlePhysics/en/book/">EN book</a>
+        </div>
+      </div>
+    </details>
+  </section>
+</div>
+```
