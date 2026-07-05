@@ -4,6 +4,36 @@ lang: ru-RU
 toc: false
 ---
 
-# Физика элементарных частиц
+```{=html}
+<style>
+  .quarto-title-block {
+    display: none;
+  }
+</style>
 
-Каркас русской книги для будущего курса из 16 лекций.
+<div class="course-index course-subpage">
+  <nav class="course-profile-links" aria-label="Навигация книги">
+    <a href="../../index.html">Страница курса</a>
+    <a href="https://neutrinohit.github.io/">NeutrinoHit</a>
+    <a href="https://neutrinohit.github.io/ru/education.html#particle-physics-course">Карта курса</a>
+  </nav>
+
+  <section class="course-intro">
+    <p class="course-kicker">Книга RU</p>
+    <h1>Физика элементарных частиц</h1>
+    <p>
+      Заготовка русской онлайн-книги курса. Этот раздел будет развиваться рядом
+      со слайдами и задачами, сохраняя постоянный адрес.
+    </p>
+  </section>
+
+  <section aria-label="Будущая структура книги">
+    <h2 class="course-section-title">Структура</h2>
+    <div class="course-material-grid">
+      <article class="course-material"><h3>Конспект</h3><p>Главы будут появляться по мере подготовки лекций.</p></article>
+      <article class="course-material"><h3>Задачи</h3><p>Сборник задач и упражнений будет вынесен в отдельный раздел курса.</p></article>
+      <article class="course-material"><h3>Справочные материалы</h3><p>Формулы, соглашения, обозначения и таблицы будут собраны здесь.</p></article>
+    </div>
+  </section>
+</div>
+```

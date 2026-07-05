@@ -29,14 +29,16 @@ website:
   repo-url: "https://github.com/NeutrinoHit/particlephysics"
   navbar:
     left:
+      - href: https://neutrinohit.github.io/
+        text: NeutrinoHit
+      - href: https://neutrinohit.github.io/ru/education.html#particles
+        text: Карта курса
       - href: index.qmd
         text: Раздел
       - href: IntroParticlePhysicsBaikal/index.qmd
         text: Мини-курс
       - href: ParticlePhysics/index.qmd
         text: Введение в физику элементарных частиц
-      - href: https://neutrinohit.github.io/lectures.html
-        text: Все лекции
   page-footer:
     left: "© NeutrinoHit"
     right: "Built with Quarto"

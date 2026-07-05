@@ -4,6 +4,49 @@ lang: ru-RU
 toc: false
 ---
 
-# Физика элементарных частиц
+```{=html}
+<style>
+  .quarto-title-block {
+    display: none;
+  }
+</style>
 
-Каркас русских слайдов для будущего курса из 16 лекций.
+<div class="course-index course-subpage">
+  <nav class="course-profile-links" aria-label="Навигация слайдов">
+    <a href="../../index.html">Страница курса</a>
+    <a href="https://neutrinohit.github.io/">NeutrinoHit</a>
+    <a href="https://neutrinohit.github.io/ru/education.html#particle-physics-course">Карта курса</a>
+  </nav>
+
+  <section class="course-intro">
+    <p class="course-kicker">Русские слайды</p>
+    <h1>Физика элементарных частиц</h1>
+    <p>
+      Раздел русских HTML-слайдов для большого курса. Лекции пока готовятся,
+      но структура курса уже заведена и будет заполняться без смены адреса.
+    </p>
+  </section>
+
+  <section aria-label="План русских лекций">
+    <h2 class="course-section-title">Карточки лекций</h2>
+    <div class="course-card-grid">
+      <article class="course-card is-planned"><span class="course-card-status">01 готовится</span><h3>Язык физики частиц</h3><p>Планируемая HTML-лекция.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">02 готовится</span><h3>Релятивистская кинематика</h3><p>Планируемая HTML-лекция.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">03 готовится</span><h3>Симметрии и законы сохранения</h3><p>Планируемая HTML-лекция.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">04 готовится</span><h3>Рассеяния и распады</h3><p>Планируемая HTML-лекция.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">05 готовится</span><h3>Квантовая электродинамика</h3><p>Планируемая HTML-лекция.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">06 готовится</span><h3>Слабое взаимодействие</h3><p>Планируемая HTML-лекция.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">07 готовится</span><h3>Кварки, адроны и КХД</h3><p>Планируемая HTML-лекция.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">08 готовится</span><h3>Электрослабое объединение</h3><p>Планируемая HTML-лекция.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">09 готовится</span><h3>Механизм Хиггса</h3><p>Планируемая HTML-лекция.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">10 готовится</span><h3>Нейтрино</h3><p>Планируемая HTML-лекция.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">11 готовится</span><h3>Осцилляции нейтрино</h3><p>Планируемая HTML-лекция.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">12 готовится</span><h3>CP-нарушение и аромат</h3><p>Планируемая HTML-лекция.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">13 готовится</span><h3>Детекторы частиц</h3><p>Планируемая HTML-лекция.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">14 готовится</span><h3>Коллайдеры и пучки</h3><p>Планируемая HTML-лекция.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">15 готовится</span><h3>За Стандартной моделью</h3><p>Планируемая HTML-лекция.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">16 готовится</span><h3>Экспериментальный фронтир</h3><p>Планируемая HTML-лекция.</p></article>
+    </div>
+  </section>
+</div>
+```

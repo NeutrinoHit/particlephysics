@@ -11,16 +11,73 @@ toc: false
 </style>
 
 <div class="course-index course-subpage">
-  <a class="course-back-link" href="../index.html">← Раздел физики элементарных частиц</a>
+  <nav class="course-profile-links" aria-label="Навигация курса">
+    <a href="../index.html">Раздел физики частиц</a>
+    <a href="https://neutrinohit.github.io/">NeutrinoHit</a>
+    <a href="https://neutrinohit.github.io/ru/education.html#particle-physics-course">Карта курса</a>
+  </nav>
 
   <section class="course-intro">
     <p class="course-kicker">Курс</p>
     <h1>Введение в физику элементарных частиц</h1>
     <p>
-      Заготовка для будущего большого курса. Ориентир — около 16 лекций,
-      но точное число можно менять по мере подготовки. Структура уже готова
-      для русских и английских слайдов и книжных материалов.
+      Рабочий дом будущего большого курса по физике элементарных частиц.
+      Структура уже заведена как самостоятельный сайт: русские и английские
+      слайды, книжные материалы, будущие задачи, applets и экзаменационные
+      проекты будут расти внутри этого адреса.
     </p>
+    <p class="course-author-note">
+      Автор: Дмитрий Наумов. Краткая информация и другие направления доступны
+      на <a href="https://neutrinohit.github.io/ru/">основном сайте NeutrinoHit</a>.
+    </p>
+  </section>
+
+  <section aria-label="Материалы курса">
+    <h2 class="course-section-title">Материалы курса</h2>
+    <div class="course-material-grid">
+      <article class="course-material">
+        <h3>Слайды RU</h3>
+        <p>Карточки будущих лекций и место для русских HTML-слайдов.</p>
+        <div class="course-links"><a href="ru/slides/">Открыть</a></div>
+      </article>
+      <article class="course-material">
+        <h3>Slides EN</h3>
+        <p>English scaffold for the same lecture sequence.</p>
+        <div class="course-links"><a href="en/slides/">Open</a></div>
+      </article>
+      <article class="course-material">
+        <h3>Книга RU</h3>
+        <p>Будущий конспект или онлайн-книга курса.</p>
+        <div class="course-links"><a href="ru/book/">Открыть</a></div>
+      </article>
+      <article class="course-material">
+        <h3>Book EN</h3>
+        <p>English book scaffold for translated or independent materials.</p>
+        <div class="course-links"><a href="en/book/">Open</a></div>
+      </article>
+    </div>
+  </section>
+
+  <section aria-label="Предварительный план лекций">
+    <h2 class="course-section-title">Предварительный план лекций</h2>
+    <div class="course-card-grid">
+      <article class="course-card is-planned"><span class="course-card-status">01 готовится</span><h3>Язык физики частиц</h3><p>Частицы, поля, квантовые числа и естественные единицы.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">02 готовится</span><h3>Релятивистская кинематика</h3><p>Инварианты, пороги, фазы и простые процессы.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">03 готовится</span><h3>Симметрии и законы сохранения</h3><p>Заряды, дискретные симметрии и ограничения на реакции.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">04 готовится</span><h3>Рассеяния и распады</h3><p>Амплитуды, сечения, ширины и времена жизни.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">05 готовится</span><h3>КЭД как первая калибровочная теория</h3><p>Фотон, фермионы, вершины и измеримые эффекты.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">06 готовится</span><h3>Слабое взаимодействие</h3><p>Заряженные и нейтральные токи, V-A структура.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">07 готовится</span><h3>Кварки, адроны и КХД</h3><p>Цвет, конфайнмент, струи и адронная феноменология.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">08 готовится</span><h3>Электрослабое объединение</h3><p>Калибровочная структура и физические бозоны.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">09 готовится</span><h3>Механизм Хиггса</h3><p>Массы частиц, бозон Хиггса и экспериментальные тесты.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">10 готовится</span><h3>Нейтрино в Стандартной модели</h3><p>Лептоны, слабые процессы и ограничения минимальной модели.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">11 готовится</span><h3>Осцилляции нейтрино</h3><p>Смешивание, массовые состояния и вероятности переходов.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">12 готовится</span><h3>CP-нарушение и аромат</h3><p>Смешивание кварков и лептонов, матрицы CKM и PMNS.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">13 готовится</span><h3>Детекторы частиц</h3><p>Что измеряют трекеры, калориметры и нейтринные детекторы.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">14 готовится</span><h3>Коллайдеры и пучки</h3><p>Светимость, события, фон и реконструкция.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">15 готовится</span><h3>Физика за Стандартной моделью</h3><p>Наблюдательные мотивы и типичные сценарии расширений.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">16 готовится</span><h3>Экспериментальный фронтир</h3><p>Открытые вопросы и программы будущих экспериментов.</p></article>
+    </div>
   </section>
 
   <section class="course-accordion" aria-label="Материалы курса">
@@ -46,6 +103,20 @@ toc: false
         <div class="course-links">
           <a href="en/slides/">Slides</a>
           <a href="en/book/">Book</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="course-row">
+      <summary>
+        <span class="course-row-kind">Дополнительно</span>
+        <span>Задачи, applets, экзамены и данные</span>
+      </summary>
+      <div class="course-row-body">
+        <p>Эти разделы заведены как часть стандарта курса и будут заполняться по мере подготовки материалов.</p>
+        <div class="course-links">
+          <a href="ru/book/">Книга</a>
+          <a href="ru/slides/">Слайды</a>
         </div>
       </div>
     </details>

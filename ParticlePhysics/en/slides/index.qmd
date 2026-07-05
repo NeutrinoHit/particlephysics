@@ -4,6 +4,49 @@ lang: en
 toc: false
 ---
 
-# Particle Physics
+```{=html}
+<style>
+  .quarto-title-block {
+    display: none;
+  }
+</style>
 
-English slides scaffold for the future 16-lecture course.
+<div class="course-index course-subpage">
+  <nav class="course-profile-links" aria-label="Slide navigation">
+    <a href="../../index.html">Course home</a>
+    <a href="https://neutrinohit.github.io/">NeutrinoHit</a>
+    <a href="https://neutrinohit.github.io/en/education.html#particle-physics-course">Course map</a>
+  </nav>
+
+  <section class="course-intro">
+    <p class="course-kicker">English slides</p>
+    <h1>Particle Physics</h1>
+    <p>
+      English HTML slide section for the full course. The lectures are in
+      preparation; the permanent course structure is already in place.
+    </p>
+  </section>
+
+  <section aria-label="English lecture plan">
+    <h2 class="course-section-title">Lecture Cards</h2>
+    <div class="course-card-grid">
+      <article class="course-card is-planned"><span class="course-card-status">01 planned</span><h3>Particle-physics language</h3><p>HTML lecture in preparation.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">02 planned</span><h3>Relativistic kinematics</h3><p>HTML lecture in preparation.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">03 planned</span><h3>Symmetries and conservation laws</h3><p>HTML lecture in preparation.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">04 planned</span><h3>Scattering and decays</h3><p>HTML lecture in preparation.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">05 planned</span><h3>Quantum electrodynamics</h3><p>HTML lecture in preparation.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">06 planned</span><h3>Weak interaction</h3><p>HTML lecture in preparation.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">07 planned</span><h3>Quarks, hadrons, and QCD</h3><p>HTML lecture in preparation.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">08 planned</span><h3>Electroweak unification</h3><p>HTML lecture in preparation.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">09 planned</span><h3>Higgs mechanism</h3><p>HTML lecture in preparation.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">10 planned</span><h3>Neutrinos</h3><p>HTML lecture in preparation.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">11 planned</span><h3>Neutrino oscillations</h3><p>HTML lecture in preparation.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">12 planned</span><h3>CP violation and flavor</h3><p>HTML lecture in preparation.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">13 planned</span><h3>Particle detectors</h3><p>HTML lecture in preparation.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">14 planned</span><h3>Colliders and beams</h3><p>HTML lecture in preparation.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">15 planned</span><h3>Beyond the Standard Model</h3><p>HTML lecture in preparation.</p></article>
+      <article class="course-card is-planned"><span class="course-card-status">16 planned</span><h3>Experimental frontier</h3><p>HTML lecture in preparation.</p></article>
+    </div>
+  </section>
+</div>
+```

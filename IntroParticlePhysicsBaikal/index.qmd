@@ -4,52 +4,79 @@ subtitle: "Две вводные лекции"
 format:
   html:
     theme: cosmo
-    toc: true
+    toc: false
 ---
 
-Мини-курс вводит язык физики элементарных частиц, который нужен для
-нейтринных и астрофизических экспериментов. Это не вывод полного лагранжиана
-Стандартной модели. Цель — понять, что такое частицы, как описываются
-взаимодействия, что измеряют эксперименты и почему нейтрино одновременно
-являются частицами Стандартной модели и указанием на физику за ее минимальными
-пределами.
+```{=html}
+<style>
+  .quarto-title-block {
+    display: none;
+  }
+</style>
 
-## Лекции
+<div class="course-index course-subpage">
+  <nav class="course-profile-links" aria-label="Навигация мини-курса">
+    <a href="../index.html">Раздел физики частиц</a>
+    <a href="https://neutrinohit.github.io/">NeutrinoHit</a>
+    <a href="https://neutrinohit.github.io/ru/education.html#particle-physics-mini-course">Карта мини-курса</a>
+  </nav>
 
-1. [Particles, Fields, and Interactions](slides/01_particles_fields_interactions.html)
-2. [The Standard Model and Neutrinos](slides/02_standard_model_neutrinos.html)
+  <section class="course-intro">
+    <p class="course-kicker">Мини-курс</p>
+    <h1>Введение в физику элементарных частиц</h1>
+    <p>
+      Мини-курс вводит язык физики элементарных частиц, который нужен для
+      нейтринных и астрофизических экспериментов. Цель — понять, что такое
+      частицы, как описываются взаимодействия, что измеряют эксперименты и
+      почему нейтрино одновременно являются частицами Стандартной модели и
+      указанием на физику за ее минимальными пределами.
+    </p>
+    <p class="course-author-note">
+      Автор: Дмитрий Наумов. Основной профиль и другие курсы находятся на
+      <a href="https://neutrinohit.github.io/ru/">NeutrinoHit</a>.
+    </p>
+  </section>
 
-## Раздаточные материалы
+  <section aria-label="Лекции мини-курса">
+    <h2 class="course-section-title">Лекции</h2>
+    <div class="course-card-grid">
+      <article class="course-card">
+        <span class="course-card-status">лекция 1</span>
+        <h3>Particles, Fields, and Interactions</h3>
+        <p>Частицы, квантовые числа, поля, взаимодействия, вершины, амплитуды и сечения.</p>
+        <div class="course-links"><a href="slides/01_particles_fields_interactions.html">Открыть слайды</a></div>
+      </article>
+      <article class="course-card">
+        <span class="course-card-status">лекция 2</span>
+        <h3>The Standard Model and Neutrinos</h3>
+        <p>Структура Стандартной модели, слабое взаимодействие, нейтрино и осцилляции.</p>
+        <div class="course-links"><a href="slides/02_standard_model_neutrinos.html">Открыть слайды</a></div>
+      </article>
+    </div>
+  </section>
 
-- [Вопросы после лекции 1](handouts/01_questions_particles_interactions.html)
-- [Вопросы после лекции 2](handouts/02_questions_standard_model_neutrinos.html)
-- [Формулы](handouts/formula_sheet.html)
-
-## Ноутбуки
-
-- [Event rates and cross sections](notebooks/01_event_rates_and_cross_sections.ipynb)
-- [Decay law and lifetime](notebooks/02_decay_law_and_lifetime.ipynb)
-- [Neutrino oscillation probability](notebooks/03_neutrino_oscillation_probability.ipynb)
-
-Ноутбуки учебные и используют toy-модели. Это не прецизионные расчеты и не
-замена детекторному моделированию.
-
-## Линия мини-курса
-
-Содержательная линия:
-
-$$
-\text{particles and quantum numbers}
-\to
-\text{interactions and Feynman diagrams}
-\to
-\text{cross sections and decay rates}
-\to
-\text{Standard Model structure}
-\to
-\text{weak interaction}
-\to
-\text{neutrinos and oscillations}
-\to
-\text{why minimal SM is incomplete}.
-$$
+  <section aria-label="Дополнительные материалы">
+    <h2 class="course-section-title">Дополнительные материалы</h2>
+    <div class="course-material-grid">
+      <article class="course-material">
+        <h3>Раздаточные материалы</h3>
+        <p>Вопросы после лекций и формулы.</p>
+        <div class="course-links">
+          <a href="handouts/01_questions_particles_interactions.html">Вопросы 1</a>
+          <a href="handouts/02_questions_standard_model_neutrinos.html">Вопросы 2</a>
+          <a href="handouts/formula_sheet.html">Формулы</a>
+        </div>
+      </article>
+      <article class="course-material">
+        <h3>Ноутбуки</h3>
+        <p>Учебные toy-модели для темпов событий, распадов и осцилляций.</p>
+        <div class="course-links">
+          <a href="notebooks/01_event_rates_and_cross_sections.ipynb">Event rates</a>
+          <a href="notebooks/02_decay_law_and_lifetime.ipynb">Decay law</a>
+          <a href="notebooks/03_neutrino_oscillation_probability.ipynb">Oscillations</a>
+        </div>
+      </article>
+    </div>
+  </section>
+</div>
+```

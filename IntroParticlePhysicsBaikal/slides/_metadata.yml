@@ -7,7 +7,7 @@ format:
     html-math-method: mathjax
     include-after-body:
       - text: |
-          <script data-external="1" data-context-home="https://neutrinohit.github.io/en/education.html#particle-physics-mini-course" data-context-home-label="Particle physics mini-course map" src="../../shared/reveal/neutrinohit-reveal-footer.js"></script>
+          <script data-external="1" data-context-home="https://neutrinohit.github.io/particlephysics/IntroParticlePhysicsBaikal/" data-context-home-label="Mini-course home" src="../../shared/reveal/neutrinohit-reveal-footer.js"></script>
       - ../../analytics/cloudflare-web-analytics.html
     footer: "Introduction to Particle Physics · Mini-course · D. Naumov"
     embed-resources: false

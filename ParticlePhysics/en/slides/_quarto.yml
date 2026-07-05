@@ -30,4 +30,4 @@ format:
     center: false
     include-after-body:
       text: |
-        <script data-external="1" data-context-home="https://neutrinohit.github.io/en/education.html#particle-physics-course" data-context-home-label="Particle physics course map" src="../../../shared/reveal/neutrinohit-reveal-footer.js"></script>
+        <script data-external="1" data-context-home="https://neutrinohit.github.io/particlephysics/ParticlePhysics/" data-context-home-label="Course home" src="../../../shared/reveal/neutrinohit-reveal-footer.js"></script>

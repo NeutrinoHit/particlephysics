@@ -15,7 +15,7 @@ toc: false
     <img class="course-profile-photo" src="assets/naumov-portrait.jpg" alt="Dmitry V. Naumov">
     <div class="course-profile-copy">
       <p class="course-kicker">Физика элементарных частиц</p>
-      <h1>Курсы и мини-курсы</h1>
+      <h1>Курсы по физике элементарных частиц</h1>
       <p>
         Материалы NeutrinoHit по физике элементарных частиц: вводный
         мини-курс из двух лекций и будущий большой курс с русскими и
@@ -23,10 +23,14 @@ toc: false
       </p>
       <nav class="course-profile-links" aria-label="Ссылки раздела">
         <a href="https://neutrinohit.github.io/">NeutrinoHit</a>
-        <a href="https://neutrinohit.github.io/lectures.html">Все лекции</a>
+        <a href="https://neutrinohit.github.io/ru/education.html#particles">Карта курса</a>
         <a href="https://t.me/NeutrinoHit">Telegram</a>
         <a href="https://www.youtube.com/@dmitrynaumov6099/">YouTube</a>
       </nav>
+      <p class="course-author-note">
+        Автор и куратор материалов: Дмитрий Наумов. Краткая информация и другие
+        направления собраны на <a href="https://neutrinohit.github.io/ru/">основном сайте NeutrinoHit</a>.
+      </p>
     </div>
   </header>
 
@@ -38,6 +42,30 @@ toc: false
       настройки синхронизируются из neutrinohit-map, а каждый курс сохраняет
       собственную локальную конфигурацию Quarto.
     </p>
+  </section>
+
+  <section aria-label="Быстрые входы">
+    <h2 class="course-section-title">Быстрые входы</h2>
+    <div class="course-card-grid">
+      <article class="course-card">
+        <span class="course-card-status">опубликовано</span>
+        <h3>Мини-курс</h3>
+        <p>Две вводные лекции, формулы, вопросы и учебные notebooks.</p>
+        <div class="course-links">
+          <a href="IntroParticlePhysicsBaikal/">Открыть</a>
+          <a href="IntroParticlePhysicsBaikal/slides/01_particles_fields_interactions.html">Лекция 1</a>
+          <a href="IntroParticlePhysicsBaikal/slides/02_standard_model_neutrinos.html">Лекция 2</a>
+        </div>
+      </article>
+      <article class="course-card is-planned">
+        <span class="course-card-status">готовится</span>
+        <h3>Введение в физику элементарных частиц</h3>
+        <p>Страница большого курса уже имеет постоянный адрес, структуру и заготовки материалов.</p>
+        <div class="course-links">
+          <a href="ParticlePhysics/">Открыть курс</a>
+        </div>
+      </article>
+    </div>
   </section>
 
   <section class="course-accordion" aria-label="Материалы по физике элементарных частиц">
@@ -73,10 +101,10 @@ toc: false
         </p>
         <div class="course-links">
           <a href="ParticlePhysics/">Открыть курс</a>
-          <a href="ParticlePhysics/ru/slides/">RU slides</a>
-          <a href="ParticlePhysics/en/slides/">EN slides</a>
-          <a href="ParticlePhysics/ru/book/">RU book</a>
-          <a href="ParticlePhysics/en/book/">EN book</a>
+          <a href="ParticlePhysics/ru/slides/">Слайды RU</a>
+          <a href="ParticlePhysics/en/slides/">Slides EN</a>
+          <a href="ParticlePhysics/ru/book/">Книга RU</a>
+          <a href="ParticlePhysics/en/book/">Book EN</a>
         </div>
       </div>
     </details>
