@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Saturn-like planet">
+  <defs>
+    <radialGradient id="saturnBody" cx="37%" cy="30%" r="72%">
+      <stop offset="0%" stop-color="#fff2b7"/>
+      <stop offset="42%" stop-color="#f0b95d"/>
+      <stop offset="78%" stop-color="#b76f35"/>
+      <stop offset="100%" stop-color="#5d2d2a"/>
+    </radialGradient>
+    <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7fcfff" stop-opacity="0.22"/>
+      <stop offset="28%" stop-color="#f6d08a" stop-opacity="0.9"/>
+      <stop offset="52%" stop-color="#ffffff" stop-opacity="0.7"/>
+      <stop offset="76%" stop-color="#f6d08a" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#7fcfff" stop-opacity="0.22"/>
+    </linearGradient>
+    <filter id="saturnGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3.6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="128" height="128" fill="none"/>
+  <ellipse cx="64" cy="66" rx="58" ry="16" fill="none" stroke="url(#ringGrad)" stroke-width="8" opacity="0.86" transform="rotate(-14 64 66)" filter="url(#saturnGlow)"/>
+  <ellipse cx="64" cy="66" rx="48" ry="11" fill="none" stroke="#0d1424" stroke-width="4" opacity="0.72" transform="rotate(-14 64 66)"/>
+  <circle cx="64" cy="64" r="35" fill="url(#saturnBody)" filter="url(#saturnGlow)"/>
+  <path d="M32 54c18 5 43 5 64-1" fill="none" stroke="#fff1b0" stroke-width="4" opacity="0.38"/>
+  <path d="M31 65c20 5 46 6 66 0" fill="none" stroke="#7d3e29" stroke-width="4" opacity="0.34"/>
+  <path d="M38 75c16 4 35 5 52 1" fill="none" stroke="#fff6c9" stroke-width="3" opacity="0.26"/>
+  <path d="M15 76c31-13 68-20 98-16" fill="none" stroke="#ffffff" stroke-width="2.5" opacity="0.42"/>
+</svg>
