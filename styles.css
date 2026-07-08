@@ -33,6 +33,14 @@ main.content {
   box-shadow: 0 8px 24px rgba(43, 67, 91, 0.18);
 }
 
+.course-site-logo {
+  display: block;
+  width: 76px;
+  height: 76px;
+  margin: 0 0 1rem;
+  object-fit: contain;
+}
+
 .course-profile-copy h1,
 .course-intro h1 {
   margin: 0.1rem 0 0.45rem;

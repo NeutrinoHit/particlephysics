@@ -1,0 +1,151 @@
+<table class="pillars-table">
+<thead>
+<tr>
+<th>Discovery</th>
+<th>Experimental lesson</th>
+<th>Impact on the Standard Model</th>
+<th></th>
+</tr>
+</thead>
+
+<tbody>
+<tr class="fragment">
+<td>Positron</td>
+<td>The electron has an antiparticle.</td>
+<td>Antiparticles became mandatory in relativistic QFT.</td>
+<td class="pillar-icon-cell">
+<svg class="pillar-icon" viewBox="0 0 100 56" aria-label="Positron">
+  <path d="M18 43 C28 20 56 17 67 31 C76 43 62 54 47 46 C34 39 39 24 54 24" fill="none" stroke="#8ec5ff" stroke-width="3" stroke-linecap="round"/>
+  <path d="M65 15 L84 15 M74 6 L74 24" stroke="#ffcc66" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="54" cy="24" r="4" fill="#ffcc66"/>
+</svg>
+</td>
+</tr>
+
+<tr class="fragment">
+<td>Neutrino and beta decay</td>
+<td>Missing energy and momentum are carried by an invisible particle.</td>
+<td>The lepton sector and weak interaction entered the theory.</td>
+<td class="pillar-icon-cell">
+<svg class="pillar-icon" viewBox="0 0 100 56" aria-label="Beta decay">
+  <circle cx="20" cy="28" r="10" fill="#8ec5ff" opacity="0.75"/>
+  <path d="M32 26 C48 16 60 14 78 12" fill="none" stroke="#ffcc66" stroke-width="3" stroke-linecap="round"/>
+  <path d="M70 8 L79 12 L72 19" fill="none" stroke="#ffcc66" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M32 31 C49 40 62 43 83 46" fill="none" stroke="#c7b6ff" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="5 5"/>
+  <text x="72" y="22" fill="#f2f2f2" font-size="17" font-weight="700">e⁻</text>
+  <text x="80" y="52" fill="#f2f2f2" font-size="16" font-weight="700">ν</text>
+</svg>
+</td>
+</tr>
+
+<tr class="fragment">
+<td>Parity violation</td>
+<td>The weak interaction distinguishes left from right.</td>
+<td>Weak currents have a chiral structure.</td>
+<td class="pillar-icon-cell">
+<svg class="pillar-icon" viewBox="0 0 100 56" aria-label="Parity violation">
+  <path d="M50 6 L50 50" stroke="#d0d0d0" stroke-width="2" stroke-dasharray="4 4"/>
+  <ellipse cx="50" cy="28" rx="3" ry="22" fill="none" stroke="#d0d0d0" stroke-width="1.6" opacity="0.8"/>
+  <circle cx="22" cy="30" r="10" fill="#8ec5ff" opacity="0.72"/>
+  <path d="M16 30 C20 23 26 23 30 30 C26 37 20 37 16 30" fill="none" stroke="#f2f2f2" stroke-width="1.5"/>
+  <path d="M22 30 L22 14" stroke="#ffcc66" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M18 18 L22 13 L26 18" fill="none" stroke="#ffcc66" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M31 27 C39 22 43 21 48 21" fill="none" stroke="#ffcc66" stroke-width="2.8" stroke-linecap="round"/>
+  <path d="M42 17 L49 21 L43 26" fill="none" stroke="#ffcc66" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="38" y="16" fill="#f2f2f2" font-size="13" font-weight="700">e⁻</text>
+  <circle cx="78" cy="30" r="10" fill="#384654" opacity="0.72"/>
+  <path d="M72 30 C76 23 82 23 86 30 C82 37 76 37 72 30" fill="none" stroke="#9aa8b6" stroke-width="1.5"/>
+  <path d="M78 30 L78 14" stroke="#777" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M74 18 L78 13 L82 18" fill="none" stroke="#777" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M69 27 C61 22 57 21 52 21" fill="none" stroke="#777" stroke-width="2.8" stroke-linecap="round"/>
+  <path d="M58 17 L51 21 L57 26" fill="none" stroke="#777" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M84 10 L96 22 M96 10 L84 22" stroke="#ff6b6b" stroke-width="2.8" stroke-linecap="round"/>
+</svg>
+</td>
+</tr>
+
+<tr class="fragment">
+<td>Strange particles and Ω⁻</td>
+<td>Hadrons form regular multiplets.</td>
+<td>The quark classification u, d, s became compelling.</td>
+<td class="pillar-icon-cell">
+<svg class="pillar-icon" viewBox="0 0 100 56" aria-label="Hadron multiplet">
+  <path d="M50 8 L78 24 L78 42 L50 54 L22 42 L22 24 Z" fill="none" stroke="#8ec5ff" stroke-width="2"/>
+  <path d="M22 24 L78 42 M78 24 L22 42 M50 8 L50 54" stroke="#8ec5ff" stroke-width="1.5" opacity="0.55"/>
+  <circle cx="50" cy="8" r="4" fill="#ffcc66"/>
+  <circle cx="22" cy="24" r="4" fill="#ffcc66"/>
+  <circle cx="78" cy="24" r="4" fill="#ffcc66"/>
+  <circle cx="22" cy="42" r="4" fill="#ffcc66"/>
+  <circle cx="78" cy="42" r="4" fill="#ffcc66"/>
+  <circle cx="50" cy="52" r="4" fill="#ffcc66"/>
+  <text x="45" y="50" fill="#f2f2f2" font-size="14">Ω</text>
+</svg>
+</td>
+</tr>
+
+<tr class="fragment">
+<td>Deep-inelastic scattering</td>
+<td>The proton contains point-like constituents.</td>
+<td>Quarks became real partonic degrees of freedom.</td>
+<td class="pillar-icon-cell">
+<svg class="pillar-icon" viewBox="0 0 100 56" aria-label="Deep inelastic scattering">
+  <path d="M5 33 C11 25 17 41 23 33 C29 25 35 41 41 33 C47 25 53 41 59 33" fill="none" stroke="#ffcc66" stroke-width="3" stroke-linecap="round"/>
+  <path d="M55 25 L65 33 L55 41" fill="none" stroke="#ffcc66" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="67" cy="28" r="20" fill="none" stroke="#8ec5ff" stroke-width="2.5"/>
+  <circle cx="60" cy="22" r="4" fill="#ff6b6b"/>
+  <circle cx="75" cy="26" r="4" fill="#63d471"/>
+  <circle cx="65" cy="36" r="4" fill="#72d6ff"/>
+  <path d="M67 28 L88 15 M67 28 L89 32 M67 28 L80 48" stroke="#d0d0d0" stroke-width="1.8" stroke-linecap="round" opacity="0.75"/>
+</svg>
+</td>
+</tr>
+
+<tr class="fragment">
+<td>Neutral weak currents</td>
+<td>A neutrino can scatter without producing a charged lepton.</td>
+<td>Electroweak SU(2)<sub>L</sub> × U(1)<sub>Y</sub> was confirmed.</td>
+<td class="pillar-icon-cell">
+<svg class="pillar-icon" viewBox="0 0 100 56" aria-label="Neutral current">
+  <path d="M6 28 L45 28" fill="none" stroke="#c7b6ff" stroke-width="2.8" stroke-dasharray="5 4" stroke-linecap="round"/>
+  <path d="M45 28 L82 7" fill="none" stroke="#c7b6ff" stroke-width="2.8" stroke-dasharray="5 4" stroke-linecap="round"/>
+  <circle cx="45" cy="28" r="5.5" fill="#8ec5ff"/>
+  <path d="M45 28 L90 36" stroke="#ffcc66" stroke-width="3" stroke-linecap="round"/>
+  <path d="M45 28 L84 44" stroke="#63d471" stroke-width="3" stroke-linecap="round"/>
+  <path d="M45 28 L72 51" stroke="#72d6ff" stroke-width="3" stroke-linecap="round"/>
+  <path d="M45 28 L94 48" stroke="#d0d0d0" stroke-width="2" opacity="0.7" stroke-linecap="round"/>
+  <path d="M70 31 C79 33 87 37 95 43 M61 38 C69 43 76 49 82 54" fill="none" stroke="#8ec5ff" stroke-width="1.3" opacity="0.55" stroke-linecap="round"/>
+  <text x="41" y="33" fill="#020509" font-size="12" font-weight="700">Z</text>
+</svg>
+</td>
+</tr>
+
+<tr class="fragment">
+<td>Jets and three-jet events</td>
+<td>Hadrons appear as traces of quarks and gluons.</td>
+<td>QCD gained direct experimental support.</td>
+<td class="pillar-icon-cell">
+<svg class="pillar-icon" viewBox="0 0 100 56" aria-label="Three jets">
+  <circle cx="50" cy="29" r="4" fill="#f2f2f2"/>
+  <path d="M50 29 L20 10" stroke="#ffcc66" stroke-width="5" stroke-linecap="round"/>
+  <path d="M50 29 L83 18" stroke="#63d471" stroke-width="5" stroke-linecap="round"/>
+  <path d="M50 29 L54 51" stroke="#72d6ff" stroke-width="5" stroke-linecap="round"/>
+  <path d="M20 10 L9 5 M83 18 L95 14 M54 51 L56 55" stroke="#d0d0d0" stroke-width="2" opacity="0.55"/>
+</svg>
+</td>
+</tr>
+
+<tr class="fragment">
+<td>W<sup>±</sup>, Z<sup>0</sup>, top, Higgs</td>
+<td>Weak bosons, the final quark, and the Higgs scalar were found.</td>
+<td>The minimal SM particle content was experimentally completed.</td>
+<td class="pillar-icon-cell">
+<svg class="pillar-icon" viewBox="0 0 100 56" aria-label="Mass peaks">
+  <path d="M8 45 L92 45" stroke="#d0d0d0" stroke-width="2"/>
+  <path d="M13 44 C22 43 25 25 33 24 C42 23 44 44 51 44 C58 44 61 12 70 12 C80 12 82 43 90 44" fill="none" stroke="#ffcc66" stroke-width="3" stroke-linecap="round"/>
+  <text x="26" y="20" fill="#8ec5ff" font-size="11">W/Z</text>
+  <text x="64" y="10" fill="#ff9ccc" font-size="11">H</text>
+</svg>
+</td>
+</tr>
+</tbody>
+</table>

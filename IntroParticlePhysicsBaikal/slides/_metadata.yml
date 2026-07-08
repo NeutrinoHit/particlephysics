@@ -2,14 +2,13 @@ lang: en
 
 format:
   revealjs:
-    theme: [black, ../assets/css/custom.scss]
-    logo: ../../shared/reveal/dvnlogo.png
+    theme: [black, ../../shared/styles/neutrinohit-reveal.scss, ../assets/css/custom.scss]
+    logo: ../assets/logos/dvnlogo.png
     html-math-method: mathjax
     include-after-body:
       - text: |
           <script data-external="1" data-context-home="https://neutrinohit.github.io/particlephysics/IntroParticlePhysicsBaikal/" data-context-home-label="Mini-course home" src="../../shared/reveal/neutrinohit-reveal-footer.js"></script>
       - ../../analytics/cloudflare-web-analytics.html
-    footer: "Introduction to Particle Physics · Mini-course · D. Naumov"
     embed-resources: false
     slide-number: true
     slide-level: 2
