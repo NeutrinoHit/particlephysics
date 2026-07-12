@@ -9,7 +9,6 @@ project:
   render:
     - "index.qmd"
     - "slides/*.qmd"
-    - "handouts/*.qmd"
 
 lang: en
 bibliography: references.bib
