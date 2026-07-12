@@ -1,6 +1,6 @@
 ---
 title: "The Standard Model"
-subtitle: "The Most Successful Merge Of Conflicting Principles"
+subtitle: "The Most Successful Reconciliation of Conflicting Principles"
 author: "Dmitry V. Naumov"
 institute: "Joint Institute for Nuclear Research"
 date: "July 13, 2026"
@@ -12,15 +12,15 @@ date: "July 13, 2026"
 ## What the Standard Model Is
 
 ::: {.incremental}
-- A model in the framework of quantum field theory
-  - unifies *electromagnetic* and *weak* interactions as **electroweak interactions**
-  - formally unifies electroweak and **strong interactions**
+- A model built in the framework of quantum field theory
+  - unifies *electromagnetic* and *weak* interactions into the **electroweak interaction**
+  - places electroweak and **strong interactions** in one gauge-theory framework
 
-- Non-trivial phenomena
-  - **local symmetries**: predict non-trivial interactions of quantum fields
-  - **spontaneous breaking of symmetries**: transform massless fields into massive
-  - **quantum anomalies**: breaking classical conservation laws. Non-perturbative physics
-  - **Higgs Field and Higgs Boson**: was a central problem in physics during 45 years
+- Key nontrivial ingredients
+  - **local symmetries** predict nontrivial interactions of quantum fields
+  - **spontaneous symmetry breaking** turns massless fields into massive ones
+  - **quantum anomalies** break classical conservation laws in the quantum theory
+  - **the Higgs field and Higgs boson** were a central problem in physics for 45 years
 :::
 
 
@@ -36,7 +36,7 @@ $$
 $$
 
 ::: {.marginnote .absolute .note-lg .sm-code-sticker top=370 left=0 width=430 style="--note-rotate: -2deg;"}
-Great print for your T-shirt.
+Great T-shirt print.
 :::
 
 ::: {.marginnote .absolute .note-lg .note-right .sm-code-sticker top=510 left=770 width=330 style="--note-rotate: 2deg;"}
@@ -63,7 +63,7 @@ Easy enough?
 
 # Unity of Phenomena
 
-## Search for the Unity of Phenomena
+## The Search for the Unity of Phenomena
 
 ::: {.takeaway}
 Maxwell's move: two phenomena became one field.
@@ -74,7 +74,7 @@ Maxwell's move: two phenomena became one field.
 
 - Electricity and magnetism stopped being separate forces.
 - The electromagnetic field is one object.
-- Electric and magnetic fields are different readings of that object.
+- Electric and magnetic fields are different views of that object.
 
 :::
 ::: {.column width="50%"}
@@ -94,14 +94,14 @@ Maxwell's move: two phenomena became one field.
 ::: {.column width="42%"}
 
 ::: {.question}
-A charged particle flies past a magnet with non-zero speed $v$.
+A charged particle flies past a magnet with nonzero speed $v$.
 :::
 
 - In the lab frame, the magnetic Lorentz force acts on it:
   $$
   \mathbf F = q\,\mathbf v\times\mathbf B.
   $$
-- Ride with the particle: $v=0$.
+- Riding with the particle: $v=0$.
 
 ::: {.takeaway}
 What force acts now?
@@ -133,7 +133,7 @@ What force acts now?
 |---|---|---|
 | Range | long range | very short range, $\sim 10^{-18}$ m |
 | Carrier mass | $m_\gamma = 0$ | $\approx 100$ GeV |
-| Low-energy strength | everyday strong | about $10^7$--$10^8$ times weaker |
+| Low-energy strength | strong at everyday scales | about $10^7$--$10^8$ times weaker |
 | Parity | conserves | violates |
 | Particle identity | keeps particle type | can change particle type |
 
@@ -142,7 +142,7 @@ What force acts now?
 ::: {.column width="28%"}
 
 ::: {.marginnote .absolute .note-lg .sm-code-sticker top=70 left=900 width=430 style="--note-rotate: -2deg;"}
-Estimate mass of the carrier:
+Estimate the carrier mass:
 $$
 M_W \sim \frac{g}{\sqrt{G_F}} \sim 100\ \mathrm{GeV}
 $$
@@ -160,40 +160,40 @@ $$
 :::
 ::::
 
-# How to Build a theory of Interactions when there is no classical analogy?
+# How Do We Build Interactions with No Classical Analogy?
 
-## A Reminder: How we Built Electrodynamics
+## A Reminder: How We Built Electrodynamics
 ::: incremental
 - James Clerk Maxwell created a theory of electromagnetism by unifying electricity and magnetism.
-- The theory disagree with Galileo's principle of relativity but agreed with Einstein's principle of relativity.  Thus, 
+- Maxwell's theory is incompatible with Galilean relativity but compatible with Einstein's relativity. Thus,
 $$
 \mathbf{E},\mathbf{B}\to A^\mu
 $$
 
-- Least action principle gives a receipt:
+- The principle of least action gives a prescription:
 $$
 i\partial_\mu\to iD_\mu=i\partial_\mu+qA_\mu
 $$
-- Thus, a free lagrangian 
+- Thus, a free Lagrangian
 $$
 \mathcal{L}=\overline{\psi}(i\gamma^\mu\partial_\mu-m)\psi
 $$
-- becomes an interacting lagrangian
+- becomes an interacting Lagrangian:
 $$
 \mathcal{L}=\overline{\psi}(i\gamma^\mu D_\mu-m)\psi = \overline{\psi}(i\gamma^\mu\partial_\mu-m)\psi - q\overline{\psi}\gamma^\mu \psi A_\mu
 $$
 :::
 
-## Three friends-physicists story
+## The Three Physicist Friends Story
 :::: {.columns}
 
 ::: {.column width="50%"}
 ::: {.incremental}
 - A theorist and two experimentalists are sitting in a bar.
-- The theorist says: 
-  - "We have to know the electron field at two astrophysically distant points. You should go there and measure it".
+- The theorist says:
+  - "We need to know the electron field at two astrophysically distant points. You should go there and measure it."
   - "Remember, the phase of the electron field is a convention. You can choose it arbitrarily at each point."
-- Experimentalists took flights to very-very distant destinations $x$ and $y$ with only one-way communication.  
+- The experimentalists fly to very distant destinations $x$ and $y$, with only one-way communication.
 :::
 
 :::
@@ -206,7 +206,7 @@ $$
 
 ::::
 
-## Three friends-physicists story. A problem 
+## The Three Physicist Friends Story: A Problem
 ::: incremental
 - The experimentalists measured the electron field at points $x$ and $y$ and sent the results back to the theorist.
 - But they all forgot to agree on the phase convention. 
@@ -214,20 +214,20 @@ $$
 $$
 \psi(x)-\psi(y) 
 $$
-OR 
+or
 $$
 \psi(x)e^{i\alpha(x)}-\psi(y)e^{i\alpha(y)}
 $$
 - Not knowing which **constant** phases $\alpha(x)$ and $\alpha(y)$ were used, the theorist cannot compare the two numbers.
-- The problem is even worse. For two infinitesimally close points he cannot calculate the derivative $\partial_\mu \psi(x)$. Thus, even a *free* theory is not well-defined!
+- The problem is even worse. For two infinitesimally close points, he cannot calculate the derivative $\partial_\mu \psi(x)$. Therefore, even a *free* theory is not well-defined!
 
 :::
 
-## Gauge invariance: A New Principle
+## Gauge Invariance: A New Principle
 ::: incremental
 - The theorist:
   - A theory should not depend on the choice of phase convention at any point.
-- A free lagrangian
+- A free Lagrangian
 $$
 \mathcal{L}_0=\overline{\psi}(i\gamma^\mu\partial_\mu-m)\psi
 $$
@@ -238,12 +238,12 @@ $$
 
 ::: 
 
-## Gauge invariance: A New Principle
+## Gauge Invariance: A New Principle
 
 :::: {.columns}
 ::: {.column .gauge-principle-text width="58%"}
 ::: incremental
-- But this lagrangian is **invariant**:
+- But this Lagrangian is **invariant**:
 $$
 \mathcal{L} = \overline{\psi}(i\gamma^\mu\partial_\mu-m)\psi -q\overline{\psi}\gamma^\mu\psi A_\mu-\frac{1}{4}F_{\mu\nu}F^{\mu\nu}
 $$
@@ -254,8 +254,8 @@ $$
 A_\mu(x)&\to A_\mu(x)+\frac{1}{q}\partial_\mu\alpha(x)
 \end{aligned}
 $$
-- We got the QED!
-- As a bonus, the mass of photon is zero. Otherwise, $$m_A^2A_\mu A^\mu$$ is not invariant under the gauge transformation.
+- This gives QED.
+- As a bonus, the photon is massless. Otherwise, $$m_A^2A_\mu A^\mu$$ is not invariant under the gauge transformation.
 :::
 :::
 
@@ -264,7 +264,7 @@ $$
 :::
 ::::
 
-## Scalar Electrodynamics Example of Gauge invariance
+## Scalar Electrodynamics as an Example of Gauge Invariance
 ::: incremental
 - The same principle for a charged spin-0 field:
 $$
@@ -296,15 +296,15 @@ $$
 
 {{< include media/_formula_cat_animation.qmd >}}
 
-## The Algorithm 
+## The Algorithm
 ::: incremental
-- Now we have a new method **gauge invariance** to predict the interaction 
+- Gauge invariance is now a method for predicting interactions.
 - The algorithm is simple:
-  - Take a free theory 
+  - Take a free theory.
   - Replace $\partial_\mu\to D_\mu$
-  - Introduce compensating fields $A^\mu_i$ with the number equal to the number of generators in your free theory symmetry group
-  - Introduce $F_{\mu\nu}$ and gauge-invariant lagrangian for it.
-  - Enjoy a new interaction theory!
+  - Introduce one compensating field $A^\mu_i$ for each generator of the symmetry group.
+  - Introduce $F_{\mu\nu}$ and a gauge-invariant Lagrangian for the new fields.
+  - The interaction is no longer optional.
 :::
 
 ## Symmetry Becomes Dynamics
@@ -315,7 +315,7 @@ $$
 Salam and Ward, 1961
 :::
 
-# The Standard Model Pillars
+# The Pillars of the Standard Model
 :::: {.columns}
 
 ::: {.column width="56%"}
@@ -325,10 +325,10 @@ Salam and Ward, 1961
 $$
 SU(2)_L\times U(1)_Y
 $$
-  - it requires zero masses for all particles: fermions and gauge bosons. This is not good.
+  - it requires all fermion and gauge-boson masses to vanish. This is not what we observe.
 
 2. A symmetry breaking mechanism
-  - it gives masses to particles 
+  - it gives particles their masses
 :::
 :::
 
@@ -349,9 +349,9 @@ $$
 :::
 ::::
 
-# Origin of mass
+# Origin of Mass
 
-## Six definitions of mass
+## Six Definitions of Mass
 ::: incremental
 
 1. Inertial mass — a measure of resistance to acceleration under an applied force.
@@ -367,21 +367,21 @@ $$
 Experiments show that all these masses are equal to, or proportional to, one another.
 :::
 
-## Secret Origin of Mass
+## The Secret Origin of Mass
 
 ::: incremental
-- Modern Physics suggests: the masses appear dynamically shortly after the **Big Bang** because of a phase transition.
-- After the phase transition a scalar (Higgs) field was condensed and this lead to masses of particles.
-- Methaphorically, we leave inside of a **superconductor**.
+- Modern physics suggests that masses appeared dynamically shortly after the **Big Bang**, through a phase transition.
+- After the phase transition, a scalar (Higgs) field condensed; this generated particle masses.
+- Metaphorically, we live inside a **superconductor**.
 - There are two distinct mechanisms of mass generation:
-  - for gauge vector bosons
+  - for gauge bosons
   - for fermions.
 
 :::
 
-# Mass generation of a vector boson
+# Mass Generation of a Vector Boson
 
-## Meissner effect {.meissner-effect-slide}
+## Meissner Effect {.meissner-effect-slide}
 :::: {.columns}
 ::: {.column width="40%"}
 ::: {.meissner-effect-text}
@@ -404,9 +404,9 @@ $$
 :::
 ::::
 
-## Higgs mechanism in the Standard Model
+## The Higgs Mechanism in the Standard Model
 ::: incremental
-- Higgs scalar field has a **screening** current:
+- The Higgs scalar field produces a **screening** current:
 $$
 j^\mu = -e^2 v^2 A^\mu
 $$
@@ -421,8 +421,8 @@ $$
 - This is exactly the Meissner effect.
 :::
 
-# Mass generation of a fermion
-## Two coupled pendulums
+# Mass Generation of a Fermion
+## Two Coupled Pendulums
 :::: {.columns}
 ::: {.column width="43%"}
 ::: incremental
@@ -467,7 +467,7 @@ $$
 :::
 ::::
 
-## Chiral waves become massive normal modes {.chiral-mass-slide}
+## Chiral Waves Become Massive Normal Modes {.chiral-mass-slide}
 :::: {.columns}
 ::: {.column width="42%"}
 ::: {.chiral-mass-text}
@@ -507,7 +507,7 @@ $$
 :::
 ::::
 
-## A finite condensate layer {.chiral-slab-slide}
+## A Finite Condensate Layer {.chiral-slab-slide}
 :::: {.columns}
 ::: {.column width="42%"}
 ::: {.chiral-slab-text}
@@ -548,7 +548,7 @@ $$
 :::
 ::::
 
-## Two mechanisms, one condensate
+## Two Mechanisms, One Condensate
 
 The Higgs condensate creates a gap in the spectrum in two different ways.
 
@@ -556,7 +556,7 @@ The Higgs condensate creates a gap in the spectrum in two different ways.
 ::: {.column width="50%"}
 **Vector bosons: Meissner mechanism**
 
-- Condensate behaves like a superconductor.
+- The condensate behaves like a superconductor.
 - A gauge field induces a screening current.
 - Free propagation is lost: the field becomes short-range.
 $$
@@ -569,8 +569,8 @@ $$
 ::: {.column width="50%"}
 **Fermions: coupled chiral waves**
 
-- Without condensate, $R$ and $L$ move independently at $c$.
-- Condensate couples them: left sources right, and right sources left.
+- Without the condensate, $R$ and $L$ move independently at $c$.
+- The condensate couples them: left sources right, and right sources left.
 $$
 m_f=\frac{y_fv}{\sqrt2}.
 $$
