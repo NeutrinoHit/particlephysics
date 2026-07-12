@@ -322,24 +322,26 @@ Salam and Ward, 1961
 
 ::: {.column width="56%"}
 
-::: incremental
+::: {.fragment data-fragment-index="1"}
 1. A symmetry group 
 $$
 SU(2)_L\times U(1)_Y
 $$
   - it requires all fermion and gauge-boson masses to vanish. This is not what we observe.
+:::
 
+::: {.fragment data-fragment-index="2"}
 2. A symmetry breaking mechanism
   - it gives particles their masses
 :::
 :::
 
 ::: {.column width="20%"}
-::: {.media-figure style="--media-max-height: 205px; --media-bg: transparent; --media-shadow: none;"}
+::: {.media-figure .fragment data-fragment-index="1" style="--media-max-height: 205px; --media-bg: transparent; --media-shadow: none;"}
 ![](media/symmetric-butterfly.svg){fig-alt="Symmetric butterfly"}
 :::
 
-::: {.media-figure style="--media-max-height: 205px; --media-bg: transparent; --media-shadow: none;"}
+::: {.media-figure .fragment data-fragment-index="2" style="--media-max-height: 205px; --media-bg: transparent; --media-shadow: none;"}
 ![](media/broken-symmetry-butterfly.svg){fig-alt="Butterfly with broken symmetry"}
 :::
 :::
