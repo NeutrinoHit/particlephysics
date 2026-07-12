@@ -6,8 +6,9 @@
 
 .uniform-field-jump {
   position: relative;
-  width: min(100%, 720px);
-  margin: 0 auto;
+  width: 116%;
+  max-width: 840px;
+  margin: 1.15rem 0 0 -1.05rem;
 }
 
 .uniform-field-jump canvas {
@@ -52,6 +53,9 @@
     const ctx = canvas.getContext("2d");
     const width = canvas.width;
     const height = canvas.height;
+    const slide = canvas.closest("section");
+    const fragment = canvas.closest(".fragment");
+    let startTime = null;
 
     const beta = 0.35;
     const shellWidth = 0.13;
@@ -92,11 +96,20 @@
       return t * t * (3 - 2 * t);
     }
 
-    function solutionAt(x, y, t) {
+    function solutionAt(x, y, t, restOnly = false) {
       const xOld = 0;
       const xNew = beta * t;
       const r = Math.hypot(x, y);
       const oldField = fieldUniform(x, y, xOld, 0);
+
+      if (restOnly) {
+        return {
+          x: oldField.x,
+          y: oldField.y,
+          region: "old",
+        };
+      }
+
       const newField = fieldUniform(x, y, xNew, beta);
       const inner = t - shellWidth;
       const outer = t + shellWidth;
@@ -109,15 +122,15 @@
       };
     }
 
-    function integrateLine(angle, t) {
-      const xNew = beta * t;
-      let x = xNew + seedRadius * Math.cos(angle);
+    function integrateLine(angle, t, restOnly = false) {
+      const xCenter = restOnly ? 0 : beta * t;
+      let x = xCenter + seedRadius * Math.cos(angle);
       let y = seedRadius * Math.sin(angle);
       const points = [];
 
       for (let i = 0; i < maxSteps; i += 1) {
         if (x < xmin || x > xmax || y < ymin || y > ymax) break;
-        const f = solutionAt(x, y, t);
+        const f = solutionAt(x, y, t, restOnly);
         const norm = Math.hypot(f.x, f.y);
         if (norm < 1e-8) break;
         points.push({ x, y, region: f.region });
@@ -172,13 +185,13 @@
       ctx.fillText(text, x, y);
     }
 
-    function drawFrame(t) {
+    function drawFrame(t, restOnly = false) {
       ctx.clearRect(0, 0, width, height);
       ctx.fillStyle = "#000";
       ctx.fillRect(0, 0, width, height);
 
       const xOld = 0;
-      const xNew = beta * t;
+      const xNew = restOnly ? 0 : beta * t;
 
       ctx.strokeStyle = "rgba(245,245,245,0.42)";
       ctx.lineWidth = 1.2;
@@ -196,24 +209,28 @@
       ctx.setLineDash([]);
 
       seeds.forEach((angle) => {
-        const points = integrateLine(angle, t);
+        const points = integrateLine(angle, t, restOnly);
         for (let i = 0; i < points.length - 1; i += 1) {
           drawSegment(points[i], points[i + 1], points[i].region);
         }
         drawArrow(points, Math.floor(points.length * 0.58));
       });
 
-      ctx.strokeStyle = "#ffd166";
-      ctx.lineWidth = 2.4;
-      ctx.beginPath();
-      ctx.arc(sx(0), sy(0), Math.abs(sx(t) - sx(0)), 0, 2 * Math.PI);
-      ctx.stroke();
+      if (!restOnly && t > 0.02) {
+        ctx.strokeStyle = "#ffd166";
+        ctx.lineWidth = 2.4;
+        ctx.beginPath();
+        ctx.arc(sx(0), sy(0), Math.abs(sx(t) - sx(0)), 0, 2 * Math.PI);
+        ctx.stroke();
+      }
 
-      ctx.strokeStyle = "rgba(245,245,245,0.50)";
-      ctx.lineWidth = 1.4;
-      ctx.beginPath();
-      ctx.arc(sx(xOld), sy(0), 6, 0, 2 * Math.PI);
-      ctx.stroke();
+      if (!restOnly) {
+        ctx.strokeStyle = "rgba(245,245,245,0.50)";
+        ctx.lineWidth = 1.4;
+        ctx.beginPath();
+        ctx.arc(sx(xOld), sy(0), 6, 0, 2 * Math.PI);
+        ctx.stroke();
+      }
 
       ctx.fillStyle = "#f5f5f5";
       ctx.beginPath();
@@ -223,22 +240,49 @@
       ctx.lineWidth = 2;
       ctx.stroke();
 
-      drawText("uniform motion", sx(xNew + 0.16), sy(0.34), 15, "#7fc0ff");
-      drawText("front r = ct", sx(0.45), sy(t - 0.2), 15, "#ffd166");
+      drawText(restOnly ? "electron at rest" : "uniform motion", sx(xNew + 0.16), sy(0.34), 15, restOnly ? "#ffd166" : "#7fc0ff");
+      if (!restOnly && t > 0.35) {
+        drawText("front r = ct", sx(0.45), sy(t - 0.2), 15, "#ffd166");
+      }
       drawText("e", sx(xNew + 0.1), sy(-0.15), 16, "rgba(245,245,245,0.86)");
-      drawText("rest field", sx(xOld - 0.22), sy(-0.17), 14, "rgba(245,245,245,0.50)");
+      drawText("rest field", sx(xOld - 0.22), sy(-0.17), 14, restOnly ? "rgba(245,245,245,0.72)" : "rgba(245,245,245,0.50)");
 
-      drawText(`β = ${beta.toFixed(2)},  c = 1,  t = ${t.toFixed(2)}`, width - 28, height - 24, 15, "rgba(245,245,245,0.62)", "right");
+      drawText(restOnly ? "β = 0,  c = 1,  t = 0.00" : `β = ${beta.toFixed(2)},  c = 1,  t = ${t.toFixed(2)}`, width - 28, height - 24, 15, "rgba(245,245,245,0.62)", "right");
+    }
+
+    function isAnimationVisible() {
+      const slideVisible = !slide || slide.classList.contains("present");
+      const fragmentVisible = !fragment || fragment.classList.contains("visible") || fragment.classList.contains("current-fragment");
+      return slideVisible && fragmentVisible;
     }
 
     function animate(now) {
-      const period = 7200;
-      const phase = (now % period) / period;
-      const t = 0.8 + 1.65 * phase;
-      drawFrame(t);
+      const holdMs = 2000;
+      const motionMs = 7200;
+      const period = holdMs + motionMs;
+
+      if (!isAnimationVisible()) {
+        startTime = null;
+        drawFrame(0, true);
+        requestAnimationFrame(animate);
+        return;
+      }
+
+      if (startTime === null) startTime = now;
+
+      const elapsed = (now - startTime) % period;
+      if (elapsed < holdMs) {
+        drawFrame(0, true);
+      } else {
+        const phase = (elapsed - holdMs) / motionMs;
+        const t = 2.45 * phase;
+        drawFrame(t, false);
+      }
+
       requestAnimationFrame(animate);
     }
 
+    drawFrame(0, true);
     requestAnimationFrame(animate);
   });
 })();
