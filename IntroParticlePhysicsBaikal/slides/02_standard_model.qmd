@@ -260,7 +260,9 @@ $$
 :::
 
 ::: {.column width="42%"}
+::: {.fragment}
 {{< include media/_accelerating_electron_field_animation.qmd >}}
+:::
 :::
 ::::
 
