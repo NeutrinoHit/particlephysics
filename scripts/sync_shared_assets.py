@@ -9,9 +9,12 @@ SOURCE = ROOT / "neutrinohit-map" / "assets" / "reveal"
 
 COPIES = [
     ("neutrinohit-reveal-footer.js", PROJECT / "shared" / "reveal"),
+    ("neutrinohit-timed-captions.js", PROJECT / "shared" / "reveal"),
+    ("neutrinohit-reveal-quiz.css", PROJECT / "shared" / "reveal"),
     ("dvnlogo.png", PROJECT / "shared" / "reveal"),
     ("neutrinohit-reveal.scss", PROJECT / "shared" / "styles"),
     ("neutrinohit-reveal-footer.js", PROJECT / "IntroParticlePhysicsBaikal" / "assets" / "reveal"),
+    ("neutrinohit-timed-captions.js", PROJECT / "IntroParticlePhysicsBaikal" / "assets" / "reveal"),
     ("dvnlogo.png", PROJECT / "IntroParticlePhysicsBaikal" / "assets" / "logos"),
 ]
 

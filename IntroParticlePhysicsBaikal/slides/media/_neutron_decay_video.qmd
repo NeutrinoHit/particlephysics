@@ -1,0 +1,5 @@
+```{=html}
+<video class="slide-video media-width-full media-height-xl" data-autoplay loop muted playsinline controls>
+  <source src="media/neutron_decay.mov">
+</video>
+```

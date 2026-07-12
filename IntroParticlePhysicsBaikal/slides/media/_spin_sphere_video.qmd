@@ -1,0 +1,5 @@
+```{=html}
+<video class="slide-video media-height-lg" data-autoplay loop muted playsinline controls>
+  <source src="media/simplespinwithsphere.mp4" type="video/mp4">
+</video>
+```

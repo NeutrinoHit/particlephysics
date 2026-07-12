@@ -1,0 +1,588 @@
+---
+title: "The Standard Model"
+subtitle: "The Most Successful Merge Of Conflicting Principles"
+author: "Dmitry V. Naumov"
+institute: "Joint Institute for Nuclear Research"
+date: "July 13, 2026"
+---
+
+
+# What the Standard Model Is
+
+## What the Standard Model Is
+
+::: {.incremental}
+- A model in the framework of quantum field theory
+  - unifies *electromagnetic* and *weak* interactions as **electroweak interactions**
+  - formally unifies electroweak and **strong interactions**
+
+- Non-trivial phenomena
+  - **local symmetries**: predict non-trivial interactions of quantum fields
+  - **spontaneous breaking of symmetries**: transform massless fields into massive
+  - **quantum anomalies**: breaking classical conservation laws. Non-perturbative physics
+  - **Higgs Field and Higgs Boson**: was a central problem in physics during 45 years
+:::
+
+
+## The Code of the Universe {.sm-code-slide}
+
+$$
+	\begin{aligned}
+		\mathcal{L}	 = \sum_k\left(\overline{L}_{k,L}i\hat{D}L_{k,L}+\overline{Q}_{k,L}i\hat{D}Q_{k,L} + \sum_{\psi=\ell,\nu,u,d}\overline{\psi}_{k,R}i\hat{D}\psi_{k,R}\right) -\frac{1}{4}F_{\mu\nu}F^{\mu\nu} - \frac{1}{4}G^i_{\mu\nu}G^{i,\mu\nu} \\
+		             + |D_{\mu}\varphi|^2-\frac{\lambda^2}{2}\left(|\varphi|^2-\frac{v^2}{2}\right)^2\\
+		             -\sum_{k,j}\left(\lambda_{kj}^\ell\overline{L}_{k,L}\ell_{j,R}\varphi +\lambda_{kj}^\nu\overline{L}_{k,L}\nu_{j,R}\varphi_c
+		             +\lambda_{kj}^d\overline{Q}_{k,L}d_{j,R}\varphi +\lambda_{kj}^u\overline{Q}_{k,L}u_{j,R}\varphi_c+\textrm{ э.с.}\right),
+	\end{aligned}
+$$
+
+::: {.marginnote .absolute .note-lg .sm-code-sticker top=370 left=0 width=430 style="--note-rotate: -2deg;"}
+Great print for your T-shirt.
+:::
+
+::: {.marginnote .absolute .note-lg .note-right .sm-code-sticker top=510 left=770 width=330 style="--note-rotate: 2deg;"}
+Easy enough?
+:::
+
+## Same Code. More Details {.lagrangian-scroll-slide}
+
+{{< include media/_standard_model_lagrangian_scroll_full.qmd >}}
+
+## The Code of the Universe {.sm-code-universe-slide}
+
+:::: {.columns}
+::: {.column width="50%"}
+::: {.media-figure .sm-vertices-figure style="--media-figure-width: 86%; --media-max-height: 460px; --media-bg: transparent; --media-shadow: none;"}
+![](media/standard-model-feynman-vertices.svg){.sm-inverted-media fig-alt="Standard Model Feynman diagram vertices"}
+:::
+:::
+
+::: {.column width="50%"}
+{{< include media/_standard_model_lagrangian_scroll_compact.qmd >}}
+:::
+::::
+
+# Unity of Phenomena
+
+## Search for the Unity of Phenomena
+
+::: {.takeaway}
+Maxwell's move: two phenomena became one field.
+:::
+
+:::: {.columns}
+::: {.column width="50%"}
+
+- Electricity and magnetism stopped being separate forces.
+- The electromagnetic field is one object.
+- Electric and magnetic fields are different readings of that object.
+
+:::
+::: {.column width="50%"}
+
+| Old language | Unified language |
+|---|---|
+| electric field | electromagnetic field |
+| magnetic field | electromagnetic field |
+| separate phenomena | one relativistic field |
+
+:::
+::::
+
+## Einstein's Paradox
+
+:::: {.columns}
+::: {.column width="42%"}
+
+::: {.question}
+A charged particle flies past a magnet with non-zero speed $v$.
+:::
+
+- In the lab frame, the magnetic Lorentz force acts on it:
+  $$
+  \mathbf F = q\,\mathbf v\times\mathbf B.
+  $$
+- Ride with the particle: $v=0$.
+
+::: {.takeaway}
+What force acts now?
+:::
+
+:::
+::: {.column width="58%"}
+
+::: {.fragment}
+::: {.media-figure .einstein-paradox-figure}
+![](media/EM_fields_boosted.svg){fig-alt="Electric and magnetic fields seen from different reference frames"}
+:::
+
+
+
+:::
+
+:::
+::::
+
+# Unification of Electromagnetic and Weak Interactions
+
+## Electromagnetic and Weak Interactions Are Very Different
+
+:::: {.columns}
+::: {.column width="72%"}
+
+| What to compare | Electromagnetic | Weak |
+|---|---|---|
+| Range | long range | very short range, $\sim 10^{-18}$ m |
+| Carrier mass | $m_\gamma = 0$ | $\approx 100$ GeV |
+| Low-energy strength | everyday strong | about $10^7$--$10^8$ times weaker |
+| Parity | conserves | violates |
+| Particle identity | keeps particle type | can change particle type |
+
+
+:::
+::: {.column width="28%"}
+
+::: {.marginnote .absolute .note-lg .sm-code-sticker top=70 left=900 width=430 style="--note-rotate: -2deg;"}
+Estimate mass of the carrier:
+$$
+M_W \sim \frac{g}{\sqrt{G_F}} \sim 100\ \mathrm{GeV}
+$$
+
+:::
+
+::: {.marginnote .absolute .note-lg .sm-code-sticker top=370 left=950 width=430 style="--note-rotate: 2deg;"}
+Estimate range of the interaction:
+$$
+R \sim \frac{1}{M_W} \sim 10^{-18}\ \mathrm{m}
+$$
+
+:::
+
+:::
+::::
+
+# How to Build a theory of Interactions when there is no classical analogy?
+
+## A Reminder: How we Built Electrodynamics
+::: incremental
+- James Clerk Maxwell created a theory of electromagnetism by unifying electricity and magnetism.
+- The theory disagree with Galileo's principle of relativity but agreed with Einstein's principle of relativity.  Thus, 
+$$
+\mathbf{E},\mathbf{B}\to A^\mu
+$$
+
+- Least action principle gives a receipt:
+$$
+i\partial_\mu\to iD_\mu=i\partial_\mu+qA_\mu
+$$
+- Thus, a free lagrangian 
+$$
+\mathcal{L}=\overline{\psi}(i\gamma^\mu\partial_\mu-m)\psi
+$$
+- becomes an interacting lagrangian
+$$
+\mathcal{L}=\overline{\psi}(i\gamma^\mu D_\mu-m)\psi = \overline{\psi}(i\gamma^\mu\partial_\mu-m)\psi - q\overline{\psi}\gamma^\mu \psi A_\mu
+$$
+:::
+
+## Three friends-physicists story
+:::: {.columns}
+
+::: {.column width="50%"}
+::: {.incremental}
+- A theorist and two experimentalists are sitting in a bar.
+- The theorist says: 
+  - "We have to know the electron field at two astrophysically distant points. You should go there and measure it".
+  - "Remember, the phase of the electron field is a convention. You can choose it arbitrarily at each point."
+- Experimentalists took flights to very-very distant destinations $x$ and $y$ with only one-way communication.  
+:::
+
+:::
+::: {.column width="50%"}
+::: {.fragment}
+{{< include media/_friends_rocket_animation.qmd >}}
+:::
+
+:::
+
+::::
+
+## Three friends-physicists story. A problem 
+::: incremental
+- The experimentalists measured the electron field at points $x$ and $y$ and sent the results back to the theorist.
+- But they all forgot to agree on the phase convention. 
+- The theorist received two numbers, but he cannot compare them:
+$$
+\psi(x)-\psi(y) 
+$$
+OR 
+$$
+\psi(x)e^{i\alpha(x)}-\psi(y)e^{i\alpha(y)}
+$$
+- Not knowing which **constant** phases $\alpha(x)$ and $\alpha(y)$ were used, the theorist cannot compare the two numbers.
+- The problem is even worse. For two infinitesimally close points he cannot calculate the derivative $\partial_\mu \psi(x)$. Thus, even a *free* theory is not well-defined!
+
+:::
+
+## Gauge invariance: A New Principle
+::: incremental
+- The theorist:
+  - A theory should not depend on the choice of phase convention at any point.
+- A free lagrangian
+$$
+\mathcal{L}_0=\overline{\psi}(i\gamma^\mu\partial_\mu-m)\psi
+$$
+is not invariant under local phase transformations $\psi(x)\to e^{i\alpha(x)}\psi(x)$:
+$$
+\mathcal{L}\to \mathcal{L} - \overline{\psi}\gamma^\mu\psi\partial_\mu\alpha(x)
+$$  
+
+::: 
+
+## Gauge invariance: A New Principle
+
+:::: {.columns}
+::: {.column .gauge-principle-text width="58%"}
+::: incremental
+- But this lagrangian is **invariant**:
+$$
+\mathcal{L} = \overline{\psi}(i\gamma^\mu\partial_\mu-m)\psi -q\overline{\psi}\gamma^\mu\psi A_\mu-\frac{1}{4}F_{\mu\nu}F^{\mu\nu}
+$$
+under simultaneous transformations:
+$$
+\begin{aligned}
+\psi(x)&\to e^{i\alpha(x)}\psi(x)\\
+A_\mu(x)&\to A_\mu(x)+\frac{1}{q}\partial_\mu\alpha(x)
+\end{aligned}
+$$
+- We got the QED!
+- As a bonus, the mass of photon is zero. Otherwise, $$m_A^2A_\mu A^\mu$$ is not invariant under the gauge transformation.
+:::
+:::
+
+::: {.column width="42%"}
+{{< include media/_accelerating_electron_field_animation.qmd >}}
+:::
+::::
+
+## Scalar Electrodynamics Example of Gauge invariance
+::: incremental
+- The same principle for a charged spin-0 field:
+$$
+\mathcal{L}_0=(\partial_\mu\phi^*)(\partial^\mu\phi)-m^2\phi^*\phi-\frac{1}{4}F_{\mu\nu}F^{\mu\nu}.
+$$
+
+- Make the theory gauge invariant by replacing $\partial_\mu\to D_\mu$:
+$$
+\begin{aligned}
+D_\mu&=\partial_\mu+iqA_\mu,\\
+\mathcal{L}&=(D_\mu\phi)^*(D^\mu\phi)-m^2\phi^*\phi-\frac{1}{4}F_{\mu\nu}F^{\mu\nu}.
+\end{aligned}
+$$
+
+- Expanding the covariant derivatives gives
+$$
+\begin{aligned}
+\mathcal{L}=\mathcal{L}_0
+&-iqA^\mu\phi^*(\partial_\mu\phi)
++iq(\partial_\mu\phi^*)A^\mu\phi\\
+&+q^2\phi^*\phi A^\mu A_\mu .
+\end{aligned}
+$$
+
+- Gauge invariance predicts the interaction between $\phi$ and $A_\mu$!
+:::
+
+## Big Cats Need a Break
+
+{{< include media/_formula_cat_animation.qmd >}}
+
+## The Algorithm 
+::: incremental
+- Now we have a new method **gauge invariance** to predict the interaction 
+- The algorithm is simple:
+  - Take a free theory 
+  - Replace $\partial_\mu\to D_\mu$
+  - Introduce compensating fields $A^\mu_i$ with the number equal to the number of generators in your free theory symmetry group
+  - Introduce $F_{\mu\nu}$ and gauge-invariant lagrangian for it.
+  - Enjoy a new interaction theory!
+:::
+
+## Symmetry Becomes Dynamics
+
+> If symmetries give conservation laws, perhaps interactions are also dictated by symmetry.
+
+::: {.muted}
+Salam and Ward, 1961
+:::
+
+# The Standard Model Pillars
+:::: {.columns}
+
+::: {.column width="56%"}
+
+::: incremental
+1. A symmetry group 
+$$
+SU(2)_L\times U(1)_Y
+$$
+  - it requires zero masses for all particles: fermions and gauge bosons. This is not good.
+
+2. A symmetry breaking mechanism
+  - it gives masses to particles 
+:::
+:::
+
+::: {.column width="20%"}
+::: {.media-figure style="--media-max-height: 205px; --media-bg: transparent; --media-shadow: none;"}
+![](media/symmetric-butterfly.svg){fig-alt="Symmetric butterfly"}
+:::
+
+::: {.media-figure style="--media-max-height: 205px; --media-bg: transparent; --media-shadow: none;"}
+![](media/broken-symmetry-butterfly.svg){fig-alt="Butterfly with broken symmetry"}
+:::
+:::
+
+::: {.column width="24%"}
+::: {.media-figure style="--media-max-height: 430px;"}
+![](media/qft-cover-front.jpg){fig-alt="Cover of Quantum Field Theory for Experimentalists and Not Only"}
+:::
+:::
+::::
+
+# Origin of mass
+
+## Six definitions of mass
+::: incremental
+
+1. Inertial mass — a measure of resistance to acceleration under an applied force.
+2. Active gravitational mass — the strength of the gravitational field produced by a body.
+3. Passive gravitational mass — a measure of response to an external gravitational field.
+4. Rest energy — defined through the relation $E=mc^2$.
+5. Source of spacetime curvature — the role of mass in general relativity.
+6. Quantum mass — a quantity inverse to the Compton wavelength.
+:::
+
+::: {.fragment}
+
+Experiments show that all these masses are equal to, or proportional to, one another.
+:::
+
+## Secret Origin of Mass
+
+::: incremental
+- Modern Physics suggests: the masses appear dynamically shortly after the **Big Bang** because of a phase transition.
+- After the phase transition a scalar (Higgs) field was condensed and this lead to masses of particles.
+- Methaphorically, we leave inside of a **superconductor**.
+- There are two distinct mechanisms of mass generation:
+  - for gauge vector bosons
+  - for fermions.
+
+:::
+
+# Mass generation of a vector boson
+
+## Meissner effect {.meissner-effect-slide}
+:::: {.columns}
+::: {.column width="40%"}
+::: {.meissner-effect-text}
+::: incremental 
+- An external magnetic field is expelled from a superconductor.
+- Near the surface it induces a superconducting current.
+- This screening current produces the levitation force.
+- In field language:
+$$
+\left(\nabla^2-m_\gamma^2\right)A^\mu=0,
+\qquad
+m_\gamma^2=\frac{q^2n_e}{m}.
+$$
+:::
+:::
+:::
+
+::: {.column width="60%"}
+{{< include media/_meissner_levitation_animation.qmd >}}
+:::
+::::
+
+## Higgs mechanism in the Standard Model
+::: incremental
+- Higgs scalar field has a **screening** current:
+$$
+j^\mu = -e^2 v^2 A^\mu
+$$
+- The Maxwell equation
+$$
+\partial_\nu F^{\nu\mu} = j^\mu =-e^2 v^2 A^\mu
+$$
+yields
+$$
+\left(\partial^2+m_A^2\right)A^\mu=0, \quad \mathrm{with}\quad \boxed{m_A^2= e^2v^2}.
+$$
+- This is exactly the Meissner effect.
+:::
+
+# Mass generation of a fermion
+## Two coupled pendulums
+:::: {.columns}
+::: {.column width="43%"}
+::: incremental
+- Small angles:
+$$
+\ddot{\boldsymbol{\theta}}=-D\boldsymbol{\theta},
+\qquad
+\boldsymbol{\theta}=
+\begin{pmatrix}
+\theta_1 \\
+\theta_2
+\end{pmatrix}
+$$
+$$
+D=
+\begin{pmatrix}
+\omega_0^2+\frac{k}{m_1} & -\frac{k}{m_1}\\
+-\frac{k}{m_2} & \omega_0^2+\frac{k}{m_2}
+\end{pmatrix},
+$$
+$$
+\omega_0^2=\frac{g}{L}.
+$$
+- Normal modes:
+$$
+\omega_-^2=\omega_0^2,
+\qquad
+\boldsymbol v_-=(1,1)
+$$
+$$
+\omega_+^2=\omega_0^2+
+k\left(\frac{1}{m_1}+\frac{1}{m_2}\right),
+\qquad
+\boldsymbol v_+=
+\left(1,-\frac{m_1}{m_2}\right)
+$$
+:::
+:::
+
+::: {.column width="57%"}
+{{< include media/_coupled_pendulums_normal_modes.qmd >}}
+:::
+::::
+
+## Chiral waves become massive normal modes {.chiral-mass-slide}
+:::: {.columns}
+::: {.column width="42%"}
+::: {.chiral-mass-text}
+- In 1D, with $c=\hbar=1$, massless chiral waves are independent:
+$$
+i\partial_t
+\begin{pmatrix}R\\L\end{pmatrix}
+=
+\begin{pmatrix}p&0\\0&-p\end{pmatrix}
+\begin{pmatrix}R\\L\end{pmatrix}.
+$$
+
+::: incremental
+- The Higgs condensate couples them:
+$$
+m=\frac{y_f v}{\sqrt2},
+\qquad
+H(p)=
+\begin{pmatrix}p&m\\m&-p\end{pmatrix}.
+$$
+- Normal frequencies:
+$$
+\omega_\pm(p)=\pm\sqrt{p^2+m^2}.
+$$
+- At rest:
+$$
+\Psi_+(0)=\frac{R+L}{\sqrt2},
+\qquad
+\Psi_-(0)=\frac{R-L}{\sqrt2}.
+$$
+:::
+:::
+:::
+
+::: {.column width="58%"}
+{{< include media/_chiral_waves_mass_gap_animation.qmd >}}
+:::
+::::
+
+## A finite condensate layer {.chiral-slab-slide}
+:::: {.columns}
+::: {.column width="42%"}
+::: {.chiral-slab-text}
+- Let the Higgs condensate occupy a layer:
+$$
+m(x)=
+\begin{cases}
+0, & x<0,\\
+m_0, & 0<x<a,\\
+0, & x>a.
+\end{cases}
+$$
+- For $E>m_0$, the static layer conserves $E$:
+$$
+E^2=q^2+m_0^2,
+\qquad
+q=\sqrt{E^2-m_0^2}<E,
+\qquad
+v_g=\frac{q}{E}<1.
+$$
+- For an incoming $R$ wave:
+$$
+r=
+\frac{-im_0\sin qa}
+{q\cos qa-iE\sin qa},
+$$
+$$
+t=
+\frac{q\,e^{-iEa}}
+{q\cos qa-iE\sin qa}.
+$$
+- The slider changes $a$ in the exact solution.
+:::
+:::
+
+::: {.column width="58%"}
+{{< include media/_chiral_mass_slab_scattering.qmd >}}
+:::
+::::
+
+## Two mechanisms, one condensate
+
+The Higgs condensate creates a gap in the spectrum in two different ways.
+
+:::: {.columns}
+::: {.column width="50%"}
+**Vector bosons: Meissner mechanism**
+
+- Condensate behaves like a superconductor.
+- A gauge field induces a screening current.
+- Free propagation is lost: the field becomes short-range.
+$$
+\left(\partial^2+m_A^2\right)A^\mu=0,
+\qquad
+m_A^2=e^2v^2.
+$$
+:::
+
+::: {.column width="50%"}
+**Fermions: coupled chiral waves**
+
+- Without condensate, $R$ and $L$ move independently at $c$.
+- Condensate couples them: left sources right, and right sources left.
+$$
+m_f=\frac{y_fv}{\sqrt2}.
+$$
+- Stable waves are normal modes:
+$$
+\Psi_\pm(0)=\frac{R\pm L}{\sqrt2}.
+$$
+:::
+::::
+
+## Neutron Decay in QFT
+
+{{< include media/_neutron_decay_video.qmd >}}
+
+{{< include media/_standard_model_finale.qmd >}}

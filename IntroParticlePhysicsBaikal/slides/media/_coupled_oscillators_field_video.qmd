@@ -1,0 +1,37 @@
+```{=html}
+<div class="timed-video has-overlay oscillator-field-video" data-timed-video>
+  <video class="slide-video media-width-full media-height-xl oscillator-field-video-media" data-autoplay loop muted playsinline controls>
+    <source src="media/coupled-oscillators-2d/CoupledOscillators2D.mp4" type="video/mp4">
+  </video>
+  <div class="timed-video-overlay oscillator-equations-overlay">
+    <div class="timed-video-overlay-title">Normal modes: <span class="math inline">\(w=\omega_{mn}\)</span></div>
+    <span class="math display">\[
+    M\ddot q_{ij}=-k_0 q_{ij}-k_c(4q_{ij}-q_{i+1,j}-q_{i-1,j}-q_{i,j+1}-q_{i,j-1})
+    \]</span>
+    <span class="math display">\[
+    q_{ij}^{(m,n)}(t)=A_{mn}\sin\!\frac{m\pi i}{N_x+1}\sin\!\frac{n\pi j}{N_y+1}\cos(\omega_{mn}t)
+    \]</span>
+    <span class="math display">\[
+    \omega_{mn}^2=\frac{k_0+4k_c\left[\sin^2\!\frac{m\pi}{2(N_x+1)}+\sin^2\!\frac{n\pi}{2(N_y+1)}\right]}{M}
+    \]</span>
+    <div class="timed-video-overlay-note">
+      The pair <span class="math inline">\((m,n)\)</span> labels standing-wave harmonics in <span class="math inline">\(x,y\)</span>.
+    </div>
+  </div>
+  <div class="timed-video-caption oscillator-caption" data-caption-display aria-live="polite">
+    <span data-caption-text></span>
+  </div>
+  <ol class="timed-video-cues oscillator-cues" data-caption-cues aria-hidden="true" hidden>
+    <li data-start="0.000" data-end="1.800">Coupled two-dimensional oscillator lattice.</li>
+    <li data-start="1.800" data-end="7.916">Mode (1,1), w = 2.36</li>
+    <li data-start="7.916" data-end="13.668">Mode (1,2), w = 2.54</li>
+    <li data-start="13.668" data-end="19.420">Mode (2,1), w = 2.54</li>
+    <li data-start="19.420" data-end="24.874">Mode (2,2), w = 2.70</li>
+    <li data-start="24.874" data-end="25.674">Local kick at (5,5)</li>
+    <li data-start="25.674" data-end="35.243">The disturbance spreads through the coupled lattice.</li>
+    <li data-start="35.243" data-end="38.643">The discrete lattice becomes a continuous field.</li>
+    <li data-start="38.643" data-end="43.443">Field wave evolution</li>
+    <li data-start="43.443" data-end="44.700">Particles are localized excitations of fields.</li>
+  </ol>
+</div>
+```

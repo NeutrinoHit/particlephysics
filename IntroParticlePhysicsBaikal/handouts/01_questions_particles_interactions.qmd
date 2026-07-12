@@ -10,35 +10,48 @@ format:
 
 # Control Questions
 
-1. What is the difference between a particle and a field?
-2. Which quantum numbers are needed to describe an electron?
-3. Why do the photon and the electron belong to different classes of particles?
-4. What does a cross section mean?
-5. Why can a process be energetically allowed but physically forbidden or strongly suppressed?
-6. Why does a neutrino detector measure events rather than the incoming flux directly?
+1. In natural units, why do energy, mass, inverse length, and inverse time have the same dimension?
+2. How does the uncertainty relation limit a simultaneous coordinate and momentum description of a GeV particle?
+3. What distinguishes fermions, gauge bosons, and the Higgs boson in the Standard Model?
+4. In what sense is a particle a quantum of a field mode rather than a small classical object?
+5. What information does a Feynman diagram encode, and what should not be read from it literally?
+6. What does a cross-section measure, and why is it more useful than a classical geometric size?
+7. Why does the Rutherford cross-section develop an apparent divergence at small angles?
+8. Why is the assumption of exactly zero emitted photons unphysical for scattering of charged particles?
 
 # Additional Questions
 
-1. Why is a Feynman diagram not a literal particle trajectory?
-2. How is lifetime related to decay width?
-3. Which factors enter the toy event-rate formula?
-4. Where does the detector response function enter an event prediction?
+1. Why are free quarks absent from the list of directly observable particles?
+2. What changes at a weak charged-current vertex, and what remains unchanged at a weak neutral-current vertex?
+3. How does the wave-packet picture soften, but not completely remove, the small-angle problem?
+4. Why must unresolved soft photons be included in the observable cross-section?
+5. What cancels between real and virtual soft-photon corrections in the inclusive result?
 
 # Short Written Check
 
-Explain, using one example, the difference between:
-
-- a conservation law;
-- a kinematic threshold;
-- the absence or suppression of an interaction vertex.
-
-Use one of the processes:
+Choose one process and explain what the diagram tells you:
 
 $$
-\bar\nu_e+p\to n+e^+,
+e^-e^-\to e^-e^-,
 \qquad
-\nu_\mu+N\to\mu^-+X,
+\nu_\mu\mu^-\to\nu_\mu\mu^-,
 \qquad
-\mu^-\to e^-+\gamma.
+\nu_\mu e^-\to\nu_e\mu^-,
+\qquad
+qq\to qq.
 $$
 
+In your answer, name the exchanged boson, the relevant charge or current, and whether particle type or flavor changes at the vertex.
+
+# Short Calculation
+
+$$
+d\sigma_{\mathrm{obs}}
+=
+d\sigma(p\to p')
++
+\sum_{E_\gamma<\Delta E}
+d\sigma(p\to p'+n\gamma).
+$$
+
+Explain in words why the detector resolution \(\Delta E\) enters this formula and why the observable result is finite.

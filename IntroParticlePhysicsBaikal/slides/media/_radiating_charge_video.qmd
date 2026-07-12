@@ -1,0 +1,5 @@
+```{=html}
+<video class="slide-video media-width-full media-height-lg" data-autoplay loop muted playsinline controls>
+  <source src="media/radiating_charge_pyqtgraph_3d.mp4" type="video/mp4">
+</video>
+```

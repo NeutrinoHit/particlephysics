@@ -1,0 +1,82 @@
+```{=html}
+<div class="friends-rocket-animation" role="img" aria-label="Two rockets launch from Earth in different directions.">
+  <svg viewBox="0 0 640 420">
+    <defs>
+      <radialGradient id="friends-earth-gradient" cx="45%" cy="38%" r="62%">
+        <stop offset="0%" stop-color="#98e6ff"/>
+        <stop offset="62%" stop-color="#2778d6"/>
+        <stop offset="100%" stop-color="#0d2756"/>
+      </radialGradient>
+      <linearGradient id="friends-rocket-body" x1="0" x2="1" y1="0" y2="0">
+        <stop offset="0%" stop-color="#f8fbff"/>
+        <stop offset="54%" stop-color="#cfd9e6"/>
+        <stop offset="100%" stop-color="#8aa0b9"/>
+      </linearGradient>
+      <filter id="friends-glow" x="-40%" y="-40%" width="180%" height="180%">
+        <feGaussianBlur stdDeviation="4" result="blur"/>
+        <feMerge>
+          <feMergeNode in="blur"/>
+          <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+      </filter>
+    </defs>
+
+    <rect class="friends-space-bg" x="18" y="18" width="604" height="384" rx="18"/>
+
+    <g class="friends-stars">
+      <circle cx="76" cy="68" r="2"/>
+      <circle cx="152" cy="120" r="1.6"/>
+      <circle cx="256" cy="72" r="1.5"/>
+      <circle cx="418" cy="88" r="2"/>
+      <circle cx="546" cy="132" r="1.5"/>
+      <circle cx="590" cy="58" r="1.7"/>
+      <circle cx="92" cy="220" r="1.4"/>
+      <circle cx="518" cy="232" r="1.4"/>
+    </g>
+
+    <path id="friends-rocket-path-left" class="friends-orbit friends-orbit-left" d="M 320 256 C 245 222 182 160 126 82"/>
+    <path id="friends-rocket-path-right" class="friends-orbit friends-orbit-right" d="M 320 256 C 395 222 458 160 514 82"/>
+
+    <g class="friends-earth" transform="translate(320 308)">
+      <circle class="friends-earth-halo" cx="0" cy="0" r="66"/>
+      <circle class="friends-earth-ocean" cx="0" cy="0" r="52"/>
+      <path class="friends-earth-land" d="M -35 -14 C -20 -31 3 -28 12 -11 C 23 -4 14 10 -2 8 C -17 5 -27 1 -35 -14 Z"/>
+      <path class="friends-earth-land" d="M 19 -25 C 38 -16 42 6 29 19 C 17 31 3 21 8 5 C 11 -8 8 -18 19 -25 Z"/>
+      <path class="friends-earth-land" d="M -18 20 C -3 16 8 26 4 38 C -10 42 -25 35 -18 20 Z"/>
+      <circle class="friends-launch-point" cx="0" cy="-52" r="7"/>
+    </g>
+
+    <g class="friend-rocket friend-rocket-left">
+      <animateMotion dur="5.8s" repeatCount="indefinite" rotate="auto"
+        keyPoints="0; 1; 1" keyTimes="0; 0.72; 1" calcMode="linear">
+        <mpath href="#friends-rocket-path-left"/>
+      </animateMotion>
+      <g>
+        <path class="friend-rocket-flame" d="M -29 0 C -48 -10 -58 0 -48 10 C -39 18 -32 12 -29 0 Z"/>
+        <path class="friend-rocket-fin" d="M -12 -12 L -31 -25 L -24 -7 Z"/>
+        <path class="friend-rocket-fin" d="M -12 12 L -31 25 L -24 7 Z"/>
+        <path class="friend-rocket-body" d="M -28 -13 L 17 -13 C 31 -13 45 0 17 13 L -28 13 Z"/>
+        <circle class="friend-rocket-window" cx="8" cy="0" r="6"/>
+        <text class="friend-rocket-symbol" x="-10" y="0" text-anchor="middle" dominant-baseline="middle" transform="rotate(90 -10 0)">ψ</text>
+        <path class="friend-rocket-nose" d="M 17 -13 C 44 -9 44 9 17 13 Z"/>
+      </g>
+    </g>
+
+    <g class="friend-rocket friend-rocket-right">
+      <animateMotion dur="5.8s" repeatCount="indefinite" rotate="auto"
+        keyPoints="0; 1; 1" keyTimes="0; 0.72; 1" calcMode="linear">
+        <mpath href="#friends-rocket-path-right"/>
+      </animateMotion>
+      <g>
+        <path class="friend-rocket-flame" d="M -29 0 C -48 -10 -58 0 -48 10 C -39 18 -32 12 -29 0 Z"/>
+        <path class="friend-rocket-fin" d="M -12 -12 L -31 -25 L -24 -7 Z"/>
+        <path class="friend-rocket-fin" d="M -12 12 L -31 25 L -24 7 Z"/>
+        <path class="friend-rocket-body" d="M -28 -13 L 17 -13 C 31 -13 45 0 17 13 L -28 13 Z"/>
+        <circle class="friend-rocket-window" cx="8" cy="0" r="6"/>
+        <text class="friend-rocket-symbol" x="-10" y="0" text-anchor="middle" dominant-baseline="middle" transform="rotate(90 -10 0)">ψ</text>
+        <path class="friend-rocket-nose" d="M 17 -13 C 44 -9 44 9 17 13 Z"/>
+      </g>
+    </g>
+  </svg>
+</div>
+```

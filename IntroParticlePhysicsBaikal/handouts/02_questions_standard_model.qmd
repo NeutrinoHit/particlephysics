@@ -1,0 +1,41 @@
+---
+title: "Questions after Lecture 2"
+subtitle: "The Standard Model"
+lang: en
+format:
+  html:
+    theme: cosmo
+    toc: true
+---
+
+# Control Questions
+
+1. Why is the Standard Model better viewed as a quantum-field-theory Lagrangian than as a particle table?
+2. What is the phase-convention problem in the "three friends" story?
+3. Why is the free Dirac Lagrangian not invariant under a local phase transformation?
+4. How does introducing \(A_\mu\) and replacing \(\partial_\mu\) by \(D_\mu\) make QED possible?
+5. Why does gauge invariance forbid a photon mass term \(m_A^2A_\mu A^\mu\)?
+6. In what ways do electromagnetic and weak interactions look different before unification?
+7. What are the two pillars needed after choosing the group \(SU(2)_L\times U(1)_Y\)?
+8. What does neutron decay illustrate about weak interactions in the Standard Model?
+
+# Additional Questions
+
+1. How does the gauge principle turn a symmetry of the free theory into an interaction?
+2. What is the analogy between the Meissner effect and mass generation for a vector boson?
+3. How does the Higgs condensate couple right- and left-moving chiral fermion waves?
+4. Why do Yukawa couplings parameterize fermion masses but not explain their hierarchy?
+5. What does the finite condensate layer animation show about transmission, reflection, and reduced group velocity?
+6. What does it mean to say that the Standard Model is a consistency machine?
+
+# Short Exercise
+
+Using the estimate from the lecture,
+
+$$
+R\sim \frac{1}{M_W},
+\qquad
+1\ \mathrm{GeV}^{-1}=0.197\ \mathrm{fm},
+$$
+
+estimate the range of the weak interaction for \(M_W\simeq 80\ \mathrm{GeV}\). Compare the answer with an atomic scale of order \(10^{-10}\ \mathrm{m}\).

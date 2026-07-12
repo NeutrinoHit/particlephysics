@@ -1,0 +1,368 @@
+```{=html}
+<style>
+.chiral-waves-mass-gap-animation {
+  width: min(100%, 820px);
+  margin: 0 auto;
+}
+
+.reveal section.chiral-mass-slide .columns {
+  gap: 1.05rem;
+}
+
+.reveal section.chiral-mass-slide .chiral-mass-text {
+  font-size: 0.68em;
+  line-height: 1.18;
+}
+
+.reveal section.chiral-mass-slide .chiral-mass-text li {
+  margin-bottom: 0.35rem;
+}
+
+.reveal section.chiral-mass-slide .chiral-mass-text .math.display {
+  margin: 0.22rem 0 0;
+  font-size: 1.08em;
+}
+
+.chiral-waves-mass-gap-animation svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 545px;
+}
+
+.chiral-waves-mass-gap-animation text {
+  font-family: var(--r-main-font, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
+  letter-spacing: 0;
+}
+
+.chiral-stage-bg {
+  fill: rgba(2, 7, 14, 0.76);
+  stroke: rgba(142, 197, 255, 0.24);
+  stroke-width: 2;
+}
+
+.chiral-axis,
+.chiral-zero-line {
+  stroke: rgba(246, 251, 255, 0.42);
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.chiral-zero-line {
+  stroke-dasharray: 5 9;
+  opacity: 0.7;
+}
+
+.chiral-axis-label {
+  fill: #b8d3e5;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.chiral-plot-label {
+  fill: #f6fbff;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.chiral-small-label {
+  fill: #b8d3e5;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.chiral-massless-line {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.44);
+  stroke-width: 2.5;
+  stroke-dasharray: 8 8;
+}
+
+.chiral-massive-positive,
+.chiral-massive-negative {
+  fill: none;
+  stroke-width: 4.5;
+  stroke-linecap: round;
+  filter: drop-shadow(0 0 7px rgba(142, 197, 255, 0.55));
+}
+
+.chiral-massive-positive {
+  stroke: #8ec5ff;
+}
+
+.chiral-massive-negative {
+  stroke: #ff8a7a;
+}
+
+.chiral-gap-line {
+  stroke: #ffd166;
+  stroke-width: 4;
+  stroke-linecap: round;
+  filter: drop-shadow(0 0 7px rgba(255, 209, 102, 0.62));
+}
+
+.chiral-branch-dot-positive {
+  fill: #8ec5ff;
+  stroke: #f6fbff;
+  stroke-width: 2.5;
+  filter: drop-shadow(0 0 8px rgba(142, 197, 255, 0.8));
+}
+
+.chiral-branch-dot-negative {
+  fill: #ff8a7a;
+  stroke: #f6fbff;
+  stroke-width: 2.5;
+  filter: drop-shadow(0 0 8px rgba(255, 138, 122, 0.75));
+}
+
+.chiral-mode-panel {
+  fill: rgba(2, 7, 14, 0.72);
+  stroke: rgba(142, 197, 255, 0.2);
+  stroke-width: 2;
+}
+
+.chiral-mode-title {
+  fill: #f6fbff;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.chiral-mode-formula {
+  fill: #ffd166;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.chiral-lane {
+  stroke: rgba(246, 251, 255, 0.2);
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.chiral-component-label {
+  fill: #b8d3e5;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.chiral-component-wave-r,
+.chiral-component-wave-l {
+  fill: none;
+  stroke-width: 4;
+  stroke-linecap: round;
+  filter: drop-shadow(0 0 5px rgba(142, 197, 255, 0.4));
+}
+
+.chiral-component-wave-r {
+  stroke: #8ec5ff;
+}
+
+.chiral-component-wave-l {
+  stroke: #ffd166;
+}
+
+.chiral-phase-dot-r,
+.chiral-phase-dot-l {
+  stroke: #f6fbff;
+  stroke-width: 2;
+}
+
+.chiral-phase-dot-r {
+  fill: #8ec5ff;
+}
+
+.chiral-phase-dot-l {
+  fill: #ffd166;
+}
+</style>
+
+<div class="chiral-waves-mass-gap-animation" role="img" aria-label="Higgs condensate couples right and left chiral waves, opening a mass gap and producing in-phase and out-of-phase normal modes at rest.">
+  <svg viewBox="0 0 820 520">
+    <defs>
+      <clipPath id="chiral-dispersion-clip">
+        <rect x="82" y="48" width="660" height="282"/>
+      </clipPath>
+    </defs>
+
+    <rect class="chiral-stage-bg" x="12" y="14" width="796" height="492" rx="8"/>
+
+    <g class="chiral-dispersion" data-mass="1">
+      <text class="chiral-plot-label" x="38" y="48">frequency spectrum</text>
+      <text class="chiral-small-label" x="38" y="72">Higgs condensate opens the gap</text>
+
+      <line class="chiral-axis" x1="82" y1="190" x2="742" y2="190"/>
+      <line class="chiral-axis" x1="412" y1="48" x2="412" y2="330"/>
+      <line class="chiral-zero-line" x1="82" y1="120" x2="742" y2="120"/>
+      <line class="chiral-zero-line" x1="82" y1="260" x2="742" y2="260"/>
+
+      <text class="chiral-axis-label" x="728" y="215">p</text>
+      <text class="chiral-axis-label" x="424" y="63">&#969;</text>
+      <text class="chiral-small-label" x="424" y="102">+m</text>
+      <text class="chiral-small-label" x="424" y="292">-m</text>
+
+      <g clip-path="url(#chiral-dispersion-clip)">
+        <path class="chiral-massless-line" data-path="massless-positive"/>
+        <path class="chiral-massless-line" data-path="massless-negative"/>
+        <path class="chiral-massive-positive" data-path="massive-positive"/>
+        <path class="chiral-massive-negative" data-path="massive-negative"/>
+        <circle class="chiral-branch-dot-positive" data-dot="positive" cx="412" cy="120" r="8"/>
+        <circle class="chiral-branch-dot-negative" data-dot="negative" cx="412" cy="260" r="8"/>
+      </g>
+
+      <line class="chiral-gap-line" x1="412" y1="120" x2="412" y2="260"/>
+      <text class="chiral-mode-formula" x="430" y="195">2m</text>
+      <text class="chiral-small-label" x="622" y="88">&#969; = +&#8730;(p&#178;+m&#178;)</text>
+      <text class="chiral-small-label" x="620" y="306">&#969; = -&#8730;(p&#178;+m&#178;)</text>
+      <text class="chiral-small-label" x="118" y="92">&#969; = +p</text>
+      <text class="chiral-small-label" x="112" y="306">&#969; = -p</text>
+
+    </g>
+
+    <g class="chiral-mode" data-mode="plus" data-phase-sign="1">
+      <rect class="chiral-mode-panel" x="40" y="360" width="348" height="112" rx="8"/>
+      <text class="chiral-mode-title" x="60" y="388">in phase at p = 0</text>
+      <text class="chiral-mode-formula" x="250" y="388">&#936;&#8330; = (R+L)/&#8730;2</text>
+      <line class="chiral-lane" x1="100" y1="418" x2="352" y2="418"/>
+      <line class="chiral-lane" x1="100" y1="450" x2="352" y2="450"/>
+      <text class="chiral-component-label" x="66" y="423">R</text>
+      <text class="chiral-component-label" x="66" y="455">L</text>
+      <path class="chiral-component-wave-r" data-wave="r"/>
+      <path class="chiral-component-wave-l" data-wave="l"/>
+      <circle class="chiral-phase-dot-r" data-dot="r" r="6"/>
+      <circle class="chiral-phase-dot-l" data-dot="l" r="6"/>
+    </g>
+
+    <g class="chiral-mode" data-mode="minus" data-phase-sign="-1">
+      <rect class="chiral-mode-panel" x="432" y="360" width="348" height="112" rx="8"/>
+      <text class="chiral-mode-title" x="452" y="388">out of phase at p = 0</text>
+      <text class="chiral-mode-formula" x="642" y="388">&#936;&#8331; = (R-L)/&#8730;2</text>
+      <line class="chiral-lane" x1="492" y1="418" x2="744" y2="418"/>
+      <line class="chiral-lane" x1="492" y1="450" x2="744" y2="450"/>
+      <text class="chiral-component-label" x="458" y="423">R</text>
+      <text class="chiral-component-label" x="458" y="455">L</text>
+      <path class="chiral-component-wave-r" data-wave="r"/>
+      <path class="chiral-component-wave-l" data-wave="l"/>
+      <circle class="chiral-phase-dot-r" data-dot="r" r="6"/>
+      <circle class="chiral-phase-dot-l" data-dot="l" r="6"/>
+    </g>
+  </svg>
+</div>
+
+<script>
+(() => {
+  const roots = document.querySelectorAll(".chiral-waves-mass-gap-animation:not([data-chiral-ready])");
+
+  function pathFromPoints(points) {
+    return points.map((point, index) => `${index === 0 ? "M" : "L"} ${point.x.toFixed(2)} ${point.y.toFixed(2)}`).join(" ");
+  }
+
+  function makeDispersionMapper() {
+    const left = 82;
+    const right = 742;
+    const centerY = 190;
+    const pMax = 3.25;
+    const omegaMax = 3.25;
+    const xScale = (right - left) / (2 * pMax);
+    const yScale = 70;
+
+    return {
+      x: (p) => (left + right) / 2 + p * xScale,
+      y: (omega) => centerY - omega * yScale,
+      pMax,
+      omegaMax
+    };
+  }
+
+  function drawDispersion(root) {
+    const mapper = makeDispersionMapper();
+    const mass = Number(root.querySelector(".chiral-dispersion").dataset.mass || 1);
+    const samples = 140;
+    const positiveMassless = [];
+    const negativeMassless = [];
+    const positiveMassive = [];
+    const negativeMassive = [];
+
+    for (let i = 0; i <= samples; i += 1) {
+      const p = -mapper.pMax + (2 * mapper.pMax * i) / samples;
+      const omega = Math.sqrt(p * p + mass * mass);
+      positiveMassless.push({ x: mapper.x(p), y: mapper.y(p) });
+      negativeMassless.push({ x: mapper.x(p), y: mapper.y(-p) });
+      positiveMassive.push({ x: mapper.x(p), y: mapper.y(omega) });
+      negativeMassive.push({ x: mapper.x(p), y: mapper.y(-omega) });
+    }
+
+    root.querySelector('[data-path="massless-positive"]').setAttribute("d", pathFromPoints(positiveMassless));
+    root.querySelector('[data-path="massless-negative"]').setAttribute("d", pathFromPoints(negativeMassless));
+    root.querySelector('[data-path="massive-positive"]').setAttribute("d", pathFromPoints(positiveMassive));
+    root.querySelector('[data-path="massive-negative"]').setAttribute("d", pathFromPoints(negativeMassive));
+  }
+
+  function wavePath(x0, x1, baseY, amplitude, phase, sign) {
+    const points = [];
+    const samples = 60;
+    const width = x1 - x0;
+
+    for (let i = 0; i <= samples; i += 1) {
+      const u = i / samples;
+      const envelope = Math.sin(Math.PI * u);
+      const wave = Math.sin(2 * Math.PI * u);
+      const y = baseY - sign * amplitude * Math.cos(phase) * envelope * wave;
+      points.push({ x: x0 + width * u, y });
+    }
+
+    return pathFromPoints(points);
+  }
+
+  function updateModes(root, t) {
+    const phase = 1.55 * t;
+    root.querySelectorAll(".chiral-mode").forEach((mode) => {
+      const sign = Number(mode.dataset.phaseSign || 1);
+      const x0 = mode.dataset.mode === "plus" ? 100 : 492;
+      const x1 = mode.dataset.mode === "plus" ? 352 : 744;
+      const rBase = 418;
+      const lBase = 450;
+      const amp = 15;
+      const rValue = Math.cos(phase);
+      const lValue = sign * Math.cos(phase);
+
+      mode.querySelector('[data-wave="r"]').setAttribute("d", wavePath(x0, x1, rBase, amp, phase, 1));
+      mode.querySelector('[data-wave="l"]').setAttribute("d", wavePath(x0, x1, lBase, amp, phase, sign));
+      mode.querySelector('[data-dot="r"]').setAttribute("cx", (x0 + x1) / 2);
+      mode.querySelector('[data-dot="r"]').setAttribute("cy", rBase - amp * rValue);
+      mode.querySelector('[data-dot="l"]').setAttribute("cx", (x0 + x1) / 2);
+      mode.querySelector('[data-dot="l"]').setAttribute("cy", lBase - amp * lValue);
+    });
+  }
+
+  function updateBranchDots(root, t) {
+    const mapper = makeDispersionMapper();
+    const mass = Number(root.querySelector(".chiral-dispersion").dataset.mass || 1);
+    const p = 2.75 * Math.sin(0.65 * t);
+    const omega = Math.sqrt(p * p + mass * mass);
+    const positive = root.querySelector('[data-dot="positive"]');
+    const negative = root.querySelector('[data-dot="negative"]');
+
+    positive.setAttribute("cx", mapper.x(p).toFixed(2));
+    positive.setAttribute("cy", mapper.y(omega).toFixed(2));
+    negative.setAttribute("cx", mapper.x(p).toFixed(2));
+    negative.setAttribute("cy", mapper.y(-omega).toFixed(2));
+  }
+
+  function animate(root, startTime) {
+    const tick = (now) => {
+      const t = (now - startTime) / 1000;
+      updateBranchDots(root, t);
+      updateModes(root, t);
+      window.requestAnimationFrame(tick);
+    };
+    tick(startTime);
+  }
+
+  roots.forEach((root) => {
+    root.dataset.chiralReady = "true";
+    drawDispersion(root);
+    animate(root, performance.now());
+  });
+})();
+</script>
+```

@@ -1,0 +1,5 @@
+```{=html}
+<video class="slide-video media-width-sm media-height-sm" data-autoplay loop muted playsinline controls>
+  <source src="media/feynman-scattering/NuMuElectronToNuEMuonScattering.mp4" type="video/mp4">
+</video>
+```

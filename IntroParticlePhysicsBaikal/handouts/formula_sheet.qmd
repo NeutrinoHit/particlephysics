@@ -8,26 +8,6 @@ format:
     toc: true
 ---
 
-# Counting Experiment
-
-$$
-N = \Phi \sigma N_{\rm target}T\epsilon
-$$
-
-Toy meaning only: this formula omits spectra, backgrounds, detector response, and uncertainty propagation.
-
-# Decay Width and Lifetime
-
-$$
-\Gamma = \frac{1}{\tau}
-$$
-
-For an exponential decay law:
-
-$$
-P(t)=e^{-t/\tau}.
-$$
-
 # Natural Units
 
 $$
@@ -40,10 +20,120 @@ $$
 \hbar c \simeq 197.3\ \mathrm{MeV\,fm}.
 $$
 
+$$
+1\ \mathrm{GeV}^{-1}\simeq 0.197\ \mathrm{fm},
+\qquad
+1\ \mathrm{fm}\simeq 5.07\ \mathrm{GeV}^{-1}.
+$$
+
+# Momentum and Coordinate
+
+$$
+\sigma_x\sigma_p\ge \frac{1}{2},
+\qquad
+\varepsilon_p=\frac{\sigma_p}{p}.
+$$
+
+$$
+\sigma_x\ge
+\frac{1}{2\sigma_p}
+=
+\frac{1}{2\varepsilon_p p}
+\simeq
+10\ \mathrm{fm}
+\frac{10^{-2}}{\varepsilon_p}
+\frac{\mathrm{GeV}}{p}.
+$$
+
+# Cross-Sections and Soft Photons
+
+$$
+\text{interaction rate}=\sigma\times\text{flux}.
+$$
+
+For Rutherford-type small-angle scattering:
+
+$$
+\frac{d\sigma}{d\Omega}\propto\frac{1}{\sin^4(\theta/2)}.
+$$
+
+The observable charged-particle cross-section is inclusive:
+
+$$
+d\sigma_{\mathrm{obs}}
+=
+d\sigma(p\to p')
++
+\sum_{E_\gamma<\Delta E}
+d\sigma(p\to p'+n\gamma).
+$$
+
+Real and virtual soft-photon logarithms cancel in the inclusive result:
+
+$$
+\frac{d\sigma_{\mathrm{real}}}{d\Omega}
+=
+\left(\frac{d\sigma}{d\Omega}\right)_0
+\left[
+1+\frac{\alpha}{\pi}L\ell_\mu+O(\alpha^2)
+\right],
+$$
+
+$$
+\frac{d\sigma_{\mathrm{virt}}}{d\Omega}
+=
+\left(\frac{d\sigma}{d\Omega}\right)_0
+\left[
+1-\frac{\alpha}{\pi}L\ell_\mu+O(\alpha^2)
+\right].
+$$
+
 # Standard Model Gauge Group
 
 $$
 SU(3)_c\times SU(2)_L\times U(1)_Y
+$$
+
+# Gauge Principle in QED
+
+Free Dirac field:
+
+$$
+\mathcal{L}_0=\overline{\psi}(i\gamma^\mu\partial_\mu-m)\psi.
+$$
+
+Local phase transformation:
+
+$$
+\psi(x)\to e^{i\alpha(x)}\psi(x).
+$$
+
+Covariant derivative:
+
+$$
+D_\mu=\partial_\mu+iqA_\mu.
+$$
+
+Gauge transformation of the vector potential:
+
+$$
+A_\mu(x)\to A_\mu(x)+\frac{1}{q}\partial_\mu\alpha(x).
+$$
+
+QED Lagrangian:
+
+$$
+\mathcal{L}
+=
+\overline{\psi}(i\gamma^\mu\partial_\mu-m)\psi
+-q\overline{\psi}\gamma^\mu\psi A_\mu
+-\frac{1}{4}F_{\mu\nu}F^{\mu\nu}.
+$$
+
+Gauge invariance forbids a photon mass term:
+
+$$
+m_A^2A_\mu A^\mu.
 $$
 
 # Higgs Vacuum Expectation Value
@@ -54,6 +144,22 @@ $$
 v\simeq 246\ \mathrm{GeV}
 $$
 
+# Vector-Boson Mass from a Condensate
+
+Meissner-type equation:
+
+$$
+\left(\partial^2+m_A^2\right)A^\mu=0,
+\qquad
+m_A^2=e^2v^2.
+$$
+
+Weak-interaction range estimate:
+
+$$
+R\sim\frac{1}{M_W}.
+$$
+
 # Fermion Masses
 
 $$
@@ -62,30 +168,14 @@ $$
 
 This parameterizes charged-fermion masses through Yukawa couplings; it does not explain the numerical pattern of those couplings.
 
-# Flavor and Mass States
+# Coupled Chiral Waves
 
 $$
-|\nu_\alpha\rangle=\sum_i U_{\alpha i}^*|\nu_i\rangle
-$$
-
-# Two-Flavor Oscillation Probability
-
-$$
-P_{\nu_\alpha\to\nu_\beta}
-=
-\sin^2 2\theta
-\sin^2
-\left(
-1.27
-\frac{\Delta m^2[\mathrm{eV}^2]L[\mathrm{km}]}
-{E[\mathrm{GeV}]}
-\right)
-$$
-
-Survival probability:
-
-$$
-P_{\nu_\alpha\to\nu_\alpha}
-=
-1-P_{\nu_\alpha\to\nu_\beta}.
+H(p)=
+\begin{pmatrix}
+p&m\\
+m&-p
+\end{pmatrix},
+\qquad
+\omega_\pm(p)=\pm\sqrt{p^2+m^2}.
 $$

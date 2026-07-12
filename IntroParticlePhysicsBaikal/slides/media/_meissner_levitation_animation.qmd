@@ -1,0 +1,421 @@
+```{=html}
+<style>
+.meissner-levitation-animation {
+  width: min(100%, 1080px);
+  margin: 0 auto;
+}
+
+.reveal section.meissner-effect-slide .columns {
+  gap: 1.1rem;
+}
+
+.reveal section.meissner-effect-slide .meissner-effect-text {
+  font-size: 0.68em;
+  line-height: 1.23;
+}
+
+.reveal section.meissner-effect-slide .meissner-effect-text ul {
+  margin-top: 0.15rem;
+}
+
+.reveal section.meissner-effect-slide .meissner-effect-text li {
+  margin-bottom: 0.42rem;
+}
+
+.reveal section.meissner-effect-slide .meissner-effect-text .math.display {
+  margin: 0.28rem 0 0;
+  font-size: 0.72em;
+}
+
+.reveal section.meissner-effect-slide .meissner-levitation-animation {
+  width: 100%;
+  margin-top: -0.1rem;
+}
+
+.meissner-levitation-stage {
+  position: relative;
+  width: 100%;
+}
+
+.meissner-levitation-scene {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 560px;
+}
+
+.meissner-levitation-animation text {
+  font-family: var(--r-main-font, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
+  letter-spacing: 0;
+}
+
+.meissner-formulas {
+  position: absolute;
+  z-index: 4;
+  inset: 0;
+  pointer-events: none;
+}
+
+.meissner-formula {
+  position: absolute;
+  color: #f6fbff;
+  font-size: 0.34em;
+  line-height: 1.1;
+  white-space: nowrap;
+  filter: drop-shadow(0 2px 0 rgba(2, 7, 14, 0.96)) drop-shadow(0 0 9px rgba(142, 197, 255, 0.42));
+}
+
+.meissner-formula mjx-container {
+  margin: 0 !important;
+}
+
+.meissner-formula p {
+  margin: 0;
+}
+
+.meissner-window {
+  fill: rgba(2, 7, 14, 0.78);
+  stroke: rgba(142, 197, 255, 0.24);
+  stroke-width: 2;
+}
+
+.meissner-field-line {
+  fill: none;
+  stroke: #8ec5ff;
+  stroke-width: 3.4;
+  stroke-linecap: round;
+  stroke-dasharray: 12 12;
+  opacity: 0.82;
+  filter: url("#meissner-blue-glow");
+}
+
+.meissner-field-line {
+  animation: meissner-field-flow 1.25s linear infinite;
+}
+
+.meissner-penetration {
+  fill: none;
+  stroke: #8ec5ff;
+  stroke-linecap: round;
+  stroke-dasharray: 8 10;
+  filter: url("#meissner-blue-glow");
+}
+
+.meissner-penetration {
+  animation: meissner-penetration-pulse 2.6s ease-in-out infinite;
+}
+
+.meissner-current-track {
+  fill: none;
+  stroke: rgba(255, 209, 102, 0.42);
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.meissner-current-arrow {
+  fill: #ffd166;
+  stroke: #ff8a3d;
+  stroke-width: 1.5;
+  filter: drop-shadow(0 0 7px rgba(255, 209, 102, 0.65));
+}
+
+.meissner-current-arrow {
+  animation: meissner-current-slide 1.25s linear infinite;
+}
+
+.meissner-superconductor-body {
+  fill: url("#meissner-superconductor-gradient");
+  stroke: rgba(255, 255, 255, 0.9);
+  stroke-width: 2.5;
+  filter: url("#meissner-blue-glow");
+}
+
+.meissner-superconductor-top {
+  fill: rgba(184, 235, 255, 0.44);
+  stroke: rgba(255, 255, 255, 0.78);
+  stroke-width: 2;
+}
+
+.meissner-magnet {
+  filter: url("#meissner-soft-shadow");
+}
+
+.meissner-magnet {
+  animation: meissner-magnet-float 3.6s ease-in-out infinite;
+  transform-box: view-box;
+  transform-origin: 380px 145px;
+}
+
+.meissner-magnet-n {
+  fill: url("#meissner-magnet-n");
+}
+
+.meissner-magnet-s {
+  fill: url("#meissner-magnet-s");
+}
+
+.meissner-magnet-outline {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.92);
+  stroke-width: 2.5;
+}
+
+.meissner-force-up,
+.meissner-force-down {
+  stroke-width: 5;
+  stroke-linecap: round;
+}
+
+.meissner-force-up {
+  stroke: #ffd166;
+  marker-end: url("#meissner-arrow-head-up");
+  filter: drop-shadow(0 0 8px rgba(255, 209, 102, 0.65));
+  transform-box: fill-box;
+  transform-origin: center bottom;
+}
+
+.meissner-force-down {
+  stroke: #ff7a7a;
+  marker-end: url("#meissner-arrow-head-down");
+  filter: drop-shadow(0 0 8px rgba(255, 122, 122, 0.65));
+  transform-box: fill-box;
+  transform-origin: center top;
+}
+
+.meissner-force-up {
+  animation: meissner-force-up-pulse 1.8s ease-in-out infinite;
+}
+
+.meissner-force-down {
+  animation: meissner-force-down-pulse 1.8s ease-in-out infinite;
+}
+
+.meissner-label {
+  fill: #f6fbff;
+  font-size: 19px;
+  font-weight: 700;
+  paint-order: stroke;
+  stroke: rgba(2, 7, 14, 0.92);
+  stroke-width: 5px;
+}
+
+.meissner-small-label {
+  fill: #b8d3e5;
+  font-size: 15px;
+  font-weight: 650;
+}
+
+.meissner-gap {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.48);
+  stroke-width: 2.5;
+  stroke-dasharray: 5 7;
+}
+
+.meissner-field-sample {
+  fill: none;
+  stroke: #8ec5ff;
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.meissner-field-sample-axis {
+  stroke: rgba(255, 255, 255, 0.38);
+  stroke-width: 2;
+}
+
+@keyframes meissner-field-flow {
+  to {
+    stroke-dashoffset: -24;
+  }
+}
+
+@keyframes meissner-penetration-pulse {
+  0%,
+  100% {
+    opacity: 0.22;
+  }
+  50% {
+    opacity: 0.58;
+  }
+}
+
+@keyframes meissner-current-slide {
+  0% {
+    transform: translateX(-42px);
+  }
+  100% {
+    transform: translateX(42px);
+  }
+}
+
+@keyframes meissner-magnet-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-9px);
+  }
+}
+
+@keyframes meissner-force-up-pulse {
+  0%,
+  100% {
+    opacity: 0.65;
+    transform: scaleY(0.92);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleY(1.08);
+  }
+}
+
+@keyframes meissner-force-down-pulse {
+  0%,
+  100% {
+    opacity: 0.7;
+    transform: scaleY(1.06);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleY(0.94);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .meissner-levitation-animation * {
+    animation-duration: 0.001s !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+</style>
+```
+
+::: {.meissner-levitation-animation role="img" aria-label="A magnet levitates above a superconductor. External magnetic field lines are expelled, screening current flows near the surface, and magnetic pressure balances gravity."}
+::: {.meissner-levitation-stage}
+
+::: {.meissner-formulas aria-hidden="true"}
+::: {.meissner-formula style="top: 5%; left: 5%;"}
+$$
+\nabla^2\mathbf B=\lambda_L^{-2}\mathbf B,\qquad
+\lambda_L=\sqrt{\frac{m}{\mu_0 n_s q^2}}
+$$
+:::
+
+::: {.meissner-formula style="top: 5%; right: 5%; text-align: right;"}
+$$
+\mathbf B(x)=\mathbf B_0 e^{-x/\lambda_L},\qquad
+\nabla\times\mathbf J_s=-\frac{1}{\mu_0\lambda_L^2}\mathbf B
+$$
+:::
+
+::: {.meissner-formula style="bottom: 7%; left: 5%;"}
+$$
+U_B=\int\frac{B^2}{2\mu_0}\,dV,\qquad
+F_z=-\frac{\partial U_B}{\partial z}
+$$
+:::
+
+::: {.meissner-formula style="bottom: 7%; right: 7%; text-align: right;"}
+$$
+p_B=\frac{B^2}{2\mu_0},\qquad F_z=mg
+$$
+:::
+:::
+
+```{=html}
+    <svg class="meissner-levitation-scene" viewBox="0 0 760 460">
+      <defs>
+        <linearGradient id="meissner-superconductor-gradient" x1="0" x2="1" y1="0" y2="1">
+          <stop offset="0%" stop-color="#dff8ff"/>
+          <stop offset="42%" stop-color="#45d6ff"/>
+          <stop offset="100%" stop-color="#1857c9"/>
+        </linearGradient>
+        <linearGradient id="meissner-magnet-n" x1="0" x2="1" y1="0" y2="0">
+          <stop offset="0%" stop-color="#ffb0b0"/>
+          <stop offset="100%" stop-color="#ff4d6d"/>
+        </linearGradient>
+        <linearGradient id="meissner-magnet-s" x1="0" x2="1" y1="0" y2="0">
+          <stop offset="0%" stop-color="#4fc3ff"/>
+          <stop offset="100%" stop-color="#246bff"/>
+        </linearGradient>
+        <filter id="meissner-blue-glow" x="-40%" y="-40%" width="180%" height="180%">
+          <feGaussianBlur stdDeviation="4" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+        <filter id="meissner-soft-shadow" x="-40%" y="-40%" width="180%" height="180%">
+          <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#000814" flood-opacity="0.62"/>
+        </filter>
+        <marker id="meissner-arrow-head-up" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill="#ffd166"/>
+        </marker>
+        <marker id="meissner-arrow-head-down" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill="#ff7a7a"/>
+        </marker>
+      </defs>
+
+      <rect class="meissner-window" x="18" y="18" width="724" height="424" rx="18"/>
+
+      <g class="meissner-field-lines">
+        <path class="meissner-field-line" d="M 360 116 C 238 92 142 142 118 246 C 109 284 134 314 183 322"/>
+        <path class="meissner-field-line" d="M 399 116 C 522 92 618 142 642 246 C 651 284 626 314 577 322"/>
+        <path class="meissner-field-line" d="M 346 168 C 252 168 190 210 178 286 C 173 316 198 338 241 337"/>
+        <path class="meissner-field-line" d="M 414 168 C 508 168 570 210 582 286 C 587 316 562 338 519 337"/>
+        <path class="meissner-field-line" d="M 332 141 C 269 126 215 151 194 205"/>
+        <path class="meissner-field-line" d="M 428 141 C 491 126 545 151 566 205"/>
+      </g>
+
+      <g class="meissner-magnet">
+        <ellipse cx="380" cy="202" rx="126" ry="22" fill="rgba(0, 0, 0, 0.34)"/>
+        <rect class="meissner-magnet-n" x="306" y="102" width="74" height="86" rx="14"/>
+        <rect class="meissner-magnet-s" x="380" y="102" width="74" height="86" rx="14"/>
+        <rect class="meissner-magnet-outline" x="306" y="102" width="148" height="86" rx="14"/>
+        <line x1="380" y1="104" x2="380" y2="186" stroke="rgba(255,255,255,0.82)" stroke-width="2"/>
+        <text class="meissner-label" x="343" y="153" text-anchor="middle">N</text>
+        <text class="meissner-label" x="417" y="153" text-anchor="middle">S</text>
+        <line class="meissner-force-down" x1="380" y1="84" x2="380" y2="132"/>
+        <text class="meissner-label" x="397" y="90">mg</text>
+      </g>
+
+      <g class="meissner-superconductor">
+        <ellipse class="meissner-superconductor-top" cx="380" cy="318" rx="252" ry="48"/>
+        <path class="meissner-superconductor-body" d="M 128 318 C 128 292 241 270 380 270 C 519 270 632 292 632 318 L 632 378 C 632 404 519 426 380 426 C 241 426 128 404 128 378 Z"/>
+        <ellipse class="meissner-superconductor-top" cx="380" cy="318" rx="252" ry="48"/>
+
+        <path class="meissner-penetration" style="stroke-width: 5; opacity: 0.46;" d="M 247 313 C 304 333 457 333 513 313"/>
+        <path class="meissner-penetration" style="stroke-width: 3.6; opacity: 0.28;" d="M 285 337 C 329 350 431 350 475 337"/>
+        <path class="meissner-penetration" style="stroke-width: 2.2; opacity: 0.16;" d="M 318 360 C 348 367 412 367 442 360"/>
+
+        <path class="meissner-current-track" d="M 196 306 C 271 286 489 286 564 306"/>
+        <g class="meissner-current-arrow">
+          <path d="M 245 299 L 264 292 L 259 306 Z"/>
+          <path d="M 342 289 L 362 286 L 353 301 Z"/>
+          <path d="M 447 289 L 467 295 L 452 305 Z"/>
+          <path d="M 545 304 L 560 317 L 540 319 Z"/>
+        </g>
+      </g>
+
+      <g class="meissner-force-balance">
+        <line class="meissner-force-up" x1="380" y1="295" x2="380" y2="226"/>
+        <text class="meissner-label" x="397" y="249">F_z</text>
+        <path class="meissner-gap" d="M 472 188 L 472 270 M 461 188 H 483 M 461 270 H 483"/>
+        <text class="meissner-small-label" x="490" y="233">levitation gap</text>
+      </g>
+
+      <g class="meissner-decay-plot" transform="translate(72 188)">
+        <line class="meissner-field-sample-axis" x1="0" y1="100" x2="126" y2="100"/>
+        <line class="meissner-field-sample-axis" x1="0" y1="100" x2="0" y2="10"/>
+        <path class="meissner-field-sample" d="M 0 16 C 22 47 52 76 126 96"/>
+        <text class="meissner-small-label" x="8" y="18">B</text>
+        <text class="meissner-small-label" x="112" y="118">x</text>
+        <text class="meissner-small-label" x="16" y="126">inside superconductor</text>
+      </g>
+    </svg>
+```
+
+:::
+:::

@@ -3,8 +3,6 @@ project:
   output-dir: outputs
   resources:
     - "assets/**"
-    - "notebooks/**"
-    - "README.md"
     - "requirements.txt"
     - "environment.yml"
     - "references.bib"
@@ -24,12 +22,14 @@ website:
         text: Course
       - href: slides/01_particles_fields_interactions.qmd
         text: Lecture 1
-      - href: slides/02_standard_model_neutrinos.qmd
+      - href: slides/02_standard_model.qmd
         text: Lecture 2
 
 format:
   revealjs:
     theme: [black, ../shared/styles/neutrinohit-reveal.scss, assets/css/custom.scss]
+    css:
+      - ../shared/reveal/neutrinohit-reveal-quiz.css
     logo: assets/logos/dvnlogo.png
     html-math-method: mathjax
     include-after-body:
@@ -39,9 +39,8 @@ format:
     embed-resources: true
     slide-number: true
     slide-level: 2
-    toc: true
+    toc: false
     toc-depth: 1
-    toc-title: "Lecture map"
     transition: fade
     width: 1280
     height: 720

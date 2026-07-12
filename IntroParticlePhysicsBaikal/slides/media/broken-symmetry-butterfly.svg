@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360" role="img" aria-label="Butterfly with broken symmetry">
+  <defs>
+    <linearGradient id="leftWing" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff5f9a"/>
+      <stop offset="0.5" stop-color="#7658ff"/>
+      <stop offset="1" stop-color="#29c7ff"/>
+    </linearGradient>
+    <linearGradient id="rightWing" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffcf5a"/>
+      <stop offset="0.55" stop-color="#ff7b49"/>
+      <stop offset="1" stop-color="#7a3a24"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <rect width="520" height="360" rx="22" fill="#05080c"/>
+  <g filter="url(#shadow)">
+    <path d="M252 178 C178 28 54 27 30 101 C10 163 75 205 190 199 C101 239 73 305 128 329 C199 359 240 277 257 195 Z" fill="url(#leftWing)" stroke="#f6f7ff" stroke-width="5"/>
+    <path d="M268 178 C318 38 452 47 486 122 C516 187 456 220 356 211 C426 256 436 314 381 331 C324 349 285 276 263 195 Z" fill="url(#rightWing)" stroke="#f6f7ff" stroke-width="5"/>
+    <path d="M249 184 C190 85 87 79 58 126 C38 161 94 184 194 188 Z" fill="#2ad2ea" opacity="0.78"/>
+    <path d="M270 185 C314 92 424 99 462 151 C488 187 424 202 338 195 Z" fill="#ffe28a" opacity="0.78"/>
+    <path d="M251 198 C165 224 126 286 154 309 C190 338 236 276 258 202 Z" fill="#289bff" opacity="0.76"/>
+    <path d="M269 199 C346 219 385 281 360 309 C321 339 286 280 262 202 Z" fill="#ff664d" opacity="0.76"/>
+    <path d="M260 105 C245 137 244 256 260 318 C276 256 275 137 260 105 Z" fill="#20141d" stroke="#f6f7ff" stroke-width="4"/>
+    <circle cx="260" cy="93" r="17" fill="#20141d" stroke="#f6f7ff" stroke-width="4"/>
+    <path d="M253 82 C226 42 203 27 181 24" fill="none" stroke="#f6f7ff" stroke-width="4" stroke-linecap="round"/>
+    <path d="M267 82 C294 42 317 27 339 24" fill="none" stroke="#f6f7ff" stroke-width="4" stroke-linecap="round"/>
+    <g stroke="#f6f7ff" stroke-width="3" opacity="0.9">
+      <circle cx="121" cy="108" r="16" fill="#071019"/>
+      <circle cx="395" cy="136" r="24" fill="#7a2e20"/>
+      <circle cx="159" cy="262" r="19" fill="#071019"/>
+      <circle cx="356" cy="254" r="12" fill="#fff0b0"/>
+      <circle cx="206" cy="154" r="13" fill="#071019"/>
+      <circle cx="322" cy="163" r="18" fill="#ffcf5a"/>
+    </g>
+  </g>
+  <path d="M260 22 L260 338" stroke="#ffcc8a" stroke-width="3" stroke-dasharray="10 10" opacity="0.55"/>
+</svg>

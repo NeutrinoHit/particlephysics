@@ -1,0 +1,380 @@
+```{=html}
+<style>
+.reveal .formula-cat-animation {
+  width: min(100%, 1040px);
+  margin: 0 auto;
+}
+
+.reveal .formula-cat-stage {
+  position: relative;
+  width: 100%;
+}
+
+.reveal .formula-cat-scene {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 560px;
+}
+
+.reveal .formula-cat-animation text {
+  letter-spacing: 0;
+}
+
+.reveal .formula-cat-floor {
+  stroke: rgba(255, 255, 255, 0.34);
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+.reveal .formula-cat-rain {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.reveal .formula-cat-formula {
+  position: absolute;
+  top: -16%;
+  left: var(--formula-left);
+  color: #f6fbff;
+  font-size: var(--formula-size, 0.56em);
+  line-height: 1;
+  opacity: 0;
+  white-space: nowrap;
+  filter: drop-shadow(0 2px 0 rgba(2, 7, 14, 0.96)) drop-shadow(0 0 9px rgba(142, 197, 255, 0.45));
+}
+
+.reveal .formula-cat-formula mjx-container {
+  margin: 0 !important;
+}
+
+.reveal section.present .formula-cat-animation.visible .formula-cat-formula {
+  animation: formula-cat-fall 7.2s linear infinite;
+  animation-delay: var(--formula-delay);
+  transform-origin: center;
+}
+
+.reveal .formula-cat-shadow {
+  fill: rgba(0, 0, 0, 0.32);
+}
+
+.reveal .formula-cat-tail,
+.reveal .formula-cat-fur {
+  fill: url("#formula-cat-fur");
+  stroke: rgba(255, 255, 255, 0.9);
+  stroke-width: 4;
+}
+
+.reveal .formula-cat-belly {
+  fill: rgba(255, 255, 255, 0.72);
+}
+
+.reveal .formula-cat-ear-inner,
+.reveal .formula-cat-nose {
+  fill: #ff9ec8;
+}
+
+.reveal .formula-cat-eye {
+  fill: #06111e;
+}
+
+.reveal .formula-cat-eye-shine {
+  fill: #ffffff;
+}
+
+.reveal .formula-cat-whiskers,
+.reveal .formula-cat-mouth-line {
+  fill: none;
+  stroke: #06111e;
+  stroke-linecap: round;
+  stroke-width: 4;
+}
+
+.reveal .formula-cat-open-mouth {
+  fill: #06111e;
+  opacity: 0;
+}
+
+.reveal .formula-cat-open-mouth-tongue {
+  fill: #ff78a8;
+  opacity: 0;
+}
+
+.reveal section.present .formula-cat-animation.visible .formula-cat-body {
+  animation: formula-cat-squash 7.2s ease-in-out infinite;
+  transform-box: view-box;
+  transform-origin: 310px 338px;
+}
+
+.reveal section.present .formula-cat-animation.visible .formula-cat-left-paw {
+  animation: formula-cat-left-paw 7.2s ease-in-out infinite;
+  transform-box: view-box;
+  transform-origin: 265px 350px;
+}
+
+.reveal section.present .formula-cat-animation.visible .formula-cat-right-paw {
+  animation: formula-cat-right-paw 7.2s ease-in-out infinite;
+  transform-box: view-box;
+  transform-origin: 355px 350px;
+}
+
+.reveal section.present .formula-cat-animation.visible .formula-cat-mouth-line {
+  animation: formula-cat-hide-mouth 7.2s ease-in-out infinite;
+}
+
+.reveal section.present .formula-cat-animation.visible .formula-cat-open-mouth,
+.reveal section.present .formula-cat-animation.visible .formula-cat-open-mouth-tongue {
+  animation: formula-cat-roar-mouth 7.2s ease-in-out infinite;
+}
+
+.reveal section.present .formula-cat-animation.visible .formula-cat-stress {
+  animation: formula-cat-stress 7.2s ease-in-out infinite;
+}
+
+.reveal .formula-cat-roar {
+  fill: #ffd166;
+  font-family: var(--r-main-font, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
+  font-size: 40px;
+  font-weight: 900;
+  opacity: 0;
+  paint-order: stroke;
+  stroke: rgba(2, 7, 14, 0.92);
+  stroke-width: 7px;
+}
+
+.reveal section.present .formula-cat-animation.visible .formula-cat-roar {
+  animation: formula-cat-roar-text 7.2s ease-in-out infinite;
+  transform-box: view-box;
+  transform-origin: 430px 140px;
+}
+
+@keyframes formula-cat-fall {
+  0% {
+    top: -16%;
+    opacity: 0;
+    transform: translateX(0) rotate(-12deg);
+  }
+  8% {
+    opacity: 1;
+  }
+  62% {
+    top: 63%;
+    opacity: 1;
+    transform: translateX(var(--formula-drift)) rotate(var(--formula-rotation));
+  }
+  69% {
+    top: 71%;
+    opacity: 0;
+    transform: translateX(calc(var(--formula-drift) + 10px)) rotate(var(--formula-rotation));
+  }
+  100% {
+    top: 71%;
+    opacity: 0;
+    transform: translateX(calc(var(--formula-drift) + 10px)) rotate(var(--formula-rotation));
+  }
+}
+
+@keyframes formula-cat-squash {
+  0%,
+  55%,
+  100% {
+    transform: translateY(0) scale(1, 1);
+  }
+  62%,
+  72% {
+    transform: translateY(9px) scale(1.05, 0.94);
+  }
+  82%,
+  92% {
+    transform: translateY(-4px) scale(0.98, 1.04);
+  }
+}
+
+@keyframes formula-cat-left-paw {
+  0%,
+  68%,
+  100% {
+    transform: rotate(0deg) translate(0, 0);
+  }
+  82%,
+  92% {
+    transform: rotate(-28deg) translate(-20px, -2px);
+  }
+}
+
+@keyframes formula-cat-right-paw {
+  0%,
+  68%,
+  100% {
+    transform: rotate(0deg) translate(0, 0);
+  }
+  82%,
+  92% {
+    transform: rotate(28deg) translate(20px, -2px);
+  }
+}
+
+@keyframes formula-cat-hide-mouth {
+  0%,
+  74%,
+  100% {
+    opacity: 1;
+  }
+  80%,
+  94% {
+    opacity: 0;
+  }
+}
+
+@keyframes formula-cat-roar-mouth {
+  0%,
+  74%,
+  100% {
+    opacity: 0;
+  }
+  80%,
+  94% {
+    opacity: 1;
+  }
+}
+
+@keyframes formula-cat-stress {
+  0%,
+  50%,
+  100% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  58%,
+  92% {
+    opacity: 1;
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes formula-cat-roar-text {
+  0%,
+  76%,
+  100% {
+    opacity: 0;
+    transform: scale(0.72) rotate(-5deg);
+  }
+  83%,
+  94% {
+    opacity: 1;
+    transform: scale(1) rotate(-5deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal section.present .formula-cat-animation.visible * {
+    animation-duration: 0.001s !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+</style>
+
+<div class="formula-cat-animation fragment" role="img" aria-label="A cartoon cat gets tired of falling particle-physics formulas and finally shouts.">
+  <div class="formula-cat-stage">
+    <div class="formula-cat-rain" aria-hidden="true">
+      <div class="formula-cat-formula" style="--formula-left: 7%; --formula-delay: -0.2s; --formula-drift: -20px; --formula-rotation: -22deg; --formula-size: 0.52em;">
+        \(\displaystyle \left(i\gamma^\mu\partial_\mu-m\right)\psi=0\)
+      </div>
+      <div class="formula-cat-formula" style="--formula-left: 35%; --formula-delay: -0.75s; --formula-drift: 24px; --formula-rotation: 18deg; --formula-size: 0.56em;">
+        \(\displaystyle \left(\Box+m^2\right)\phi=0\)
+      </div>
+      <div class="formula-cat-formula" style="--formula-left: 49%; --formula-delay: -1.3s; --formula-drift: -30px; --formula-rotation: 16deg; --formula-size: 0.46em;">
+        \(\displaystyle \partial_\mu F^{\mu\nu}+m^2A^\nu=0\)
+      </div>
+      <div class="formula-cat-formula" style="--formula-left: 8%; --formula-delay: -1.85s; --formula-drift: 18px; --formula-rotation: -14deg; --formula-size: 0.46em;">
+        \(\displaystyle \left(\Box+m^2\right)G(x)=\delta^{(4)}(x)\)
+      </div>
+      <div class="formula-cat-formula" style="--formula-left: 45%; --formula-delay: -2.4s; --formula-drift: -24px; --formula-rotation: 12deg; --formula-size: 0.48em;">
+        \(\displaystyle \mathcal{L}_{\mathrm{int}}=-e\,\bar{\psi}\gamma^\mu\psi A_\mu\)
+      </div>
+      <div class="formula-cat-formula" style="--formula-left: 12%; --formula-delay: -2.95s; --formula-drift: 14px; --formula-rotation: -18deg; --formula-size: 0.38em;">
+        \(\displaystyle \mathcal{L}_{\mathrm{SM}}=\sum_\psi\bar{\psi}i\gamma^\mu D_\mu\psi+|D_\mu\phi|^2-V(\phi)+\cdots\)
+      </div>
+      <div class="formula-cat-formula" style="--formula-left: 24%; --formula-delay: -3.5s; --formula-drift: -20px; --formula-rotation: 20deg; --formula-size: 0.36em;">
+        \(\displaystyle \mathcal{L}_{\mathrm{QCD}}=-\frac14G^a_{\mu\nu}G^{a\mu\nu}+\bar{q}\,i\gamma^\mu D_\mu q\)
+      </div>
+      <div class="formula-cat-formula" style="--formula-left: 6%; --formula-delay: -4.05s; --formula-drift: 26px; --formula-rotation: -16deg; --formula-size: 0.42em;">
+        \(\displaystyle W[C]=\operatorname{P}\exp\!\left(ig\oint_C A_\mu dx^\mu\right)\)
+      </div>
+      <div class="formula-cat-formula" style="--formula-left: 34%; --formula-delay: -4.6s; --formula-drift: -28px; --formula-rotation: 14deg; --formula-size: 0.4em;">
+        \(\displaystyle \partial_\mu J_5^\mu=\frac{g^2}{16\pi^2}F_{\mu\nu}\widetilde{F}^{\mu\nu}\)
+      </div>
+      <div class="formula-cat-formula" style="--formula-left: 27%; --formula-delay: -5.15s; --formula-drift: 20px; --formula-rotation: -20deg; --formula-size: 0.52em;">
+        \(\displaystyle \tau_{\pi^0}=8.4\times10^{-17}\,\mathrm{s}\)
+      </div>
+      <div class="formula-cat-formula" style="--formula-left: 48%; --formula-delay: -5.7s; --formula-drift: -18px; --formula-rotation: 18deg; --formula-size: 0.42em;">
+        \(\displaystyle V(\phi)=\lambda\left(|\phi|^2-\frac{v^2}{2}\right)^2\)
+      </div>
+      <div class="formula-cat-formula" style="--formula-left: 7%; --formula-delay: -6.25s; --formula-drift: 28px; --formula-rotation: -12deg; --formula-size: 0.36em;">
+        \(\displaystyle P(\nu_\mu\to\nu_e)=\sin^2 2\theta\,\sin^2\!\frac{\Delta m^2L}{4E}\)
+      </div>
+      <div class="formula-cat-formula" style="--formula-left: 41%; --formula-delay: -6.8s; --formula-drift: -22px; --formula-rotation: 22deg; --formula-size: 0.48em;">
+        \(\displaystyle D_\mu=\partial_\mu+igA_\mu^aT^a\)
+      </div>
+    </div>
+
+  <svg class="formula-cat-scene" viewBox="0 0 620 430">
+    <defs>
+      <linearGradient id="formula-cat-fur" x1="0" x2="1" y1="0" y2="1">
+        <stop offset="0%" stop-color="#ffffff"/>
+        <stop offset="48%" stop-color="#b9ecff"/>
+        <stop offset="100%" stop-color="#5f9dff"/>
+      </linearGradient>
+      <filter id="formula-cat-soft-glow" x="-35%" y="-35%" width="170%" height="170%">
+        <feGaussianBlur stdDeviation="3" result="blur"/>
+        <feMerge>
+          <feMergeNode in="blur"/>
+          <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+      </filter>
+    </defs>
+
+    <line class="formula-cat-floor" x1="96" y1="386" x2="524" y2="386"/>
+
+    <g class="formula-cat-stress" filter="url(#formula-cat-soft-glow)">
+      <path d="M246 118 228 82M280 108 276 70M374 108 384 70M408 118 430 82" fill="none" stroke="#ffd166" stroke-width="7" stroke-linecap="round"/>
+      <path d="M302 88 314 58 326 88" fill="none" stroke="#ff7a7a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <g class="formula-cat-body" filter="url(#formula-cat-soft-glow)">
+      <ellipse class="formula-cat-shadow" cx="310" cy="386" rx="116" ry="18"/>
+      <path class="formula-cat-tail" d="M392 327 C 466 288 514 326 480 354 C 454 376 420 360 442 338"/>
+      <ellipse class="formula-cat-fur" cx="310" cy="329" rx="86" ry="67"/>
+      <ellipse class="formula-cat-belly" cx="310" cy="342" rx="48" ry="38"/>
+      <path class="formula-cat-fur" d="M228 238 242 184 282 224 C 300 216 324 216 342 224 L 382 184 396 238 C 412 254 421 276 421 301 C 421 348 374 374 310 374 C 246 374 199 348 199 301 C 199 276 211 253 228 238 Z"/>
+      <path class="formula-cat-ear-inner" d="M239 229 247 200 268 224 Z"/>
+      <path class="formula-cat-ear-inner" d="M381 229 373 200 352 224 Z"/>
+      <ellipse class="formula-cat-eye" cx="278" cy="286" rx="9" ry="13"/>
+      <ellipse class="formula-cat-eye" cx="342" cy="286" rx="9" ry="13"/>
+      <circle class="formula-cat-eye-shine" cx="281" cy="281" r="3"/>
+      <circle class="formula-cat-eye-shine" cx="345" cy="281" r="3"/>
+      <path class="formula-cat-nose" d="M310 299 300 310 320 310 Z"/>
+      <path class="formula-cat-mouth-line" d="M310 312 C 304 323 292 324 284 316 M310 312 C 316 323 328 324 336 316"/>
+      <ellipse class="formula-cat-open-mouth" cx="310" cy="324" rx="19" ry="25"/>
+      <path class="formula-cat-open-mouth-tongue" d="M296 337 C 304 348 316 348 324 337 C 318 333 302 333 296 337 Z"/>
+      <path class="formula-cat-whiskers" d="M258 305 H220 M259 316 H224 M362 305 H400 M361 316 H396"/>
+    </g>
+
+    <g class="formula-cat-left-paw" filter="url(#formula-cat-soft-glow)">
+      <ellipse class="formula-cat-fur" cx="244" cy="354" rx="27" ry="18"/>
+      <path d="M232 350 220 342M242 348 237 337M254 349 262 338" fill="none" stroke="#06111e" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+    </g>
+
+    <g class="formula-cat-right-paw" filter="url(#formula-cat-soft-glow)">
+      <ellipse class="formula-cat-fur" cx="376" cy="354" rx="27" ry="18"/>
+      <path d="M388 350 400 342M378 348 383 337M366 349 358 338" fill="none" stroke="#06111e" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+    </g>
+
+    <text class="formula-cat-roar" x="398" y="148">MEEEOOW!</text>
+  </svg>
+  </div>
+</div>
+```

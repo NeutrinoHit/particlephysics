@@ -1,0 +1,50 @@
+```{=html}
+<div class="uncertainty-scale-panel" role="img" aria-label="A logarithmic scale places 10 femtometers and atomic scales inside one detector division of width 1 micrometer.">
+  <svg viewBox="0 0 640 430">
+    <rect class="uncertainty-frame" x="20" y="24" width="600" height="382" rx="16"/>
+    <text class="uncertainty-heading" x="320" y="58" text-anchor="middle">position scale</text>
+    <text class="uncertainty-scale-subtitle" x="320" y="88" text-anchor="middle">log scale in femtometers</text>
+
+    <g class="uncertainty-caliper" transform="translate(46 112)">
+      <rect class="uncertainty-caliper-bin" x="0" y="-1" width="532" height="22" rx="4"/>
+      <line class="uncertainty-caliper-body" x1="0" y1="0" x2="532" y2="0"/>
+      <line class="uncertainty-caliper-body" x1="0" y1="20" x2="532" y2="20"/>
+      <line class="uncertainty-caliper-jaw" x1="0" y1="-18" x2="0" y2="58"/>
+      <line class="uncertainty-caliper-jaw" x1="532" y1="-18" x2="532" y2="58"/>
+      <text class="uncertainty-caliper-label" x="266" y="50" text-anchor="middle">one detector division: 1 μm</text>
+    </g>
+
+    <rect class="uncertainty-scale-resolution-bin" x="46" y="220" width="532" height="24" rx="12"/>
+    <line class="uncertainty-scale-axis" x1="46" y1="232" x2="578" y2="232"/>
+
+    <path class="uncertainty-scale-gaussian-fill"
+          d="M 46 232 C 57 232 60 182 82 182 C 104 182 107 232 118 232 L 46 232 Z"/>
+    <path class="uncertainty-scale-gaussian"
+          d="M 46 232 C 57 232 60 182 82 182 C 104 182 107 232 118 232"/>
+    <text class="uncertainty-gaussian-label" x="82" y="170" text-anchor="middle">wave packet</text>
+
+    <g class="uncertainty-scale-tick uncertainty-scale-tick-quantum">
+      <line x1="82" y1="204" x2="82" y2="260"/>
+      <circle cx="82" cy="232" r="7"/>
+      <text x="82" y="288" text-anchor="middle">10 fm</text>
+      <text x="82" y="314" text-anchor="middle"><tspan class="uncertainty-math-label">σ</tspan><tspan class="uncertainty-subscript" baseline-shift="sub">x</tspan></text>
+    </g>
+
+    <g class="uncertainty-scale-tick">
+      <line x1="330" y1="208" x2="330" y2="256"/>
+      <circle cx="330" cy="232" r="5"/>
+      <text x="330" y="288" text-anchor="middle">10<tspan class="uncertainty-superscript" baseline-shift="super">5</tspan><tspan dx="2"> fm</tspan></text>
+      <text x="330" y="314" text-anchor="middle">atom</text>
+    </g>
+
+    <g class="uncertainty-scale-tick uncertainty-scale-tick-detector">
+      <line x1="578" y1="190" x2="578" y2="274"/>
+      <circle cx="578" cy="232" r="9"/>
+      <text x="578" y="288" text-anchor="middle">10<tspan class="uncertainty-superscript" baseline-shift="super">9</tspan><tspan dx="2"> fm</tspan></text>
+      <text x="578" y="314" text-anchor="middle">1 micrometer</text>
+    </g>
+
+    <text class="uncertainty-scale-emphasis" x="320" y="372" text-anchor="middle">1 micrometer is 10<tspan class="uncertainty-superscript" baseline-shift="super">8</tspan><tspan dx="2"> times larger than 10 fm</tspan></text>
+  </svg>
+</div>
+```

@@ -1,0 +1,41 @@
+```{=html}
+<div class="sm-fields-object-overlay">
+  <video class="slide-video media-width-full media-height-xl" data-autoplay muted playsinline controls>
+    <source src="media/sm-field-mattress/StandardModelFieldMattress.mp4" type="video/mp4">
+  </video>
+
+  <div class="sm-field-content-box" aria-label="Standard Model field content">
+    <div class="sm-field-content-title">SM field content</div>
+    <div class="sm-field-content-row sm-field-content-quarks">quarks: <span class="math inline">\(u,d,c,s,t,b\quad(\times 3)\)</span></div>
+    <div class="sm-field-content-row sm-field-content-leptons">charged leptons: <span class="math inline">\(e,\mu,\tau\)</span></div>
+    <div class="sm-field-content-row sm-field-content-neutrinos">neutrinos: <span class="math inline">\(\nu_e,\nu_\mu,\nu_\tau\)</span></div>
+    <div class="sm-field-content-row sm-field-content-gauge">gauge: <span class="math inline">\(\gamma,\ g,\ W^\pm,\ Z\)</span></div>
+    <div class="sm-field-content-row sm-field-content-scalar">scalar: <span class="math inline">\(H\)</span></div>
+  </div>
+
+  <figure class="sm-field-object sm-field-object-universe">
+    <img src="media/sm-field-objects/universe.jpg" alt="Universe">
+    <figcaption>Universe</figcaption>
+  </figure>
+
+  <figure class="sm-field-object sm-field-object-star">
+    <img src="media/sm-field-objects/star.png" alt="Star">
+    <figcaption>Star</figcaption>
+  </figure>
+
+  <figure class="sm-field-object sm-field-object-planet">
+    <img src="media/sm-field-objects/planet.svg" alt="Planet">
+    <figcaption>Planet</figcaption>
+  </figure>
+
+  <figure class="sm-field-object sm-field-object-phone">
+    <img src="media/sm-field-objects/phone.svg" alt="Cell phone">
+    <figcaption>Phone</figcaption>
+  </figure>
+
+  <figure class="sm-field-object sm-field-object-cat">
+    <img src="media/sm-field-objects/cat.svg" alt="Cat">
+    <figcaption>Cat</figcaption>
+  </figure>
+</div>
+```

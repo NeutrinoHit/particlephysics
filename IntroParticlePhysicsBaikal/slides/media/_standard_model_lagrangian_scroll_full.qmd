@@ -1,0 +1,5 @@
+```{=html}
+<div class="lagrangian-scroll-frame" aria-label="Expanded Standard Model Lagrangian">
+  <img src="media/standard-model-lagrangian-expanded.jpg" alt="Full expanded Standard Model Lagrangian">
+</div>
+```

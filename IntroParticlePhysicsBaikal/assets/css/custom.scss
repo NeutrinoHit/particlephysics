@@ -87,6 +87,122 @@ $presentation-font-size-root: 32px;
   max-width: 100%;
 }
 
+.reveal .friends-rocket-animation {
+  width: 100%;
+  margin: 0.05rem auto 0;
+}
+
+.reveal .friends-rocket-animation svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+}
+
+.reveal .friends-space-bg {
+  fill: rgba(2, 7, 14, 0.78);
+  stroke: rgba(142, 197, 255, 0.26);
+  stroke-width: 2;
+}
+
+.reveal .friends-stars circle {
+  fill: rgba(255, 255, 255, 0.86);
+  filter: drop-shadow(0 0 5px rgba(142, 197, 255, 0.6));
+}
+
+.reveal .friends-orbit {
+  fill: none;
+  stroke: rgba(142, 197, 255, 0.35);
+  stroke-dasharray: 9 10;
+  stroke-linecap: round;
+  stroke-width: 3;
+}
+
+.reveal .friends-earth-halo {
+  fill: rgba(78, 160, 255, 0.12);
+  filter: drop-shadow(0 0 20px rgba(82, 173, 255, 0.45));
+}
+
+.reveal .friends-earth-ocean {
+  fill: url("#friends-earth-gradient");
+  stroke: rgba(255, 255, 255, 0.86);
+  stroke-width: 2.5;
+}
+
+.reveal .friends-earth-land {
+  fill: rgba(88, 214, 141, 0.85);
+}
+
+.reveal .friends-launch-point {
+  fill: #ffd166;
+  stroke: #ffffff;
+  stroke-width: 3;
+  filter: drop-shadow(0 0 8px rgba(255, 209, 102, 0.84));
+}
+
+.reveal .friend-rocket {
+  filter: url("#friends-glow");
+}
+
+.reveal .friend-rocket-body {
+  fill: url("#friends-rocket-body");
+  stroke: rgba(255, 255, 255, 0.92);
+  stroke-width: 2;
+}
+
+.reveal .friend-rocket-nose {
+  fill: #ff7a7a;
+  stroke: rgba(255, 255, 255, 0.92);
+  stroke-width: 2;
+}
+
+.reveal .friend-rocket-fin {
+  fill: #8ec5ff;
+  stroke: rgba(255, 255, 255, 0.78);
+  stroke-width: 1.5;
+}
+
+.reveal .friend-rocket-window {
+  fill: #06111e;
+  stroke: #bde7ff;
+  stroke-width: 2.5;
+}
+
+.reveal .friend-rocket-symbol {
+  fill: #10243a;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 800;
+  paint-order: stroke;
+  stroke: rgba(255, 255, 255, 0.72);
+  stroke-width: 0.7;
+}
+
+.reveal .friend-rocket-flame {
+  fill: #ffd166;
+  stroke: #ff7a3d;
+  stroke-width: 2;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.reveal section.present .friend-rocket-flame {
+  animation: friends-rocket-flame 0.28s ease-in-out infinite;
+}
+
+@keyframes friends-rocket-flame {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: scaleX(0.82);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleX(1.12);
+  }
+}
+
 .reveal .sm-fields-object-overlay {
   position: relative;
   width: 100%;
