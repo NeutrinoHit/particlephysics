@@ -3,18 +3,20 @@ lang: en
 format:
   revealjs:
     theme: [black, ../../shared/styles/neutrinohit-reveal.scss, ../assets/css/custom.scss]
+    css:
+      - ../../shared/reveal/neutrinohit-reveal-quiz.css
     logo: ../assets/logos/dvnlogo.png
     html-math-method: mathjax
     include-after-body:
       - text: |
           <script data-external="1" data-context-home="https://neutrinohit.github.io/particlephysics/IntroParticlePhysicsBaikal/" data-context-home-label="Mini-course home" src="../../shared/reveal/neutrinohit-reveal-footer.js"></script>
+          <script data-external="1" src="../../shared/reveal/neutrinohit-timed-captions.js"></script>
       - ../../analytics/cloudflare-web-analytics.html
     embed-resources: false
     slide-number: true
     slide-level: 2
-    toc: true
+    toc: false
     toc-depth: 1
-    toc-title: "Lecture map"
     transition: fade
     width: 1280
     height: 720

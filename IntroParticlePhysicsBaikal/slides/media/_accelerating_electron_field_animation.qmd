@@ -1,0 +1,246 @@
+```{=html}
+<style>
+.reveal .gauge-principle-text {
+  font-size: 0.82em;
+}
+
+.uniform-field-jump {
+  position: relative;
+  width: min(100%, 720px);
+  margin: 0 auto;
+}
+
+.uniform-field-jump canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #000;
+}
+
+.uniform-field-jump-formulas {
+  position: absolute;
+  top: 18px;
+  left: 28px;
+  color: rgba(245, 245, 245, 0.88);
+  font-size: 15px;
+  line-height: 1.18;
+  pointer-events: none;
+}
+
+.uniform-field-jump-formulas p {
+  margin: 0.1em 0;
+}
+</style>
+
+<div class="uniform-field-jump" role="img" aria-label="Field lines of an electron that was initially at rest and then starts moving uniformly; the old rest field and the new uniform-motion field are connected across a light front.">
+  <canvas class="uniform-field-jump-canvas" width="760" height="500"></canvas>
+  <div class="uniform-field-jump-formulas">
+    <p>\(X=x-x_q(t)\)</p>
+    <p>\(E_x=\dfrac{(1-\beta^2)X}{\left[X^2+(1-\beta^2)y^2\right]^{3/2}}\)</p>
+    <p>\(E_y=\dfrac{(1-\beta^2)y}{\left[X^2+(1-\beta^2)y^2\right]^{3/2}}\)</p>
+  </div>
+</div>
+
+<script>
+(() => {
+  const canvases = document.querySelectorAll(".uniform-field-jump-canvas");
+
+  canvases.forEach((canvas) => {
+    if (canvas.dataset.initialized === "true") return;
+    canvas.dataset.initialized = "true";
+
+    const ctx = canvas.getContext("2d");
+    const width = canvas.width;
+    const height = canvas.height;
+
+    const beta = 0.35;
+    const shellWidth = 0.13;
+    const seedRadius = 0.075;
+    const step = 0.024;
+    const maxSteps = 360;
+    const xmin = -2.7;
+    const xmax = 3.6;
+    const ymin = -2.05;
+    const ymax = 2.05;
+
+    const seeds = [];
+    for (let i = 0; i < 24; i += 1) {
+      const angle = (2 * Math.PI * i) / 24;
+      seeds.push(angle);
+    }
+
+    function sx(x) {
+      return ((x - xmin) / (xmax - xmin)) * width;
+    }
+
+    function sy(y) {
+      return height - ((y - ymin) / (ymax - ymin)) * height;
+    }
+
+    function fieldUniform(x, y, xq, fieldBeta) {
+      const X = x - xq;
+      const oneMinusBeta2 = 1 - fieldBeta * fieldBeta;
+      const denom = Math.pow(X * X + oneMinusBeta2 * y * y + 0.0009, 1.5);
+      return {
+        x: oneMinusBeta2 * X / denom,
+        y: oneMinusBeta2 * y / denom,
+      };
+    }
+
+    function smoothstep(a, b, x) {
+      const t = Math.max(0, Math.min(1, (x - a) / (b - a)));
+      return t * t * (3 - 2 * t);
+    }
+
+    function solutionAt(x, y, t) {
+      const xOld = 0;
+      const xNew = beta * t;
+      const r = Math.hypot(x, y);
+      const oldField = fieldUniform(x, y, xOld, 0);
+      const newField = fieldUniform(x, y, xNew, beta);
+      const inner = t - shellWidth;
+      const outer = t + shellWidth;
+      const mix = 1 - smoothstep(inner, outer, r);
+
+      return {
+        x: oldField.x * (1 - mix) + newField.x * mix,
+        y: oldField.y * (1 - mix) + newField.y * mix,
+        region: r < inner ? "new" : r > outer ? "old" : "shell",
+      };
+    }
+
+    function integrateLine(angle, t) {
+      const xNew = beta * t;
+      let x = xNew + seedRadius * Math.cos(angle);
+      let y = seedRadius * Math.sin(angle);
+      const points = [];
+
+      for (let i = 0; i < maxSteps; i += 1) {
+        if (x < xmin || x > xmax || y < ymin || y > ymax) break;
+        const f = solutionAt(x, y, t);
+        const norm = Math.hypot(f.x, f.y);
+        if (norm < 1e-8) break;
+        points.push({ x, y, region: f.region });
+        x += step * f.x / norm;
+        y += step * f.y / norm;
+      }
+
+      return points;
+    }
+
+    function drawSegment(a, b, region) {
+      if (region === "new") {
+        ctx.strokeStyle = "#7fc0ff";
+        ctx.lineWidth = 2.1;
+      } else if (region === "shell") {
+        ctx.strokeStyle = "#ffd166";
+        ctx.lineWidth = 2.5;
+      } else {
+        ctx.strokeStyle = "rgba(245,245,245,0.58)";
+        ctx.lineWidth = 1.8;
+      }
+
+      ctx.beginPath();
+      ctx.moveTo(sx(a.x), sy(a.y));
+      ctx.lineTo(sx(b.x), sy(b.y));
+      ctx.stroke();
+    }
+
+    function drawArrow(points, index) {
+      if (index < 2 || index >= points.length - 2) return;
+      const a = points[index - 1];
+      const b = points[index + 1];
+      const px = sx(points[index].x);
+      const py = sy(points[index].y);
+      const theta = Math.atan2(sy(a.y) - sy(b.y), sx(a.x) - sx(b.x));
+      const size = 6;
+
+      ctx.fillStyle = points[index].region === "shell" ? "#ffd166" : "rgba(245,245,245,0.86)";
+      ctx.beginPath();
+      ctx.moveTo(px + size * Math.cos(theta), py + size * Math.sin(theta));
+      ctx.lineTo(px + size * Math.cos(theta + 2.55), py + size * Math.sin(theta + 2.55));
+      ctx.lineTo(px + size * Math.cos(theta - 2.55), py + size * Math.sin(theta - 2.55));
+      ctx.closePath();
+      ctx.fill();
+    }
+
+    function drawText(text, x, y, size = 17, color = "rgba(245,245,245,0.88)", align = "left") {
+      ctx.fillStyle = color;
+      ctx.font = `${size}px -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif`;
+      ctx.textAlign = align;
+      ctx.textBaseline = "alphabetic";
+      ctx.fillText(text, x, y);
+    }
+
+    function drawFrame(t) {
+      ctx.clearRect(0, 0, width, height);
+      ctx.fillStyle = "#000";
+      ctx.fillRect(0, 0, width, height);
+
+      const xOld = 0;
+      const xNew = beta * t;
+
+      ctx.strokeStyle = "rgba(245,245,245,0.42)";
+      ctx.lineWidth = 1.2;
+      ctx.beginPath();
+      ctx.moveTo(sx(xmin + 0.15), sy(0));
+      ctx.lineTo(sx(xmax - 0.15), sy(0));
+      ctx.stroke();
+
+      ctx.setLineDash([5, 6]);
+      ctx.strokeStyle = "rgba(245,245,245,0.35)";
+      ctx.beginPath();
+      ctx.moveTo(sx(0), sy(ymin + 0.18));
+      ctx.lineTo(sx(0), sy(ymax - 0.18));
+      ctx.stroke();
+      ctx.setLineDash([]);
+
+      seeds.forEach((angle) => {
+        const points = integrateLine(angle, t);
+        for (let i = 0; i < points.length - 1; i += 1) {
+          drawSegment(points[i], points[i + 1], points[i].region);
+        }
+        drawArrow(points, Math.floor(points.length * 0.58));
+      });
+
+      ctx.strokeStyle = "#ffd166";
+      ctx.lineWidth = 2.4;
+      ctx.beginPath();
+      ctx.arc(sx(0), sy(0), Math.abs(sx(t) - sx(0)), 0, 2 * Math.PI);
+      ctx.stroke();
+
+      ctx.strokeStyle = "rgba(245,245,245,0.50)";
+      ctx.lineWidth = 1.4;
+      ctx.beginPath();
+      ctx.arc(sx(xOld), sy(0), 6, 0, 2 * Math.PI);
+      ctx.stroke();
+
+      ctx.fillStyle = "#f5f5f5";
+      ctx.beginPath();
+      ctx.arc(sx(xNew), sy(0), 7.5, 0, 2 * Math.PI);
+      ctx.fill();
+      ctx.strokeStyle = "#ffd166";
+      ctx.lineWidth = 2;
+      ctx.stroke();
+
+      drawText("uniform motion", sx(xNew + 0.16), sy(0.34), 15, "#7fc0ff");
+      drawText("front r = ct", sx(0.45), sy(t - 0.2), 15, "#ffd166");
+      drawText("e", sx(xNew + 0.1), sy(-0.15), 16, "rgba(245,245,245,0.86)");
+      drawText("rest field", sx(xOld - 0.22), sy(-0.17), 14, "rgba(245,245,245,0.50)");
+
+      drawText(`β = ${beta.toFixed(2)},  c = 1,  t = ${t.toFixed(2)}`, width - 28, height - 24, 15, "rgba(245,245,245,0.62)", "right");
+    }
+
+    function animate(now) {
+      const period = 7200;
+      const phase = (now % period) / period;
+      const t = 0.8 + 1.65 * phase;
+      drawFrame(t);
+      requestAnimationFrame(animate);
+    }
+
+    requestAnimationFrame(animate);
+  });
+})();
+</script>
+```

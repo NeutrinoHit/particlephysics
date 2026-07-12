@@ -1,0 +1,269 @@
+```{=html}
+<style>
+.coupled-pendulums-normal-modes {
+  width: min(100%, 780px);
+  margin: 0 auto;
+}
+
+.coupled-pendulums-normal-modes svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 510px;
+}
+
+.coupled-pendulums-normal-modes text {
+  font-family: var(--r-main-font, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
+  letter-spacing: 0;
+}
+
+.pendulum-panel-bg {
+  fill: rgba(2, 7, 14, 0.78);
+  stroke: rgba(142, 197, 255, 0.26);
+  stroke-width: 2;
+}
+
+.pendulum-panel-title {
+  fill: #f6fbff;
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.pendulum-panel-subtitle {
+  fill: #b8d3e5;
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.pendulum-support {
+  stroke: rgba(255, 255, 255, 0.42);
+  stroke-width: 5;
+  stroke-linecap: round;
+}
+
+.pendulum-pivot {
+  fill: #02070e;
+  stroke: #8ec5ff;
+  stroke-width: 3;
+  filter: drop-shadow(0 0 7px rgba(142, 197, 255, 0.6));
+}
+
+.pendulum-rod {
+  stroke: rgba(246, 251, 255, 0.82);
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.pendulum-bob {
+  fill: url("#pendulum-bob-gradient");
+  stroke: rgba(255, 255, 255, 0.92);
+  stroke-width: 3;
+  filter: drop-shadow(0 9px 11px rgba(0, 0, 0, 0.44));
+}
+
+.pendulum-bob.secondary {
+  fill: url("#pendulum-bob-gradient-secondary");
+}
+
+.pendulum-spring {
+  fill: none;
+  stroke: #ffd166;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 0 6px rgba(255, 209, 102, 0.55));
+}
+
+.pendulum-equilibrium {
+  stroke: rgba(255, 255, 255, 0.18);
+  stroke-width: 2;
+  stroke-dasharray: 5 8;
+}
+
+.pendulum-phase-arrow {
+  fill: none;
+  stroke: #8ec5ff;
+  stroke-width: 3;
+  stroke-linecap: round;
+  marker-end: url("#pendulum-arrow-head");
+  opacity: 0.86;
+}
+
+.pendulum-phase-arrow.opposite {
+  stroke: #ff8a7a;
+  marker-end: url("#pendulum-arrow-head-red");
+}
+
+.pendulum-mode-note {
+  fill: #ffd166;
+  font-size: 15px;
+  font-weight: 750;
+}
+
+.pendulum-axis-label {
+  fill: rgba(246, 251, 255, 0.78);
+  font-size: 13px;
+  font-weight: 650;
+}
+</style>
+
+<div class="coupled-pendulums-normal-modes" role="img" aria-label="Two coupled pendulums moving in their small-angle normal modes. The first mode is in phase. The second mode is out of phase.">
+  <svg viewBox="0 0 760 430">
+    <defs>
+      <linearGradient id="pendulum-bob-gradient" x1="0" x2="1" y1="0" y2="1">
+        <stop offset="0%" stop-color="#ffffff"/>
+        <stop offset="44%" stop-color="#8ec5ff"/>
+        <stop offset="100%" stop-color="#246bff"/>
+      </linearGradient>
+      <linearGradient id="pendulum-bob-gradient-secondary" x1="0" x2="1" y1="0" y2="1">
+        <stop offset="0%" stop-color="#ffffff"/>
+        <stop offset="44%" stop-color="#ffd166"/>
+        <stop offset="100%" stop-color="#ff7a3d"/>
+      </linearGradient>
+      <marker id="pendulum-arrow-head" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+        <path d="M 0 0 L 10 5 L 0 10 z" fill="#8ec5ff"/>
+      </marker>
+      <marker id="pendulum-arrow-head-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+        <path d="M 0 0 L 10 5 L 0 10 z" fill="#ff8a7a"/>
+      </marker>
+    </defs>
+
+    <g class="pendulum-system" data-mode="in-phase" data-omega="1.20" data-amplitude="0.18" data-length="140" data-mass-1="1" data-mass-2="1">
+      <rect class="pendulum-panel-bg" x="18" y="20" width="352" height="388" rx="8"/>
+      <text class="pendulum-panel-title" x="40" y="56">Mode 1: in phase</text>
+      <text class="pendulum-panel-subtitle" x="40" y="80">&#952;&#8321; = &#952;&#8322;, spring not stretched</text>
+      <line class="pendulum-support" x1="82" y1="110" x2="306" y2="110"/>
+      <line class="pendulum-equilibrium" x1="130" y1="110" x2="130" y2="275"/>
+      <line class="pendulum-equilibrium" x1="258" y1="110" x2="258" y2="275"/>
+      <path class="pendulum-phase-arrow" d="M 105 334 C 122 318 148 318 166 334"/>
+      <path class="pendulum-phase-arrow" d="M 233 334 C 250 318 276 318 294 334"/>
+      <text class="pendulum-mode-note" x="85" y="370">&#969;&#8331;&#178; = &#969;&#8320;&#178;</text>
+
+      <path class="pendulum-spring" data-spring="spring"/>
+      <g class="pendulum" data-pivot-x="130" data-pivot-y="110" data-bob="1">
+        <line class="pendulum-rod" data-rod="rod" x1="130" y1="110" x2="130" y2="250"/>
+        <circle class="pendulum-bob" data-bob-circle="bob" cx="130" cy="250" r="20"/>
+        <circle class="pendulum-pivot" cx="130" cy="110" r="7"/>
+      </g>
+      <g class="pendulum" data-pivot-x="258" data-pivot-y="110" data-bob="2">
+        <line class="pendulum-rod" data-rod="rod" x1="258" y1="110" x2="258" y2="250"/>
+        <circle class="pendulum-bob secondary" data-bob-circle="bob" cx="258" cy="250" r="20"/>
+        <circle class="pendulum-pivot" cx="258" cy="110" r="7"/>
+      </g>
+    </g>
+
+    <g class="pendulum-system" data-mode="out-of-phase" data-omega="1.85" data-amplitude="0.18" data-length="140" data-mass-1="1" data-mass-2="1">
+      <rect class="pendulum-panel-bg" x="390" y="20" width="352" height="388" rx="8"/>
+      <text class="pendulum-panel-title" x="412" y="56">Mode 2: out of phase</text>
+      <text class="pendulum-panel-subtitle" x="412" y="80">m&#8321;&#952;&#8321; + m&#8322;&#952;&#8322; = 0</text>
+      <line class="pendulum-support" x1="454" y1="110" x2="678" y2="110"/>
+      <line class="pendulum-equilibrium" x1="502" y1="110" x2="502" y2="275"/>
+      <line class="pendulum-equilibrium" x1="630" y1="110" x2="630" y2="275"/>
+      <path class="pendulum-phase-arrow" d="M 477 334 C 494 318 520 318 538 334"/>
+      <path class="pendulum-phase-arrow opposite" d="M 653 318 C 636 334 610 334 592 318"/>
+      <text class="pendulum-mode-note" x="428" y="370">&#969;&#8330;&#178; = &#969;&#8320;&#178; + 2k/m</text>
+      <text class="pendulum-axis-label" x="612" y="390">shown for m1 = m2</text>
+
+      <path class="pendulum-spring" data-spring="spring"/>
+      <g class="pendulum" data-pivot-x="502" data-pivot-y="110" data-bob="1">
+        <line class="pendulum-rod" data-rod="rod" x1="502" y1="110" x2="502" y2="250"/>
+        <circle class="pendulum-bob" data-bob-circle="bob" cx="502" cy="250" r="20"/>
+        <circle class="pendulum-pivot" cx="502" cy="110" r="7"/>
+      </g>
+      <g class="pendulum" data-pivot-x="630" data-pivot-y="110" data-bob="2">
+        <line class="pendulum-rod" data-rod="rod" x1="630" y1="110" x2="630" y2="250"/>
+        <circle class="pendulum-bob secondary" data-bob-circle="bob" cx="630" cy="250" r="20"/>
+        <circle class="pendulum-pivot" cx="630" cy="110" r="7"/>
+      </g>
+    </g>
+  </svg>
+</div>
+
+<script>
+(() => {
+  const roots = document.querySelectorAll(".coupled-pendulums-normal-modes:not([data-normal-modes-ready])");
+
+  function bobPosition(pivotX, pivotY, length, theta) {
+    return {
+      x: pivotX + length * Math.sin(theta),
+      y: pivotY + length * Math.cos(theta)
+    };
+  }
+
+  function springPath(a, b, bobRadius) {
+    const sx = a.x + bobRadius;
+    const sy = a.y;
+    const ex = b.x - bobRadius;
+    const ey = b.y;
+    const dx = ex - sx;
+    const dy = ey - sy;
+    const dist = Math.hypot(dx, dy) || 1;
+    const ux = dx / dist;
+    const uy = dy / dist;
+    const nx = -uy;
+    const ny = ux;
+    const coils = 8;
+    const amp = 6;
+    const step = dist / (coils * 2);
+    const points = [`M ${sx.toFixed(2)} ${sy.toFixed(2)}`];
+
+    for (let i = 1; i < coils * 2; i += 1) {
+      const sign = i % 2 === 0 ? -1 : 1;
+      const px = sx + ux * step * i + nx * amp * sign;
+      const py = sy + uy * step * i + ny * amp * sign;
+      points.push(`L ${px.toFixed(2)} ${py.toFixed(2)}`);
+    }
+
+    points.push(`L ${ex.toFixed(2)} ${ey.toFixed(2)}`);
+    return points.join(" ");
+  }
+
+  function setPendulum(group, theta, length) {
+    const pivotX = Number(group.dataset.pivotX);
+    const pivotY = Number(group.dataset.pivotY);
+    const rod = group.querySelector("[data-rod]");
+    const bob = group.querySelector("[data-bob-circle]");
+    const pos = bobPosition(pivotX, pivotY, length, theta);
+
+    rod.setAttribute("x2", pos.x.toFixed(2));
+    rod.setAttribute("y2", pos.y.toFixed(2));
+    bob.setAttribute("cx", pos.x.toFixed(2));
+    bob.setAttribute("cy", pos.y.toFixed(2));
+
+    return pos;
+  }
+
+  function updateSystem(system, t) {
+    const mode = system.dataset.mode;
+    const omega = Number(system.dataset.omega);
+    const amp = Number(system.dataset.amplitude);
+    const length = Number(system.dataset.length);
+    const mass1 = Number(system.dataset.mass1 || 1);
+    const mass2 = Number(system.dataset.mass2 || 1);
+    const phase = Math.cos(omega * t);
+    const theta1 = amp * phase;
+    const theta2 = mode === "in-phase" ? theta1 : -(mass1 / mass2) * theta1;
+    const pendulums = system.querySelectorAll(".pendulum");
+    const p1 = setPendulum(pendulums[0], theta1, length);
+    const p2 = setPendulum(pendulums[1], theta2, length);
+    const spring = system.querySelector("[data-spring]");
+    spring.setAttribute("d", springPath(p1, p2, 20));
+  }
+
+  function animate(root, startTime) {
+    const systems = root.querySelectorAll(".pendulum-system");
+    const tick = (now) => {
+      const t = (now - startTime) / 1000;
+      systems.forEach((system) => updateSystem(system, t));
+      window.requestAnimationFrame(tick);
+    };
+    tick(startTime);
+  }
+
+  roots.forEach((root) => {
+    root.dataset.normalModesReady = "true";
+    animate(root, performance.now());
+  });
+})();
+</script>
+```

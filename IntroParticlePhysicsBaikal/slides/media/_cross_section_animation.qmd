@@ -1,0 +1,72 @@
+```{=html}
+<div class="cross-section-animation" role="img" aria-label="Six regular beams of particles pass by a red target. Particles closer to the target scatter more strongly, while the two outer beams continue without changing direction.">
+  <svg viewBox="0 0 720 420">
+    <defs>
+      <radialGradient id="cross-section-target-glow" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#ffd166" stop-opacity="0.88"/>
+        <stop offset="64%" stop-color="#ffd166" stop-opacity="0.24"/>
+        <stop offset="100%" stop-color="#ffd166" stop-opacity="0"/>
+      </radialGradient>
+
+      <path id="cross-path-clear-top" d="M 36 82 L 684 82"/>
+      <path id="cross-path-far-top" d="M 36 132 L 356 132 C 442 132 536 124 684 110"/>
+      <path id="cross-path-near-top" d="M 36 182 L 356 182 C 444 170 540 124 684 58"/>
+      <path id="cross-path-near-bottom" d="M 36 232 L 356 232 C 444 244 540 292 684 356"/>
+      <path id="cross-path-far-bottom" d="M 36 282 L 356 282 C 442 282 536 292 684 306"/>
+      <path id="cross-path-clear-bottom" d="M 36 332 L 684 332"/>
+    </defs>
+
+    <rect class="cross-section-window" x="18" y="24" width="684" height="372" rx="18"/>
+
+    <g class="cross-section-paths">
+      <use href="#cross-path-clear-top"/>
+      <use href="#cross-path-far-top"/>
+      <use href="#cross-path-near-top"/>
+      <use href="#cross-path-near-bottom"/>
+      <use href="#cross-path-far-bottom"/>
+      <use href="#cross-path-clear-bottom"/>
+    </g>
+
+    <g class="cross-section-target">
+      <circle class="cross-section-effective-area" cx="360" cy="207" r="86"/>
+      <circle class="cross-section-core" cx="360" cy="207" r="25"/>
+      <circle class="cross-section-core-dot" cx="360" cy="207" r="7"/>
+    </g>
+
+    <g class="cross-section-particles">
+      <g class="stream-particle is-unscattered"><circle r="8"/><animateMotion dur="4.8s" begin="-4.8s" repeatCount="indefinite"><mpath href="#cross-path-clear-top"/></animateMotion></g>
+      <g class="stream-particle is-unscattered"><circle r="8"/><animateMotion dur="4.8s" begin="-3.6s" repeatCount="indefinite"><mpath href="#cross-path-clear-top"/></animateMotion></g>
+      <g class="stream-particle is-unscattered"><circle r="8"/><animateMotion dur="4.8s" begin="-2.4s" repeatCount="indefinite"><mpath href="#cross-path-clear-top"/></animateMotion></g>
+      <g class="stream-particle is-unscattered"><circle r="8"/><animateMotion dur="4.8s" begin="-1.2s" repeatCount="indefinite"><mpath href="#cross-path-clear-top"/></animateMotion></g>
+
+      <g class="stream-particle"><circle r="8"/><animateMotion dur="4.8s" begin="-4.56s" repeatCount="indefinite"><mpath href="#cross-path-far-top"/></animateMotion></g>
+      <g class="stream-particle"><circle r="8"/><animateMotion dur="4.8s" begin="-3.36s" repeatCount="indefinite"><mpath href="#cross-path-far-top"/></animateMotion></g>
+      <g class="stream-particle"><circle r="8"/><animateMotion dur="4.8s" begin="-2.16s" repeatCount="indefinite"><mpath href="#cross-path-far-top"/></animateMotion></g>
+      <g class="stream-particle"><circle r="8"/><animateMotion dur="4.8s" begin="-0.96s" repeatCount="indefinite"><mpath href="#cross-path-far-top"/></animateMotion></g>
+
+      <g class="stream-particle"><circle r="8"/><animateMotion dur="4.8s" begin="-4.32s" repeatCount="indefinite"><mpath href="#cross-path-near-top"/></animateMotion></g>
+      <g class="stream-particle"><circle r="8"/><animateMotion dur="4.8s" begin="-3.12s" repeatCount="indefinite"><mpath href="#cross-path-near-top"/></animateMotion></g>
+      <g class="stream-particle"><circle r="8"/><animateMotion dur="4.8s" begin="-1.92s" repeatCount="indefinite"><mpath href="#cross-path-near-top"/></animateMotion></g>
+      <g class="stream-particle"><circle r="8"/><animateMotion dur="4.8s" begin="-0.72s" repeatCount="indefinite"><mpath href="#cross-path-near-top"/></animateMotion></g>
+
+      <g class="stream-particle"><circle r="8"/><animateMotion dur="4.8s" begin="-4.08s" repeatCount="indefinite"><mpath href="#cross-path-near-bottom"/></animateMotion></g>
+      <g class="stream-particle"><circle r="8"/><animateMotion dur="4.8s" begin="-2.88s" repeatCount="indefinite"><mpath href="#cross-path-near-bottom"/></animateMotion></g>
+      <g class="stream-particle"><circle r="8"/><animateMotion dur="4.8s" begin="-1.68s" repeatCount="indefinite"><mpath href="#cross-path-near-bottom"/></animateMotion></g>
+      <g class="stream-particle"><circle r="8"/><animateMotion dur="4.8s" begin="-0.48s" repeatCount="indefinite"><mpath href="#cross-path-near-bottom"/></animateMotion></g>
+
+      <g class="stream-particle"><circle r="8"/><animateMotion dur="4.8s" begin="-3.84s" repeatCount="indefinite"><mpath href="#cross-path-far-bottom"/></animateMotion></g>
+      <g class="stream-particle"><circle r="8"/><animateMotion dur="4.8s" begin="-2.64s" repeatCount="indefinite"><mpath href="#cross-path-far-bottom"/></animateMotion></g>
+      <g class="stream-particle"><circle r="8"/><animateMotion dur="4.8s" begin="-1.44s" repeatCount="indefinite"><mpath href="#cross-path-far-bottom"/></animateMotion></g>
+      <g class="stream-particle"><circle r="8"/><animateMotion dur="4.8s" begin="-0.24s" repeatCount="indefinite"><mpath href="#cross-path-far-bottom"/></animateMotion></g>
+
+      <g class="stream-particle is-unscattered"><circle r="8"/><animateMotion dur="4.8s" begin="-3.6s" repeatCount="indefinite"><mpath href="#cross-path-clear-bottom"/></animateMotion></g>
+      <g class="stream-particle is-unscattered"><circle r="8"/><animateMotion dur="4.8s" begin="-2.4s" repeatCount="indefinite"><mpath href="#cross-path-clear-bottom"/></animateMotion></g>
+      <g class="stream-particle is-unscattered"><circle r="8"/><animateMotion dur="4.8s" begin="-1.2s" repeatCount="indefinite"><mpath href="#cross-path-clear-bottom"/></animateMotion></g>
+      <g class="stream-particle is-unscattered"><circle r="8"/><animateMotion dur="4.8s" begin="0s" repeatCount="indefinite"><mpath href="#cross-path-clear-bottom"/></animateMotion></g>
+    </g>
+
+    <text class="cross-section-note" x="46" y="378">regular flux</text>
+    <text class="cross-section-note" x="672" y="378" text-anchor="end">closer encounter = larger angle</text>
+  </svg>
+</div>
+```

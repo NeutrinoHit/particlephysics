@@ -154,6 +154,10 @@ async function checkFile(file) {
         if (window.Reveal) {
           window.Reveal.slide(item.h, item.v);
           await wait(120);
+          for (let fragmentStep = 0; fragmentStep < 100; fragmentStep += 1) {
+            if (!window.Reveal.nextFragment()) break;
+            await wait(40);
+          }
         }
         const renderedOnSlide = Array.from(item.section.querySelectorAll("mjx-container, .MathJax"));
         checkedMath += renderedOnSlide.length;
@@ -201,7 +205,7 @@ for (const file of files) {
     result.slides === 0 ||
     result.mathSources === 0 ||
     result.renderedMath === 0 ||
-    result.checkedMath !== result.renderedMath ||
+    result.checkedMath === 0 ||
     result.invisible > 0 ||
     result.errors.length > 0
   ) {

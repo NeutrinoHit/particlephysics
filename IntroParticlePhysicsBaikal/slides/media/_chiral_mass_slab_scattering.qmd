@@ -1,0 +1,386 @@
+```{=html}
+<style>
+.reveal section.chiral-slab-slide .columns {
+  gap: 1rem;
+}
+
+.reveal section.chiral-slab-slide .chiral-slab-text {
+  font-size: 0.64em;
+  line-height: 1.14;
+}
+
+.reveal section.chiral-slab-slide .chiral-slab-text li {
+  margin-bottom: 0.28rem;
+}
+
+.reveal section.chiral-slab-slide .chiral-slab-text .math.display {
+  margin: 0.2rem 0 0;
+  font-size: 0.78em;
+}
+
+.chiral-slab-scattering {
+  width: min(100%, 820px);
+  margin: 0 auto;
+}
+
+.chiral-slab-controls {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0 0 0.35rem;
+  color: #f6fbff;
+  font-family: var(--r-main-font, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
+  font-size: 0.44em;
+  font-weight: 750;
+}
+
+.chiral-slab-controls input[type="range"] {
+  width: 100%;
+  accent-color: #ffd166;
+}
+
+.chiral-slab-readout {
+  color: #ffd166;
+  white-space: nowrap;
+}
+
+.chiral-slab-scattering svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+}
+
+.chiral-slab-scattering text {
+  font-family: var(--r-main-font, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
+  letter-spacing: 0;
+}
+
+.slab-bg {
+  fill: rgba(2, 7, 14, 0.76);
+  stroke: rgba(142, 197, 255, 0.24);
+  stroke-width: 2;
+}
+
+.slab-layer {
+  fill: rgba(255, 209, 102, 0.13);
+  stroke: rgba(255, 209, 102, 0.64);
+  stroke-width: 2;
+}
+
+.slab-boundary {
+  stroke: rgba(255, 209, 102, 0.82);
+  stroke-width: 2;
+  stroke-dasharray: 6 7;
+}
+
+.slab-axis,
+.slab-lane {
+  stroke: rgba(246, 251, 255, 0.28);
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.slab-axis {
+  stroke: rgba(246, 251, 255, 0.4);
+}
+
+.slab-title {
+  fill: #f6fbff;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.slab-label {
+  fill: #b8d3e5;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.slab-formula-label {
+  fill: #ffd166;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.slab-wave-r,
+.slab-wave-l {
+  fill: none;
+  stroke-width: 4.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.slab-wave-r {
+  stroke: #8ec5ff;
+  filter: drop-shadow(0 0 6px rgba(142, 197, 255, 0.55));
+}
+
+.slab-wave-l {
+  stroke: #ffd166;
+  filter: drop-shadow(0 0 6px rgba(255, 209, 102, 0.58));
+}
+
+.slab-arrow-r,
+.slab-arrow-l {
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: round;
+  marker-end: url("#slab-arrow-head-blue");
+}
+
+.slab-arrow-r {
+  stroke: #8ec5ff;
+}
+
+.slab-arrow-l {
+  stroke: #ffd166;
+  marker-end: url("#slab-arrow-head-gold");
+}
+
+.slab-numeric-panel {
+  fill: rgba(2, 7, 14, 0.68);
+  stroke: rgba(142, 197, 255, 0.18);
+  stroke-width: 1.5;
+}
+
+.slab-numeric {
+  fill: #f6fbff;
+  font-size: 14px;
+  font-weight: 750;
+}
+
+.slab-numeric .accent {
+  fill: #ffd166;
+}
+</style>
+
+<div class="chiral-slab-scattering" data-energy="1.22" data-mass="1">
+  <div class="chiral-slab-controls">
+    <span>condensate width</span>
+    <input type="range" min="0.10" max="8.00" step="0.02" value="3.20" aria-label="Condensate layer width in inverse mass units" data-slab-width>
+    <span class="chiral-slab-readout">m<sub>0</sub>a = <span data-width-value>3.20</span></span>
+  </div>
+
+  <svg viewBox="0 0 820 480" role="img" aria-label="Exact scattering of right and left chiral waves on a finite Higgs condensate layer.">
+    <defs>
+      <marker id="slab-arrow-head-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+        <path d="M 0 0 L 10 5 L 0 10 z" fill="#8ec5ff"/>
+      </marker>
+      <marker id="slab-arrow-head-gold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+        <path d="M 0 0 L 10 5 L 0 10 z" fill="#ffd166"/>
+      </marker>
+    </defs>
+
+    <rect class="slab-bg" x="14" y="16" width="792" height="438" rx="8"/>
+
+    <text class="slab-title" x="38" y="52">exact stationary scattering</text>
+    <text class="slab-label" x="38" y="76">two incoming waves, same energy</text>
+
+    <rect class="slab-layer" data-layer x="314" y="92" width="144" height="250" rx="6"/>
+    <line class="slab-boundary" data-left-boundary x1="314" y1="90" x2="314" y2="352"/>
+    <line class="slab-boundary" data-right-boundary x1="458" y1="90" x2="458" y2="352"/>
+    <text class="slab-formula-label" data-layer-label x="340" y="116">m(x)=m&#8320;</text>
+    <text class="slab-label" data-width-label x="350" y="336">a</text>
+
+    <line class="slab-axis" x1="52" y1="360" x2="768" y2="360"/>
+    <text class="slab-label" x="754" y="382">x</text>
+
+    <line class="slab-lane" x1="52" y1="172" x2="768" y2="172"/>
+    <line class="slab-lane" x1="52" y1="252" x2="768" y2="252"/>
+    <text class="slab-formula-label" x="36" y="178">R</text>
+    <text class="slab-formula-label" x="36" y="258">L</text>
+
+    <path class="slab-wave-r" data-wave-r/>
+    <path class="slab-wave-l" data-wave-l/>
+
+    <path class="slab-arrow-r" d="M 92 118 L 154 118"/>
+    <path class="slab-arrow-l" d="M 728 300 L 666 300"/>
+    <text class="slab-label" x="90" y="106">incoming R</text>
+    <text class="slab-label" x="650" y="286">incoming L</text>
+
+    <rect class="slab-numeric-panel" x="500" y="36" width="280" height="102" rx="8"/>
+    <text class="slab-numeric" x="518" y="62">E/m&#8320; = <tspan data-energy-value>1.22</tspan></text>
+    <text class="slab-numeric" x="518" y="87">q/m&#8320; = <tspan data-q-value>0.69</tspan>,  v<tspan baseline-shift="sub">g</tspan> = <tspan data-v-value>0.57</tspan></text>
+    <text class="slab-numeric" x="518" y="112">one incoming R:</text>
+    <text class="slab-numeric" x="518" y="132">|r|² = <tspan data-r2-value>0.00</tspan>,  |t|² = <tspan data-t2-value>1.00</tspan></text>
+  </svg>
+</div>
+
+<script>
+(() => {
+  const roots = document.querySelectorAll(".chiral-slab-scattering:not([data-slab-ready])");
+
+  const C = {
+    add: (a, b) => ({ re: a.re + b.re, im: a.im + b.im }),
+    sub: (a, b) => ({ re: a.re - b.re, im: a.im - b.im }),
+    mul: (a, b) => ({ re: a.re * b.re - a.im * b.im, im: a.re * b.im + a.im * b.re }),
+    scale: (a, s) => ({ re: a.re * s, im: a.im * s }),
+    div: (a, b) => {
+      const d = b.re * b.re + b.im * b.im || 1;
+      return { re: (a.re * b.re + a.im * b.im) / d, im: (a.im * b.re - a.re * b.im) / d };
+    },
+    expi: (x) => ({ re: Math.cos(x), im: Math.sin(x) }),
+    abs2: (a) => a.re * a.re + a.im * a.im
+  };
+
+  function pathFromPoints(points) {
+    return points.map((point, index) => `${index === 0 ? "M" : "L"} ${point.x.toFixed(2)} ${point.y.toFixed(2)}`).join(" ");
+  }
+
+  function coefficients(E, m, a) {
+    const q = Math.sqrt(Math.max(E * E - m * m, 0));
+    const aq = q * a;
+    const alphaPlus = (E - q) / m;
+    const alphaMinus = (E + q) / m;
+    const ep = C.expi(aq);
+    const em = C.expi(-aq);
+    const A = { re: 1, im: 0 };
+    const B = { re: 1, im: 0 };
+
+    const numerator = C.sub(B, C.scale(em, alphaMinus));
+    const denominator = C.sub(C.scale(ep, alphaPlus), C.scale(em, alphaMinus));
+    const insideRight = C.div(numerator, denominator);
+    const insideLeft = C.sub(A, insideRight);
+    const outLeft = C.add(C.scale(insideRight, alphaPlus), C.scale(insideLeft, alphaMinus));
+    const outRight = C.add(C.mul(insideRight, ep), C.mul(insideLeft, em));
+
+    const denom = { re: q * Math.cos(aq), im: -E * Math.sin(aq) };
+    const r = C.div({ re: 0, im: -m * Math.sin(aq) }, denom);
+    const t = C.div(C.scale(C.expi(-E * a), q), denom);
+
+    return {
+      q,
+      alphaPlus,
+      alphaMinus,
+      insideRight,
+      insideLeft,
+      outLeft,
+      outRight,
+      r,
+      t,
+      r2: C.abs2(r),
+      t2: C.abs2(t)
+    };
+  }
+
+  function makeMapper(a) {
+    const xMin = -4.2;
+    const xMax = 8.2 + 4.2;
+    const left = 52;
+    const right = 768;
+    return {
+      xMin,
+      xMax,
+      toScreen: (x) => left + ((x - xMin) / (xMax - xMin)) * (right - left)
+    };
+  }
+
+  function fieldAt(x, E, a, coeffs) {
+    const A = { re: 1, im: 0 };
+    const B = { re: 1, im: 0 };
+    const q = coeffs.q;
+
+    if (x < 0) {
+      return {
+        R: C.mul(A, C.expi(E * x)),
+        L: C.mul(coeffs.outLeft, C.expi(-E * x))
+      };
+    }
+
+    if (x > a) {
+      return {
+        R: C.mul(coeffs.outRight, C.expi(E * (x - a))),
+        L: C.mul(B, C.expi(-E * (x - a)))
+      };
+    }
+
+    const ep = C.expi(q * x);
+    const em = C.expi(-q * x);
+    return {
+      R: C.add(C.mul(coeffs.insideRight, ep), C.mul(coeffs.insideLeft, em)),
+      L: C.add(C.scale(C.mul(coeffs.insideRight, ep), coeffs.alphaPlus), C.scale(C.mul(coeffs.insideLeft, em), coeffs.alphaMinus))
+    };
+  }
+
+  function updateGeometry(root, a) {
+    const mapper = makeMapper(a);
+    const x0 = mapper.toScreen(0);
+    const x1 = mapper.toScreen(a);
+    const layer = root.querySelector("[data-layer]");
+    const leftBoundary = root.querySelector("[data-left-boundary]");
+    const rightBoundary = root.querySelector("[data-right-boundary]");
+    const layerLabel = root.querySelector("[data-layer-label]");
+    const widthLabel = root.querySelector("[data-width-label]");
+
+    layer.setAttribute("x", x0.toFixed(2));
+    layer.setAttribute("width", Math.max(3, x1 - x0).toFixed(2));
+    leftBoundary.setAttribute("x1", x0.toFixed(2));
+    leftBoundary.setAttribute("x2", x0.toFixed(2));
+    rightBoundary.setAttribute("x1", x1.toFixed(2));
+    rightBoundary.setAttribute("x2", x1.toFixed(2));
+    layerLabel.setAttribute("x", (x0 + 12).toFixed(2));
+    widthLabel.setAttribute("x", ((x0 + x1) / 2).toFixed(2));
+  }
+
+  function updateReadouts(root, a, E, m, coeffs) {
+    const q = coeffs.q;
+    const v = q / E;
+    root.querySelector("[data-width-value]").textContent = a.toFixed(2);
+    root.querySelector("[data-energy-value]").textContent = (E / m).toFixed(2);
+    root.querySelector("[data-q-value]").textContent = (q / m).toFixed(2);
+    root.querySelector("[data-v-value]").textContent = v.toFixed(2);
+    root.querySelector("[data-r2-value]").textContent = coeffs.r2.toFixed(2);
+    root.querySelector("[data-t2-value]").textContent = coeffs.t2.toFixed(2);
+  }
+
+  function drawFields(root, t) {
+    const E = Number(root.dataset.energy);
+    const m = Number(root.dataset.mass);
+    const a = Number(root.querySelector("[data-slab-width]").value);
+    const coeffs = coefficients(E, m, a);
+    const mapper = makeMapper(a);
+    const time = C.expi(-E * t);
+    const samples = 240;
+    const rBase = 172;
+    const lBase = 252;
+    const raw = [];
+
+    for (let i = 0; i <= samples; i += 1) {
+      const u = i / samples;
+      const x = mapper.xMin + (mapper.xMax - mapper.xMin) * u;
+      const fields = fieldAt(x, E, a, coeffs);
+      const rValue = C.mul(fields.R, time).re;
+      const lValue = C.mul(fields.L, time).re;
+      raw.push({ x, rValue, lValue });
+    }
+
+    const amp = 16;
+    const rPoints = raw.map((point) => ({ x: mapper.toScreen(point.x), y: rBase - amp * point.rValue }));
+    const lPoints = raw.map((point) => ({ x: mapper.toScreen(point.x), y: lBase - amp * point.lValue }));
+    root.querySelector("[data-wave-r]").setAttribute("d", pathFromPoints(rPoints));
+    root.querySelector("[data-wave-l]").setAttribute("d", pathFromPoints(lPoints));
+
+    updateGeometry(root, a);
+    updateReadouts(root, a, E, m, coeffs);
+  }
+
+  function animate(root, startTime) {
+    const tick = (now) => {
+      drawFields(root, (now - startTime) / 1000);
+      window.requestAnimationFrame(tick);
+    };
+    tick(startTime);
+  }
+
+  roots.forEach((root) => {
+    root.dataset.slabReady = "true";
+    root.querySelector("[data-slab-width]").addEventListener("input", () => {
+      drawFields(root, performance.now() / 1000);
+    });
+    animate(root, performance.now());
+  });
+})();
+</script>
+```

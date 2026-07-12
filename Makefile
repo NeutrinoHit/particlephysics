@@ -20,9 +20,9 @@ render: sync-shared ## Render the whole Particle Physics site
 intro: sync-shared ## Render the moved Baikal mini-course through the site project
 	$(QUARTO_ENV) $(QUARTO) render IntroParticlePhysicsBaikal/index.qmd
 	$(QUARTO_ENV) $(QUARTO) render IntroParticlePhysicsBaikal/slides/01_particles_fields_interactions.qmd
-	$(QUARTO_ENV) $(QUARTO) render IntroParticlePhysicsBaikal/slides/02_standard_model_neutrinos.qmd
+	$(QUARTO_ENV) $(QUARTO) render IntroParticlePhysicsBaikal/slides/02_standard_model.qmd
 	$(QUARTO_ENV) $(QUARTO) render IntroParticlePhysicsBaikal/handouts/01_questions_particles_interactions.qmd
-	$(QUARTO_ENV) $(QUARTO) render IntroParticlePhysicsBaikal/handouts/02_questions_standard_model_neutrinos.qmd
+	$(QUARTO_ENV) $(QUARTO) render IntroParticlePhysicsBaikal/handouts/02_questions_standard_model.qmd
 	$(QUARTO_ENV) $(QUARTO) render IntroParticlePhysicsBaikal/handouts/formula_sheet.qmd
 
 particle-course: sync-shared ## Render the empty 16-lecture course scaffold
@@ -35,7 +35,7 @@ particle-course: sync-shared ## Render the empty 16-lecture course scaffold
 math-check: ## Check MathJax rendering in the Baikal mini-course slide decks
 	node IntroParticlePhysicsBaikal/scripts/check_reveal_math.mjs \
 	  _site/IntroParticlePhysicsBaikal/slides/01_particles_fields_interactions.html \
-	  _site/IntroParticlePhysicsBaikal/slides/02_standard_model_neutrinos.html
+	  _site/IntroParticlePhysicsBaikal/slides/02_standard_model.html
 
 clean: ## Remove generated build artifacts
 	rm -rf _site .quarto .make-tmp

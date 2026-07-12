@@ -50,11 +50,11 @@ toc: false
       <article class="course-card">
         <span class="course-card-status">опубликовано</span>
         <h3>Мини-курс</h3>
-        <p>Две вводные лекции, формулы, вопросы и учебные notebooks.</p>
+        <p>Две вводные лекции, формулы и вопросы для самопроверки.</p>
         <div class="course-links">
           <a href="IntroParticlePhysicsBaikal/">Открыть</a>
           <a href="IntroParticlePhysicsBaikal/slides/01_particles_fields_interactions.html">Лекция 1</a>
-          <a href="IntroParticlePhysicsBaikal/slides/02_standard_model_neutrinos.html">Лекция 2</a>
+          <a href="IntroParticlePhysicsBaikal/slides/02_standard_model.html">Лекция 2</a>
         </div>
       </article>
       <article class="course-card is-planned">
@@ -77,12 +77,13 @@ toc: false
       <div class="course-row-body">
         <p>
           Две вводные лекции: частицы, поля, взаимодействия, структура
-          Стандартной модели, слабое взаимодействие и нейтрино.
+          Стандартной модели, калибровочный принцип, происхождение масс и
+          слабый распад.
         </p>
         <div class="course-links">
           <a href="IntroParticlePhysicsBaikal/">Открыть мини-курс</a>
           <a href="IntroParticlePhysicsBaikal/slides/01_particles_fields_interactions.html">Лекция 1</a>
-          <a href="IntroParticlePhysicsBaikal/slides/02_standard_model_neutrinos.html">Лекция 2</a>
+          <a href="IntroParticlePhysicsBaikal/slides/02_standard_model.html">Лекция 2</a>
           <a href="IntroParticlePhysicsBaikal/handouts/formula_sheet.html">Формулы</a>
         </div>
       </div>

@@ -1,14 +1,14 @@
 # Introduction to Particle Physics for Baikal School
 
-This mini-course introduces the particle-physics language needed to read processes in neutrino and astroparticle experiments. The goal is not to derive the full Standard Model Lagrangian, but to understand what particles are, how interactions are encoded, what experiments measure, and why neutrinos are both Standard Model particles and evidence for physics beyond its minimal form.
+This mini-course introduces the particle-physics language needed to read processes in neutrino and astroparticle experiments. The goal is not to derive the full Standard Model Lagrangian, but to understand what particles are, how interactions are encoded, what experiments measure, and why the Standard Model is a tightly constrained quantum-field-theory construction.
 
 ## Contents
 
 - Lecture 1: Particles, Fields, and Interactions
-- Lecture 2: The Standard Model and Neutrinos
+- Lecture 2: The Standard Model
 - Handouts with control questions
 - Formula sheet
-- Three short pedagogical notebooks
+- Optional local pedagogical notebooks, not published on the course site
 
 ## Installation
 
@@ -41,7 +41,7 @@ Render slide decks separately:
 
 ```bash
 quarto render slides/01_particles_fields_interactions.qmd
-quarto render slides/02_standard_model_neutrinos.qmd
+quarto render slides/02_standard_model.qmd
 ```
 
 Or use:
@@ -87,8 +87,9 @@ The lectures focus on:
 - cross sections, decay widths, detector response, and event rates;
 - Standard Model matter content and gauge structure;
 - weak charged and neutral currents;
-- Higgs vacuum expectation value and fermion mass parametrization;
-- neutrino flavor, mass states, oscillations, and why the minimal Standard Model is incomplete.
+- gauge invariance as a principle for building interactions;
+- Higgs condensate, vector-boson mass generation, and fermion mass parametrization;
+- weak decays as Standard Model processes.
 
 ## Toy-Model Warnings
 

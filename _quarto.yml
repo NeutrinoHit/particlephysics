@@ -6,7 +6,6 @@ project:
     - "shared/**"
     - "analytics/**"
     - "IntroParticlePhysicsBaikal/assets/**"
-    - "IntroParticlePhysicsBaikal/notebooks/**"
     - "IntroParticlePhysicsBaikal/requirements.txt"
     - "IntroParticlePhysicsBaikal/environment.yml"
     - "IntroParticlePhysicsBaikal/references.bib"

@@ -1,0 +1,6 @@
+```{=html}
+<div class="why-particle-visuals">
+  <img src="media/why-particle-physics/detector-event.svg" alt="Animated detector event with particle tracks">
+  <img src="media/why-particle-physics/qft-chalkboard.svg" alt="Chalkboard with quantum field theory equations">
+</div>
+```

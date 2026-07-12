@@ -59,51 +59,7 @@ $$
 
 ::: {.column width="48%"}
 
-```{=html}
-<div class="uncertainty-dual-panel" role="img" aria-label="A narrow momentum-space packet corresponds to a broad coordinate-space packet.">
-  <svg viewBox="0 0 640 430">
-    <defs>
-      <linearGradient id="uncertainty-momentum-gradient" x1="0" x2="1" y1="0" y2="0">
-        <stop offset="0%" stop-color="#ffd166" stop-opacity="0.1"/>
-        <stop offset="50%" stop-color="#ffd166" stop-opacity="0.88"/>
-        <stop offset="100%" stop-color="#ffd166" stop-opacity="0.1"/>
-      </linearGradient>
-      <linearGradient id="uncertainty-coordinate-gradient" x1="0" x2="1" y1="0" y2="0">
-        <stop offset="0%" stop-color="#8ec5ff" stop-opacity="0.1"/>
-        <stop offset="50%" stop-color="#8ec5ff" stop-opacity="0.9"/>
-        <stop offset="100%" stop-color="#8ec5ff" stop-opacity="0.1"/>
-      </linearGradient>
-    </defs>
-
-    <rect class="uncertainty-frame" x="20" y="24" width="600" height="382" rx="16"/>
-    <text class="uncertainty-heading" x="320" y="56" text-anchor="middle">same state, two views</text>
-
-    <g class="uncertainty-panel-top">
-      <text class="uncertainty-axis-label momentum" x="58" y="96">momentum space</text>
-      <line class="uncertainty-axis" x1="70" y1="160" x2="570" y2="160"/>
-      <line class="uncertainty-center-line" x1="320" y1="86" x2="320" y2="160"/>
-      <text class="uncertainty-axis-symbol" x="572" y="184">p</text>
-      <path class="uncertainty-curve uncertainty-momentum-curve"
-            d="M 190 160 C 232 160 244 86 320 86 C 396 86 408 160 450 160"
-            fill="none"/>
-      <line class="uncertainty-width-line uncertainty-momentum-width" x1="268" y1="177" x2="372" y2="177"/>
-      <text class="uncertainty-note" x="320" y="208" text-anchor="middle">small <tspan class="uncertainty-math-label">σ</tspan><tspan class="uncertainty-subscript" baseline-shift="sub">p</tspan></text>
-    </g>
-
-    <g class="uncertainty-panel-bottom">
-      <text class="uncertainty-axis-label coordinate" x="58" y="260">coordinate space</text>
-      <line class="uncertainty-axis" x1="70" y1="326" x2="570" y2="326"/>
-      <line class="uncertainty-center-line" x1="320" y1="252" x2="320" y2="326"/>
-      <text class="uncertainty-axis-symbol" x="572" y="350">x</text>
-      <path class="uncertainty-curve uncertainty-coordinate-curve"
-            d="M 210 326 C 248 326 260 252 320 252 C 380 252 392 326 430 326"
-            fill="none"/>
-      <line class="uncertainty-width-line uncertainty-coordinate-width" x1="250" y1="344" x2="390" y2="344"/>
-      <text class="uncertainty-note" x="320" y="374" text-anchor="middle">large <tspan class="uncertainty-math-label">σ</tspan><tspan class="uncertainty-subscript" baseline-shift="sub">x</tspan></text>
-    </g>
-  </svg>
-</div>
-```
+{{< include media/_uncertainty_dual_panel.qmd >}}
 
 :::
 ::::
@@ -127,56 +83,7 @@ $$
 
 ::: {.column width="50%"}
 
-```{=html}
-<div class="uncertainty-scale-panel" role="img" aria-label="A logarithmic scale places 10 femtometers and atomic scales inside one detector division of width 1 micrometer.">
-  <svg viewBox="0 0 640 430">
-    <rect class="uncertainty-frame" x="20" y="24" width="600" height="382" rx="16"/>
-    <text class="uncertainty-heading" x="320" y="58" text-anchor="middle">position scale</text>
-    <text class="uncertainty-scale-subtitle" x="320" y="88" text-anchor="middle">log scale in femtometers</text>
-
-    <g class="uncertainty-caliper" transform="translate(46 112)">
-      <rect class="uncertainty-caliper-bin" x="0" y="-1" width="532" height="22" rx="4"/>
-      <line class="uncertainty-caliper-body" x1="0" y1="0" x2="532" y2="0"/>
-      <line class="uncertainty-caliper-body" x1="0" y1="20" x2="532" y2="20"/>
-      <line class="uncertainty-caliper-jaw" x1="0" y1="-18" x2="0" y2="58"/>
-      <line class="uncertainty-caliper-jaw" x1="532" y1="-18" x2="532" y2="58"/>
-      <text class="uncertainty-caliper-label" x="266" y="50" text-anchor="middle">one detector division: 1 μm</text>
-    </g>
-
-    <rect class="uncertainty-scale-resolution-bin" x="46" y="220" width="532" height="24" rx="12"/>
-    <line class="uncertainty-scale-axis" x1="46" y1="232" x2="578" y2="232"/>
-
-    <path class="uncertainty-scale-gaussian-fill"
-          d="M 46 232 C 57 232 60 182 82 182 C 104 182 107 232 118 232 L 46 232 Z"/>
-    <path class="uncertainty-scale-gaussian"
-          d="M 46 232 C 57 232 60 182 82 182 C 104 182 107 232 118 232"/>
-    <text class="uncertainty-gaussian-label" x="82" y="170" text-anchor="middle">wave packet</text>
-
-    <g class="uncertainty-scale-tick uncertainty-scale-tick-quantum">
-      <line x1="82" y1="204" x2="82" y2="260"/>
-      <circle cx="82" cy="232" r="7"/>
-      <text x="82" y="288" text-anchor="middle">10 fm</text>
-      <text x="82" y="314" text-anchor="middle"><tspan class="uncertainty-math-label">σ</tspan><tspan class="uncertainty-subscript" baseline-shift="sub">x</tspan></text>
-    </g>
-
-    <g class="uncertainty-scale-tick">
-      <line x1="330" y1="208" x2="330" y2="256"/>
-      <circle cx="330" cy="232" r="5"/>
-      <text x="330" y="288" text-anchor="middle">10<tspan class="uncertainty-superscript" baseline-shift="super">5</tspan><tspan dx="2"> fm</tspan></text>
-      <text x="330" y="314" text-anchor="middle">atom</text>
-    </g>
-
-    <g class="uncertainty-scale-tick uncertainty-scale-tick-detector">
-      <line x1="578" y1="190" x2="578" y2="274"/>
-      <circle cx="578" cy="232" r="9"/>
-      <text x="578" y="288" text-anchor="middle">10<tspan class="uncertainty-superscript" baseline-shift="super">9</tspan><tspan dx="2"> fm</tspan></text>
-      <text x="578" y="314" text-anchor="middle">1 micrometer</text>
-    </g>
-
-    <text class="uncertainty-scale-emphasis" x="320" y="372" text-anchor="middle">1 micrometer is 10<tspan class="uncertainty-superscript" baseline-shift="super">8</tspan><tspan dx="2"> times larger than 10 fm</tspan></text>
-  </svg>
-</div>
-```
+{{< include media/_uncertainty_scale_panel.qmd >}}
 
 :::
 ::::
@@ -250,11 +157,7 @@ $$
 :::
 ::: {.column width="50%"}
 
-```{=html}
-<video class="slide-video media-height-lg" data-autoplay loop muted playsinline controls>
-  <source src="media/simplespinwithsphere.mp4" type="video/mp4">
-</video>
-```
+{{< include media/_spin_sphere_video.qmd >}}
 
 ::: {.media-caption}
 We are many-sheeted Möbius strips. Live with that.
@@ -339,43 +242,7 @@ $$
 ## Coupled Oscillators as a Field Model
 
 
-```{=html}
-<div class="timed-video has-overlay oscillator-field-video" data-timed-video>
-  <video class="slide-video media-width-full media-height-xl oscillator-field-video-media" data-autoplay loop muted playsinline controls>
-    <source src="media/coupled-oscillators-2d/CoupledOscillators2D.mp4" type="video/mp4">
-  </video>
-  <div class="timed-video-overlay oscillator-equations-overlay">
-    <div class="timed-video-overlay-title">Normal modes: <span class="math inline">\(w=\omega_{mn}\)</span></div>
-    <span class="math display">\[
-    M\ddot q_{ij}=-k_0 q_{ij}-k_c(4q_{ij}-q_{i+1,j}-q_{i-1,j}-q_{i,j+1}-q_{i,j-1})
-    \]</span>
-    <span class="math display">\[
-    q_{ij}^{(m,n)}(t)=A_{mn}\sin\!\frac{m\pi i}{N_x+1}\sin\!\frac{n\pi j}{N_y+1}\cos(\omega_{mn}t)
-    \]</span>
-    <span class="math display">\[
-    \omega_{mn}^2=\frac{k_0+4k_c\left[\sin^2\!\frac{m\pi}{2(N_x+1)}+\sin^2\!\frac{n\pi}{2(N_y+1)}\right]}{M}
-    \]</span>
-    <div class="timed-video-overlay-note">
-      The pair <span class="math inline">\((m,n)\)</span> labels standing-wave harmonics in <span class="math inline">\(x,y\)</span>.
-    </div>
-  </div>
-  <div class="timed-video-caption oscillator-caption" data-caption-display aria-live="polite">
-    <span data-caption-text></span>
-  </div>
-  <ol class="timed-video-cues oscillator-cues" data-caption-cues aria-hidden="true" hidden>
-    <li data-start="0.000" data-end="1.800">Coupled two-dimensional oscillator lattice.</li>
-    <li data-start="1.800" data-end="7.916">Mode (1,1), w = 2.36</li>
-    <li data-start="7.916" data-end="13.668">Mode (1,2), w = 2.54</li>
-    <li data-start="13.668" data-end="19.420">Mode (2,1), w = 2.54</li>
-    <li data-start="19.420" data-end="24.874">Mode (2,2), w = 2.70</li>
-    <li data-start="24.874" data-end="25.674">Local kick at (5,5)</li>
-    <li data-start="25.674" data-end="35.243">The disturbance spreads through the coupled lattice.</li>
-    <li data-start="35.243" data-end="38.643">The discrete lattice becomes a continuous field.</li>
-    <li data-start="38.643" data-end="43.443">Field wave evolution</li>
-    <li data-start="43.443" data-end="44.700">Particles are localized excitations of fields.</li>
-  </ol>
-</div>
-```
+{{< include media/_coupled_oscillators_field_video.qmd >}}
 
 ## Quantum Field and Particles
 
@@ -433,47 +300,7 @@ $$
 
 ## The Standard Model as Quantum Fields
 
-```{=html}
-<div class="sm-fields-object-overlay">
-  <video class="slide-video media-width-full media-height-xl" data-autoplay muted playsinline controls>
-    <source src="media/sm-field-mattress/StandardModelFieldMattress.mp4" type="video/mp4">
-  </video>
-
-  <div class="sm-field-content-box" aria-label="Standard Model field content">
-    <div class="sm-field-content-title">SM field content</div>
-    <div class="sm-field-content-row sm-field-content-quarks">quarks: <span class="math inline">\(u,d,c,s,t,b\quad(\times 3)\)</span></div>
-    <div class="sm-field-content-row sm-field-content-leptons">charged leptons: <span class="math inline">\(e,\mu,\tau\)</span></div>
-    <div class="sm-field-content-row sm-field-content-neutrinos">neutrinos: <span class="math inline">\(\nu_e,\nu_\mu,\nu_\tau\)</span></div>
-    <div class="sm-field-content-row sm-field-content-gauge">gauge: <span class="math inline">\(\gamma,\ g,\ W^\pm,\ Z\)</span></div>
-    <div class="sm-field-content-row sm-field-content-scalar">scalar: <span class="math inline">\(H\)</span></div>
-  </div>
-
-  <figure class="sm-field-object sm-field-object-universe">
-    <img src="media/sm-field-objects/universe.jpg" alt="Universe">
-    <figcaption>Universe</figcaption>
-  </figure>
-
-  <figure class="sm-field-object sm-field-object-star">
-    <img src="media/sm-field-objects/star.png" alt="Star">
-    <figcaption>Star</figcaption>
-  </figure>
-
-  <figure class="sm-field-object sm-field-object-planet">
-    <img src="media/sm-field-objects/planet.svg" alt="Planet">
-    <figcaption>Planet</figcaption>
-  </figure>
-
-  <figure class="sm-field-object sm-field-object-phone">
-    <img src="media/sm-field-objects/phone.svg" alt="Cell phone">
-    <figcaption>Phone</figcaption>
-  </figure>
-
-  <figure class="sm-field-object sm-field-object-cat">
-    <img src="media/sm-field-objects/cat.svg" alt="Cat">
-    <figcaption>Cat</figcaption>
-  </figure>
-</div>
-```
+{{< include media/_standard_model_field_mattress.qmd >}}
 
 ## Why Particle Physics?
 :::: {.columns}
@@ -488,12 +315,7 @@ $$
 :::
 
 ::: {.column width="50%"}
-```{=html}
-<div class="why-particle-visuals">
-  <img src="media/why-particle-physics/detector-event.svg" alt="Animated detector event with particle tracks">
-  <img src="media/why-particle-physics/qft-chalkboard.svg" alt="Chalkboard with quantum field theory equations">
-</div>
-```
+{{< include media/_why_particle_visuals.qmd >}}
 :::
 ::::
 
@@ -525,11 +347,7 @@ The electrons exchange a virtual photon. The diagram encodes the allowed QED ver
 :::
 ::: {.column width="58%"}
 
-```{=html}
-<video class="slide-video media-width-sm media-height-sm" data-autoplay loop muted playsinline controls>
-  <source src="media/feynman-scattering/ElectronElectronScattering.mp4" type="video/mp4">
-</video>
-```
+{{< include media/_electron_scattering_video.qmd >}}
 
 :::
 ::::
@@ -550,11 +368,7 @@ The mediator is a virtual $Z$ boson. Flavor is conserved at the neutral-current 
 :::
 ::: {.column width="58%"}
 
-```{=html}
-<video class="slide-video media-width-sm media-height-sm" data-autoplay loop muted playsinline controls>
-  <source src="media/feynman-scattering/NuMuMuonScatteringViaZ.mp4" type="video/mp4">
-</video>
-```
+{{< include media/_weak_neutral_current_video.qmd >}}
 
 :::
 ::::
@@ -575,11 +389,7 @@ The mediator is a virtual $W$ boson. The electric charge is conserved at each ve
 :::
 ::: {.column width="58%"}
 
-```{=html}
-<video class="slide-video media-width-sm media-height-sm" data-autoplay loop muted playsinline controls>
-  <source src="media/feynman-scattering/NuMuElectronToNuEMuonScattering.mp4" type="video/mp4">
-</video>
-```
+{{< include media/_weak_charged_current_video.qmd >}}
 
 :::
 ::::
@@ -600,18 +410,12 @@ Quarks exchange a virtual gluon. The strong interaction couples to color charge,
 :::
 ::: {.column width="58%"}
 
-```{=html}
-<video class="slide-video media-width-sm media-height-sm" data-autoplay loop muted playsinline controls>
-  <source src="media/feynman-scattering/QuarkQuarkScattering.mp4" type="video/mp4">
-</video>
-```
+{{< include media/_quark_scattering_video.qmd >}}
 
 :::
 ::::
 
-```{=html}
-<img class="strong-bears-spring" src="media/strong-interaction/qcd-bears-spring.svg" alt="Quarks connected by an oscillating spring">
-```
+{{< include media/_strong_bears_spring.qmd >}}
 
 # Rutherford Scattering
 :::: {.columns}
@@ -624,11 +428,7 @@ Quarks exchange a virtual gluon. The strong interaction couples to color charge,
 
 ::: {.column width="50%"}
 
-```{=html}
-<video class="slide-video media-width-full media-height-lg" data-autoplay loop muted playsinline controls>
-  <source src="media/rutherford-geiger-marsden.mp4" type="video/mp4">
-</video>
-```
+{{< include media/_rutherford_geiger_marsden_video.qmd >}}
 
 :::
 
@@ -673,78 +473,7 @@ The larger the effective area, the more particles scatter out of the beam.
 :::
 ::: {.column width="57%"}
 
-```{=html}
-<div class="cross-section-animation" role="img" aria-label="Six regular beams of particles pass by a red target. Particles closer to the target scatter more strongly, while the two outer beams continue without changing direction.">
-  <svg viewBox="0 0 720 420">
-    <defs>
-      <radialGradient id="cross-section-target-glow" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stop-color="#ffd166" stop-opacity="0.88"/>
-        <stop offset="64%" stop-color="#ffd166" stop-opacity="0.24"/>
-        <stop offset="100%" stop-color="#ffd166" stop-opacity="0"/>
-      </radialGradient>
-
-      <path id="cross-path-clear-top" d="M 36 82 L 684 82"/>
-      <path id="cross-path-far-top" d="M 36 132 L 356 132 C 442 132 536 124 684 110"/>
-      <path id="cross-path-near-top" d="M 36 182 L 356 182 C 444 170 540 124 684 58"/>
-      <path id="cross-path-near-bottom" d="M 36 232 L 356 232 C 444 244 540 292 684 356"/>
-      <path id="cross-path-far-bottom" d="M 36 282 L 356 282 C 442 282 536 292 684 306"/>
-      <path id="cross-path-clear-bottom" d="M 36 332 L 684 332"/>
-    </defs>
-
-    <rect class="cross-section-window" x="18" y="24" width="684" height="372" rx="18"/>
-
-    <g class="cross-section-paths">
-      <use href="#cross-path-clear-top"/>
-      <use href="#cross-path-far-top"/>
-      <use href="#cross-path-near-top"/>
-      <use href="#cross-path-near-bottom"/>
-      <use href="#cross-path-far-bottom"/>
-      <use href="#cross-path-clear-bottom"/>
-    </g>
-
-    <g class="cross-section-target">
-      <circle class="cross-section-effective-area" cx="360" cy="207" r="86"/>
-      <circle class="cross-section-core" cx="360" cy="207" r="25"/>
-      <circle class="cross-section-core-dot" cx="360" cy="207" r="7"/>
-    </g>
-
-    <g class="cross-section-particles">
-      <g class="stream-particle is-unscattered"><circle r="8"/><animateMotion dur="4.8s" begin="-4.8s" repeatCount="indefinite"><mpath href="#cross-path-clear-top"/></animateMotion></g>
-      <g class="stream-particle is-unscattered"><circle r="8"/><animateMotion dur="4.8s" begin="-3.6s" repeatCount="indefinite"><mpath href="#cross-path-clear-top"/></animateMotion></g>
-      <g class="stream-particle is-unscattered"><circle r="8"/><animateMotion dur="4.8s" begin="-2.4s" repeatCount="indefinite"><mpath href="#cross-path-clear-top"/></animateMotion></g>
-      <g class="stream-particle is-unscattered"><circle r="8"/><animateMotion dur="4.8s" begin="-1.2s" repeatCount="indefinite"><mpath href="#cross-path-clear-top"/></animateMotion></g>
-
-      <g class="stream-particle"><circle r="8"/><animateMotion dur="4.8s" begin="-4.56s" repeatCount="indefinite"><mpath href="#cross-path-far-top"/></animateMotion></g>
-      <g class="stream-particle"><circle r="8"/><animateMotion dur="4.8s" begin="-3.36s" repeatCount="indefinite"><mpath href="#cross-path-far-top"/></animateMotion></g>
-      <g class="stream-particle"><circle r="8"/><animateMotion dur="4.8s" begin="-2.16s" repeatCount="indefinite"><mpath href="#cross-path-far-top"/></animateMotion></g>
-      <g class="stream-particle"><circle r="8"/><animateMotion dur="4.8s" begin="-0.96s" repeatCount="indefinite"><mpath href="#cross-path-far-top"/></animateMotion></g>
-
-      <g class="stream-particle"><circle r="8"/><animateMotion dur="4.8s" begin="-4.32s" repeatCount="indefinite"><mpath href="#cross-path-near-top"/></animateMotion></g>
-      <g class="stream-particle"><circle r="8"/><animateMotion dur="4.8s" begin="-3.12s" repeatCount="indefinite"><mpath href="#cross-path-near-top"/></animateMotion></g>
-      <g class="stream-particle"><circle r="8"/><animateMotion dur="4.8s" begin="-1.92s" repeatCount="indefinite"><mpath href="#cross-path-near-top"/></animateMotion></g>
-      <g class="stream-particle"><circle r="8"/><animateMotion dur="4.8s" begin="-0.72s" repeatCount="indefinite"><mpath href="#cross-path-near-top"/></animateMotion></g>
-
-      <g class="stream-particle"><circle r="8"/><animateMotion dur="4.8s" begin="-4.08s" repeatCount="indefinite"><mpath href="#cross-path-near-bottom"/></animateMotion></g>
-      <g class="stream-particle"><circle r="8"/><animateMotion dur="4.8s" begin="-2.88s" repeatCount="indefinite"><mpath href="#cross-path-near-bottom"/></animateMotion></g>
-      <g class="stream-particle"><circle r="8"/><animateMotion dur="4.8s" begin="-1.68s" repeatCount="indefinite"><mpath href="#cross-path-near-bottom"/></animateMotion></g>
-      <g class="stream-particle"><circle r="8"/><animateMotion dur="4.8s" begin="-0.48s" repeatCount="indefinite"><mpath href="#cross-path-near-bottom"/></animateMotion></g>
-
-      <g class="stream-particle"><circle r="8"/><animateMotion dur="4.8s" begin="-3.84s" repeatCount="indefinite"><mpath href="#cross-path-far-bottom"/></animateMotion></g>
-      <g class="stream-particle"><circle r="8"/><animateMotion dur="4.8s" begin="-2.64s" repeatCount="indefinite"><mpath href="#cross-path-far-bottom"/></animateMotion></g>
-      <g class="stream-particle"><circle r="8"/><animateMotion dur="4.8s" begin="-1.44s" repeatCount="indefinite"><mpath href="#cross-path-far-bottom"/></animateMotion></g>
-      <g class="stream-particle"><circle r="8"/><animateMotion dur="4.8s" begin="-0.24s" repeatCount="indefinite"><mpath href="#cross-path-far-bottom"/></animateMotion></g>
-
-      <g class="stream-particle is-unscattered"><circle r="8"/><animateMotion dur="4.8s" begin="-3.6s" repeatCount="indefinite"><mpath href="#cross-path-clear-bottom"/></animateMotion></g>
-      <g class="stream-particle is-unscattered"><circle r="8"/><animateMotion dur="4.8s" begin="-2.4s" repeatCount="indefinite"><mpath href="#cross-path-clear-bottom"/></animateMotion></g>
-      <g class="stream-particle is-unscattered"><circle r="8"/><animateMotion dur="4.8s" begin="-1.2s" repeatCount="indefinite"><mpath href="#cross-path-clear-bottom"/></animateMotion></g>
-      <g class="stream-particle is-unscattered"><circle r="8"/><animateMotion dur="4.8s" begin="0s" repeatCount="indefinite"><mpath href="#cross-path-clear-bottom"/></animateMotion></g>
-    </g>
-
-    <text class="cross-section-note" x="46" y="378">regular flux</text>
-    <text class="cross-section-note" x="672" y="378" text-anchor="end">closer encounter = larger angle</text>
-  </svg>
-</div>
-```
+{{< include media/_cross_section_animation.qmd >}}
 
 :::
 ::::
@@ -796,11 +525,7 @@ $$
 
 ::: {.column width="50%"}
 
-```{=html}
-<video class="slide-video media-width-full media-height-lg" data-autoplay loop muted playsinline controls>
-  <source src="media/radiating_charge_pyqtgraph_3d.mp4" type="video/mp4">
-</video>
-```
+{{< include media/_radiating_charge_video.qmd >}}
 
 :::
 ::::

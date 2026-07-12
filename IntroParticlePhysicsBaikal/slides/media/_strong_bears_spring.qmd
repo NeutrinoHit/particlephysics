@@ -1,0 +1,3 @@
+```{=html}
+<img class="strong-bears-spring" src="media/strong-interaction/qcd-bears-spring.svg" alt="Quarks connected by an oscillating spring">
+```
