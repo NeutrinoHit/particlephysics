@@ -55,20 +55,5 @@ format:
       </article>
     </div>
   </section>
-
-  <section aria-label="Дополнительные материалы">
-    <h2 class="course-section-title">Дополнительные материалы</h2>
-    <div class="course-material-grid">
-      <article class="course-material">
-        <h3>Раздаточные материалы</h3>
-        <p>Вопросы после лекций и формулы.</p>
-        <div class="course-links">
-          <a href="handouts/01_questions_particles_interactions.html">Вопросы 1</a>
-          <a href="handouts/02_questions_standard_model.html">Вопросы 2</a>
-          <a href="handouts/formula_sheet.html">Формулы</a>
-        </div>
-      </article>
-    </div>
-  </section>
 </div>
 ```
