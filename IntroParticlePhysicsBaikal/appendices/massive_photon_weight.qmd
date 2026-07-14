@@ -1,0 +1,313 @@
+---
+title: "Does a Massive Photon Make a Superconductor Heavier?"
+subtitle: "Appendix to the Standard Model lecture"
+author: "Dmitry V. Naumov"
+date: "July 14, 2026"
+---
+
+# Does a Massive Photon Make a Superconductor Heavier?
+
+## The Paradox
+
+Consider a normal conductor placed in a magnetic field.
+
+Now cool it below the critical temperature. The conductor becomes a superconductor.
+
+There are two languages for the same phenomenon.
+
+::: incremental
+1. **Current language:**  
+   a superconducting screening current appears near the surface and expels the magnetic field.
+
+2. **Field language:**  
+   the photon inside the superconductor becomes massive; the electromagnetic field acquires a finite penetration length.
+
+3. **Question:**  
+   are these two descriptions adding two different energies, or are they the same energy written twice?
+:::
+
+## Static Free Energy
+
+Use units
+
+$$
+\hbar=c=\mu_0=\varepsilon_0=1.
+$$
+
+For a nonrelativistic superconductor the Ginzburg--Landau free energy is
+
+$$
+F[\psi,A]
+=
+\int d^3x
+\left[
+\frac{1}{2}B^2
++
+\frac{1}{2m_*}
+\left|
+(-i\nabla-qA)\psi
+\right|^2
++
+\alpha |\psi|^2
++
+\frac{\beta}{2}|\psi|^4
+\right].
+$$
+
+Here
+
+$$
+B=\nabla\times A,
+$$
+
+$$
+q=2e,
+\qquad
+m_*=2m_e
+$$
+
+for Cooper pairs.
+
+The first term is magnetic-field energy.  
+The second term is the kinetic energy of the superconducting condensate.  
+The last two terms determine whether the condensate exists.
+
+## London Limit
+
+Deep in the superconducting phase the condensate amplitude is nearly fixed:
+
+$$
+\psi(x)=\sqrt{n_s}\,e^{i\theta(x)}.
+$$
+
+Then
+
+$$
+(-i\nabla-qA)\psi
+=
+\sqrt{n_s}\,e^{i\theta}
+\left(\nabla\theta-qA\right).
+$$
+
+Therefore the relevant part of the free energy becomes
+
+$$
+F_{\rm L}
+=
+\int d^3x
+\left[
+\frac{1}{2}B^2
++
+\frac{n_s}{2m_*}
+\left(\nabla\theta-qA\right)^2
+\right].
+$$
+
+Define the London penetration depth by
+
+$$
+\lambda_L^{-2}=\frac{q^2n_s}{m_*}.
+$$
+
+Then
+
+$$
+F_{\rm L}
+=
+\int d^3x
+\left[
+\frac{1}{2}B^2
++
+\frac{1}{2\lambda_L^2}
+\left(A-\frac{1}{q}\nabla\theta\right)^2
+\right].
+$$
+
+This expression is gauge invariant.  
+The gauge-invariant object is not $A$ alone, but
+
+$$
+A-\frac{1}{q}\nabla\theta.
+$$
+
+## Unitary Gauge: The Photon Mass Term
+
+Choose the gauge in which the condensate phase is constant:
+
+$$
+\theta=0.
+$$
+
+Then
+
+$$
+F_{\rm L}
+=
+\int d^3x
+\left[
+\frac{1}{2}B^2
++
+\frac{1}{2\lambda_L^2}A^2
+\right].
+$$
+
+The second term has the form of a mass term for the vector field:
+
+$$
+\frac{1}{2}m_\gamma^2A^2,
+\qquad
+m_\gamma=\frac{1}{\lambda_L}.
+$$
+
+Thus the photon is massive inside the superconductor in the precise sense that the electromagnetic field has a mass gap and a finite penetration length.
+
+## The Same Term as Supercurrent Energy
+
+The superconducting current follows from the free energy:
+
+$$
+j_s
+=
+-\frac{1}{\lambda_L^2}
+\left(A-\frac{1}{q}\nabla\theta\right).
+$$
+
+In the gauge $\theta=0$,
+
+$$
+j_s=-\frac{1}{\lambda_L^2}A.
+$$
+
+Therefore
+
+$$
+\frac{1}{2\lambda_L^2}A^2
+=
+\frac{\lambda_L^2}{2}j_s^2.
+$$
+
+So the photon mass term is not an additional energy on top of the current energy.
+
+It is the kinetic energy of the condensate current written in the gauge-field language.
+
+$$
+\boxed{
+\text{photon mass term}
+=
+\text{supercurrent kinetic energy}
+}
+$$
+
+## Meissner Equation from Free Energy Minimization
+
+Minimize
+
+$$
+F_{\rm L}
+=
+\int d^3x
+\left[
+\frac{1}{2}(\nabla\times A)^2
++
+\frac{1}{2\lambda_L^2}A^2
+\right]
+$$
+
+with respect to $A$, in the gauge
+
+$$
+\nabla\cdot A=0.
+$$
+
+The variation gives
+
+$$
+-\nabla^2 A+\frac{1}{\lambda_L^2}A=0.
+$$
+
+Therefore
+
+$$
+\left(\nabla^2-\lambda_L^{-2}\right)A=0.
+$$
+
+This is the static Proca equation inside the superconductor.
+
+The magnetic field also obeys
+
+$$
+\left(\nabla^2-\lambda_L^{-2}\right)B=0.
+$$
+
+Hence magnetic fields decay exponentially inside the superconductor.
+
+## Plane Boundary Example
+
+Let the superconductor occupy the half-space
+
+$$
+x>0.
+$$
+
+Let the magnetic field be parallel to the surface:
+
+$$
+B(x)=B_0e^{-x/\lambda_L}.
+$$
+
+Choose
+
+$$
+A(x)=-\lambda_L B_0e^{-x/\lambda_L}.
+$$
+
+Then
+
+$$
+B=\partial_x A.
+$$
+
+The magnetic energy per unit area is
+
+$$
+\frac{U_B}{S}
+=
+\int_0^\infty
+\frac{1}{2}B_0^2e^{-2x/\lambda_L}\,dx
+=
+\frac{B_0^2\lambda_L}{4}.
+$$
+
+The mass-term energy per unit area is
+
+$$
+\frac{U_m}{S}
+=
+\int_0^\infty
+\frac{1}{2\lambda_L^2}
+A^2\,dx
+=
+\int_0^\infty
+\frac{1}{2}B_0^2e^{-2x/\lambda_L}\,dx
+=
+\frac{B_0^2\lambda_L}{4}.
+$$
+
+Thus
+
+$$
+\frac{U_B}{S}
+=
+\frac{U_m}{S}.
+$$
+
+The total electromagnetic-plus-condensate energy stored in the penetration layer is
+
+$$
+\frac{U_{\rm layer}}{S}
+=
+\frac{B_0^2\lambda_L}{2}.
+$$
+
+Half of it is magnetic-field energy.  
+Half of it is condensate kinetic energy, or equivalently the photon mass term.

@@ -3,12 +3,14 @@ project:
   output-dir: outputs
   resources:
     - "assets/**"
+    - "exports/**"
     - "requirements.txt"
     - "environment.yml"
     - "references.bib"
   render:
     - "index.qmd"
     - "slides/*.qmd"
+    - "appendices/*.qmd"
 
 lang: en
 bibliography: references.bib
@@ -23,6 +25,8 @@ website:
         text: Lecture 1
       - href: slides/02_standard_model.qmd
         text: Lecture 2
+      - href: appendices/massive_photon_weight.qmd
+        text: Appendix
 
 format:
   revealjs:
