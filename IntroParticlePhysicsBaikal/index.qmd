@@ -12,6 +12,21 @@ format:
   .quarto-title-block {
     display: none;
   }
+
+  .course-animation-video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin: 0.7rem 0 0.8rem;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+    background: #000;
+    object-fit: cover;
+  }
+
+  .course-card-status + h3 {
+    margin-top: 0.35rem;
+  }
 </style>
 
 <div class="course-index course-subpage">
@@ -52,6 +67,102 @@ format:
         <h3>The Standard Model</h3>
         <p>Калибровочная инвариантность, электрослабое объединение, происхождение масс и слабый распад.</p>
         <div class="course-links"><a href="slides/02_standard_model.html">Открыть слайды</a></div>
+      </article>
+      <article class="course-card">
+        <span class="course-card-status">приложение</span>
+        <h3>Does a Massive Photon Make a Superconductor Heavier?</h3>
+        <p>Разбор парадокса про эффективную массу фотона в сверхпроводнике и показания весов.</p>
+        <div class="course-links"><a href="appendices/massive_photon_weight.html">Открыть приложение</a></div>
+      </article>
+    </div>
+  </section>
+
+  <section aria-label="Видео-анимации мини-курса">
+    <h2 class="course-section-title">Видео-анимации</h2>
+    <div class="course-card-grid">
+      <article class="course-card">
+        <span class="course-card-status">лекция 1</span>
+        <h3>Scale ladder</h3>
+        <video class="course-animation-video" src="exports/animations/lecture-01-scale-ladder.mp4" controls muted loop playsinline preload="metadata"></video>
+        <div class="course-links"><a href="exports/animations/lecture-01-scale-ladder.mp4">MP4</a></div>
+      </article>
+      <article class="course-card">
+        <span class="course-card-status">лекция 1</span>
+        <h3>Standard Model particles</h3>
+        <video class="course-animation-video" src="exports/animations/lecture-01-standard-model-particles.mp4" controls muted loop playsinline preload="metadata"></video>
+        <div class="course-links"><a href="exports/animations/lecture-01-standard-model-particles.mp4">MP4</a></div>
+      </article>
+      <article class="course-card">
+        <span class="course-card-status">лекция 1</span>
+        <h3>Why particle physics?</h3>
+        <video class="course-animation-video" src="exports/animations/lecture-01-why-particle-physics.mp4" controls muted loop playsinline preload="metadata"></video>
+        <div class="course-links"><a href="exports/animations/lecture-01-why-particle-physics.mp4">MP4</a></div>
+      </article>
+      <article class="course-card">
+        <span class="course-card-status">лекция 1</span>
+        <h3>QCD spring</h3>
+        <video class="course-animation-video" src="exports/animations/lecture-01-qcd-bears-spring.mp4" controls muted loop playsinline preload="metadata"></video>
+        <div class="course-links"><a href="exports/animations/lecture-01-qcd-bears-spring.mp4">MP4</a></div>
+      </article>
+      <article class="course-card">
+        <span class="course-card-status">лекция 1</span>
+        <h3>Cross-section</h3>
+        <video class="course-animation-video" src="exports/animations/lecture-01-cross-section.mp4" controls muted loop playsinline preload="metadata"></video>
+        <div class="course-links"><a href="exports/animations/lecture-01-cross-section.mp4">MP4</a></div>
+      </article>
+      <article class="course-card">
+        <span class="course-card-status">лекция 2</span>
+        <h3>Lagrangian scroll</h3>
+        <video class="course-animation-video" src="exports/animations/lecture-02-lagrangian-scroll.mp4" controls muted loop playsinline preload="metadata"></video>
+        <div class="course-links"><a href="exports/animations/lecture-02-lagrangian-scroll.mp4">MP4</a></div>
+      </article>
+      <article class="course-card">
+        <span class="course-card-status">лекция 2</span>
+        <h3>Physicist rockets</h3>
+        <video class="course-animation-video" src="exports/animations/lecture-02-physicist-rockets.mp4" controls muted loop playsinline preload="metadata"></video>
+        <div class="course-links"><a href="exports/animations/lecture-02-physicist-rockets.mp4">MP4</a></div>
+      </article>
+      <article class="course-card">
+        <span class="course-card-status">лекция 2</span>
+        <h3>Accelerating electron field</h3>
+        <video class="course-animation-video" src="exports/animations/lecture-02-accelerating-electron-field.mp4" controls muted loop playsinline preload="metadata"></video>
+        <div class="course-links"><a href="exports/animations/lecture-02-accelerating-electron-field.mp4">MP4</a></div>
+      </article>
+      <article class="course-card">
+        <span class="course-card-status">лекция 2</span>
+        <h3>Formula cat</h3>
+        <video class="course-animation-video" src="exports/animations/lecture-02-formula-cat.mp4" controls muted loop playsinline preload="metadata"></video>
+        <div class="course-links"><a href="exports/animations/lecture-02-formula-cat.mp4">MP4</a></div>
+      </article>
+      <article class="course-card">
+        <span class="course-card-status">лекция 2</span>
+        <h3>Meissner effect</h3>
+        <video class="course-animation-video" src="exports/animations/lecture-02-meissner-effect.mp4" controls muted loop playsinline preload="metadata"></video>
+        <div class="course-links"><a href="exports/animations/lecture-02-meissner-effect.mp4">MP4</a></div>
+      </article>
+      <article class="course-card">
+        <span class="course-card-status">лекция 2</span>
+        <h3>Coupled pendulums</h3>
+        <video class="course-animation-video" src="exports/animations/lecture-02-coupled-pendulums.mp4" controls muted loop playsinline preload="metadata"></video>
+        <div class="course-links"><a href="exports/animations/lecture-02-coupled-pendulums.mp4">MP4</a></div>
+      </article>
+      <article class="course-card">
+        <span class="course-card-status">лекция 2</span>
+        <h3>Chiral mass gap</h3>
+        <video class="course-animation-video" src="exports/animations/lecture-02-chiral-waves-mass-gap.mp4" controls muted loop playsinline preload="metadata"></video>
+        <div class="course-links"><a href="exports/animations/lecture-02-chiral-waves-mass-gap.mp4">MP4</a></div>
+      </article>
+      <article class="course-card">
+        <span class="course-card-status">лекция 2</span>
+        <h3>Condensate layer</h3>
+        <video class="course-animation-video" src="exports/animations/lecture-02-chiral-condensate-layer.mp4" controls muted loop playsinline preload="metadata"></video>
+        <div class="course-links"><a href="exports/animations/lecture-02-chiral-condensate-layer.mp4">MP4</a></div>
+      </article>
+      <article class="course-card">
+        <span class="course-card-status">лекция 2</span>
+        <h3>The Code Runs</h3>
+        <video class="course-animation-video" src="exports/animations/lecture-02-standard-model-finale.mp4" controls muted loop playsinline preload="metadata"></video>
+        <div class="course-links"><a href="exports/animations/lecture-02-standard-model-finale.mp4">MP4</a></div>
       </article>
     </div>
   </section>
