@@ -81,7 +81,7 @@ toc: false
   </section>
 
   <section class="course-accordion" aria-label="Материалы курса">
-    <details class="course-row" open>
+    <details class="course-row">
       <summary>
         <span class="course-row-kind">RU</span>
         <span>Русские материалы</span>
