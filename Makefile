@@ -2,10 +2,8 @@
 
 QUARTO ?= quarto
 PYTHON ?= python3
-QUARTO_HOME ?= $(CURDIR)/.make-tmp/quarto-home
-QUARTO_ENV ?= HOME="$(QUARTO_HOME)" XDG_CACHE_HOME="$(QUARTO_HOME)/.cache"
 
-.PHONY: help sync-shared render intro particle-course math-check clean
+.PHONY: help sync-shared site render intro particle-course math-check clean
 
 help: ## Show available targets
 	@printf '%s\n' 'Available targets:'
@@ -14,23 +12,25 @@ help: ## Show available targets
 sync-shared: ## Sync shared NeutrinoHit assets from ../neutrinohit-map
 	$(PYTHON) scripts/sync_shared_assets.py
 
-render: sync-shared ## Render the whole Particle Physics site
-	$(QUARTO_ENV) $(QUARTO) render
+site: ## Render the whole Particle Physics site into _site
+	$(QUARTO) render
+
+render: site ## Render the whole Particle Physics site
 
 intro: sync-shared ## Render the moved Baikal mini-course through the site project
-	$(QUARTO_ENV) $(QUARTO) render IntroParticlePhysicsBaikal/index.qmd
-	$(QUARTO_ENV) $(QUARTO) render IntroParticlePhysicsBaikal/slides/01_particles_fields_interactions.qmd
-	$(QUARTO_ENV) $(QUARTO) render IntroParticlePhysicsBaikal/slides/02_standard_model.qmd
-	$(QUARTO_ENV) $(QUARTO) render IntroParticlePhysicsBaikal/handouts/01_questions_particles_interactions.qmd
-	$(QUARTO_ENV) $(QUARTO) render IntroParticlePhysicsBaikal/handouts/02_questions_standard_model.qmd
-	$(QUARTO_ENV) $(QUARTO) render IntroParticlePhysicsBaikal/handouts/formula_sheet.qmd
+	$(QUARTO) render IntroParticlePhysicsBaikal/index.qmd
+	$(QUARTO) render IntroParticlePhysicsBaikal/slides/01_particles_fields_interactions.qmd
+	$(QUARTO) render IntroParticlePhysicsBaikal/slides/02_standard_model.qmd
+	$(QUARTO) render IntroParticlePhysicsBaikal/handouts/01_questions_particles_interactions.qmd
+	$(QUARTO) render IntroParticlePhysicsBaikal/handouts/02_questions_standard_model.qmd
+	$(QUARTO) render IntroParticlePhysicsBaikal/handouts/formula_sheet.qmd
 
 particle-course: sync-shared ## Render the empty 16-lecture course scaffold
-	$(QUARTO_ENV) $(QUARTO) render ParticlePhysics/index.qmd
-	$(QUARTO_ENV) $(QUARTO) render ParticlePhysics/ru/book/index.qmd
-	$(QUARTO_ENV) $(QUARTO) render ParticlePhysics/ru/slides/index.qmd
-	$(QUARTO_ENV) $(QUARTO) render ParticlePhysics/en/book/index.qmd
-	$(QUARTO_ENV) $(QUARTO) render ParticlePhysics/en/slides/index.qmd
+	$(QUARTO) render ParticlePhysics/index.qmd
+	$(QUARTO) render ParticlePhysics/ru/book/index.qmd
+	$(QUARTO) render ParticlePhysics/ru/slides/index.qmd
+	$(QUARTO) render ParticlePhysics/en/book/index.qmd
+	$(QUARTO) render ParticlePhysics/en/slides/index.qmd
 
 math-check: ## Check MathJax rendering in the Baikal mini-course slide decks
 	node IntroParticlePhysicsBaikal/scripts/check_reveal_math.mjs \

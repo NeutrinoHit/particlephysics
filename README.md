@@ -1,6 +1,6 @@
 # Particle Physics
 
-Independent Quarto/GitHub Pages project for NeutrinoHit particle-physics materials.
+Independent Quarto project for NeutrinoHit particle-physics materials.
 
 Published site:
 
@@ -18,14 +18,10 @@ https://neutrinohit.github.io/particlephysics/
 ## Build
 
 ```bash
-quarto render
+make site
 ```
 
-or:
-
-```bash
-make render
-```
+The complete site is written to `_site/`.
 
 To render only the Baikal mini-course:
 
