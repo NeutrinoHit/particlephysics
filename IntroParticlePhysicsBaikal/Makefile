@@ -1,4 +1,4 @@
-.PHONY: render slides handouts notebooks math-check clean
+.PHONY: render slides handouts notebooks math-check animations clean
 
 render:
 	quarto render
@@ -19,6 +19,9 @@ notebooks:
 
 math-check:
 	node scripts/check_reveal_math.mjs outputs/slides/01_particles_fields_interactions.html outputs/slides/02_standard_model.html
+
+animations:
+	python scripts/export_animations.py
 
 clean:
 	rm -rf outputs/*
