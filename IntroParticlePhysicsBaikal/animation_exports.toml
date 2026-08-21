@@ -1,0 +1,107 @@
+[export]
+viewport_width = 1280
+viewport_height = 720
+startup_ms = 1000
+capture = "element"
+output_width = 1280
+output_height = 720
+device_scale_factor = 2.5
+fragment_mode = "sequence"
+
+[[animation]]
+source = "slides/01_particles_fields_interactions.qmd"
+selector = ".scale-ladder"
+duration = 4.6 # primary SVG motion period
+fps = 30
+output = "exports/animations/lecture-01-scale-ladder.mp4"
+
+[[animation]]
+source = "slides/01_particles_fields_interactions.qmd"
+selector = ".sm-particles"
+duration = 4.2 # longest primary CSS loop
+fps = 30
+output = "exports/animations/lecture-01-standard-model-particles.mp4"
+
+[[animation]]
+source = "slides/01_particles_fields_interactions.qmd"
+selector = ".why-particle-visuals"
+duration = 6.2 # detector-event.svg cycle
+fps = 30
+output = "exports/animations/lecture-01-why-particle-physics.mp4"
+
+[[animation]]
+source = "slides/01_particles_fields_interactions.qmd"
+selector = ".strong-bears-spring"
+duration = 4.6 # four 1.15 s spring cycles
+fps = 30
+output = "exports/animations/lecture-01-qcd-bears-spring.mp4"
+
+[[animation]]
+source = "slides/01_particles_fields_interactions.qmd"
+selector = ".cross-section-animation"
+duration = 4.8 # animateMotion cycle
+fps = 30
+output = "exports/animations/lecture-01-cross-section.mp4"
+
+[[animation]]
+source = "slides/02_standard_model.qmd"
+selector = ".lagrangian-scroll-frame"
+duration = 35.0 # 1 s delay + 34 s scroll
+fps = 30
+output = "exports/animations/lecture-02-lagrangian-scroll.mp4"
+
+[[animation]]
+source = "slides/02_standard_model.qmd"
+selector = ".friends-rocket-animation"
+duration = 5.8 # animateMotion cycle
+fps = 30
+output = "exports/animations/lecture-02-physicist-rockets.mp4"
+
+[[animation]]
+source = "slides/02_standard_model.qmd"
+selector = ".uniform-field-jump"
+duration = 9.2 # 2.0 s hold + 7.2 s motion
+fps = 30
+output = "exports/animations/lecture-02-accelerating-electron-field.mp4"
+
+[[animation]]
+source = "slides/02_standard_model.qmd"
+selector = ".formula-cat-animation"
+duration = 7.2 # CSS animation cycle
+fps = 30
+output = "exports/animations/lecture-02-formula-cat.mp4"
+
+[[animation]]
+source = "slides/02_standard_model.qmd"
+selector = ".meissner-levitation-animation"
+duration = 3.6 # levitating-magnet motion cycle
+fps = 30
+output = "exports/animations/lecture-02-meissner-effect.mp4"
+
+[[animation]]
+source = "slides/02_standard_model.qmd"
+selector = ".coupled-pendulums-normal-modes"
+duration = 5.236 # one period of the slower omega=1.20 mode
+fps = 30
+output = "exports/animations/lecture-02-coupled-pendulums.mp4"
+
+[[animation]]
+source = "slides/02_standard_model.qmd"
+selector = ".chiral-waves-mass-gap-animation"
+duration = 9.666 # one period of p=2.75*sin(0.65 t)
+fps = 30
+output = "exports/animations/lecture-02-chiral-waves-mass-gap.mp4"
+
+[[animation]]
+source = "slides/02_standard_model.qmd"
+selector = ".chiral-slab-scattering"
+duration = 5.150 # one phase period 2*pi/E for E=1.22
+fps = 30
+output = "exports/animations/lecture-02-chiral-condensate-layer.mp4"
+
+[[animation]]
+source = "slides/02_standard_model.qmd"
+selector = ".sm-finale"
+duration = 10.0 # 7.8 s animation + maximum 2.2 s row delay
+fps = 30
+output = "exports/animations/lecture-02-standard-model-finale.mp4"
