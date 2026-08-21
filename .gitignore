@@ -9,6 +9,7 @@ __pycache__/
 
 **/*.quarto_ipynb
 IntroParticlePhysicsBaikal/outputs/
+IntroParticlePhysicsBaikal/exports/
 IntroParticlePhysicsBaikal/.quarto/
 IntroParticlePhysicsBaikal/slides/*.html
 IntroParticlePhysicsBaikal/slides/*_files/

@@ -3,7 +3,6 @@ project:
   output-dir: outputs
   resources:
     - "assets/**"
-    - "exports/**"
     - "requirements.txt"
     - "environment.yml"
     - "references.bib"
