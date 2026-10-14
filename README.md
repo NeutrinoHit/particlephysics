@@ -23,6 +23,9 @@ make site
 
 The complete site is written to `_site/`.
 
+A push to `main` publishes the site automatically. `workflow_dispatch`
+allows the publication to be run manually again.
+
 To render only the Baikal mini-course:
 
 ```bash
