@@ -17,3 +17,6 @@ IntroParticlePhysicsBaikal/handouts/*.html
 IntroParticlePhysicsBaikal/handouts/*_files/
 ParticlePhysics/**/_book/
 ParticlePhysics/**/.quarto/
+
+# Local working files
+/.work/
