@@ -1,39 +1,26 @@
 ---
-title: "Particle Physics · Book"
-lang: en
-toc: false
+page-layout: article
+format:
+  html:
+    toc: false
+    number-sections: false
 ---
 
-```{=html}
-<style>
-  .quarto-title-block {
-    display: none;
-  }
-</style>
+::: {.book-lead}
+English online-book scaffold for the course. The section will grow with
+lecture notes, exercises, references, and auxiliary materials.
+:::
 
-<div class="course-index course-subpage">
-  <nav class="course-profile-links" aria-label="Book navigation">
-    <a href="../../index.html">Course home</a>
-    <a href="https://neutrinohit.github.io/">NeutrinoHit</a>
-    <a href="https://neutrinohit.github.io/en/education.html#particle-physics-course">Course map</a>
-  </nav>
+[Course home](../../index.html) ·
+[NeutrinoHit](https://neutrinohit.github.io/) ·
+[Course map](https://neutrinohit.github.io/en/education.html#particle-physics-course)
 
-  <section class="course-intro">
-    <p class="course-kicker">Book EN</p>
-    <h1>Particle Physics</h1>
-    <p>
-      English online-book scaffold for the course. The section will grow with
-      lecture notes, exercises, references, and auxiliary materials.
-    </p>
-  </section>
+## Structure {.unnumbered}
 
-  <section aria-label="Future book structure">
-    <h2 class="course-section-title">Structure</h2>
-    <div class="course-material-grid">
-      <article class="course-material"><h3>Notes</h3><p>Chapters will be added as the lecture material is prepared.</p></article>
-      <article class="course-material"><h3>Exercises</h3><p>Problems and exercises will be connected to the course structure.</p></article>
-      <article class="course-material"><h3>Reference material</h3><p>Conventions, notation, formulas, and tables will be collected here.</p></article>
-    </div>
-  </section>
-</div>
-```
+**Notes** — chapters will be added as the lecture material is prepared.
+
+**Exercises** — problems and exercises will be connected to the course
+structure.
+
+**Reference material** — conventions, notation, formulas, and tables will be
+collected here.

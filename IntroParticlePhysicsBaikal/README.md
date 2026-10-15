@@ -10,45 +10,56 @@ This mini-course introduces the particle-physics language needed to read process
 - Formula sheet
 - Optional local pedagogical notebooks, not published on the course site
 
-## Installation
+## Python Environment
+
+The notebooks and `src/particle_intro/` need only `numpy`, `matplotlib` and
+Jupyter (`requirements.txt`). Use the shared `neutrinohit` pyenv environment or
+any pyenv environment with these packages; do not create a virtual environment
+inside the repository:
 
 ```bash
-cd /Users/dmitrijnaumov/Documents/NeutrinoHit/particlephysics/IntroParticlePhysicsBaikal
-
-python -m venv .venv
-source .venv/bin/activate
+pyenv activate neutrinohit
 pip install -r requirements.txt
 ```
 
-Quarto can also be installed separately if the local conda package is not available.
-
-With conda:
-
-```bash
-conda env create -f environment.yml
-conda activate intro-particle-physics-baikal
-```
+`environment.yml` describes the same packages for conda.
 
 ## Rendering the Mini-Course
 
-Render the whole mini-course:
+The mini-course is part of the parent `particlephysics` Quarto website: it
+uses the parent `_quarto.yml`, the shared Reveal assets in `../shared/` and the
+slide settings in `slides/_metadata.yml`. Rendered pages go to
+`../_site/IntroParticlePhysicsBaikal/`.
+
+From the repository root:
 
 ```bash
-quarto render
+make intro
 ```
 
-Render slide decks separately:
+From this folder:
 
 ```bash
-quarto render slides/01_particles_fields_interactions.qmd
-quarto render slides/02_standard_model.qmd
-```
-
-Or use:
-
-```bash
+make render
 make slides
+make handouts
 ```
+
+A single deck can also be rendered directly, for example
+`quarto render slides/01_particles_fields_interactions.qmd`.
+
+## Animation Exports
+
+`animation_exports.toml` lists the slide animations exported to MP4 by
+`scripts/export_animations.py` (Playwright and ffmpeg are required). The script
+renders the listed decks through the parent project and records the frames
+from `../_site/IntroParticlePhysicsBaikal/slides/`:
+
+```bash
+make animations
+```
+
+The MP4 files are written to `exports/animations/`.
 
 ## Running Notebooks
 
@@ -62,19 +73,20 @@ The notebooks are pedagogical and use toy models. They are not precision calcula
 
 ```text
 IntroParticlePhysicsBaikal/
-├── _quarto.yml
 ├── index.qmd
 ├── README.md
 ├── Makefile
+├── animation_exports.toml
 ├── requirements.txt
 ├── environment.yml
 ├── references.bib
-├── slides/
+├── slides/          decks, _metadata.yml with the Reveal settings, media/
 ├── handouts/
+├── appendices/
 ├── notebooks/
+├── scripts/         animation export, MathJax check
 ├── src/particle_intro/
-├── assets/
-└── outputs/
+└── assets/css/      mini-course slide styles
 ```
 
 ## Physics Scope
@@ -97,4 +109,4 @@ The code examples and notebooks are intentionally simple. They do not include fu
 
 ## Style Notes
 
-The local style follows the NeutrinoHit dark Reveal.js convention: black theme, compact typography, DVN/NeutrinoHit logo, footer, 1280 x 720 slides, and restrained visual elements. The canonical shared footer/logo assets are maintained in `neutrinohit-map` and synced into the parent `particlephysics` project.
+The local style follows the NeutrinoHit dark Reveal.js convention: black theme, compact typography, DVN/NeutrinoHit logo, footer, 1280 x 720 slides, and restrained visual elements. The canonical shared footer, logo and theme are maintained in `neutrinohit-map` and synced into `../shared/` of the parent `particlephysics` project.
