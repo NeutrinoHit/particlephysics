@@ -37,7 +37,7 @@ format:
   </nav>
 
   <section class="course-intro">
-    <img class="course-site-logo" src="assets/logos/dvnlogo.png" alt="NeutrinoHit">
+    <img class="course-site-logo" src="../shared/reveal/dvnlogo.png" alt="NeutrinoHit">
     <p class="course-kicker">Мини-курс</p>
     <h1>Введение в физику элементарных частиц</h1>
     <p>

@@ -5,7 +5,7 @@ format:
     theme: [black, ../../shared/styles/neutrinohit-reveal.scss, ../assets/css/custom.scss]
     css:
       - ../../shared/reveal/neutrinohit-reveal-quiz.css
-    logo: ../assets/logos/dvnlogo.png
+    logo: ../../shared/reveal/dvnlogo.png
     html-math-method: mathjax
     include-after-body:
       - text: |

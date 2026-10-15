@@ -2,6 +2,7 @@
 title: "Particle Physics · Slides"
 lang: en
 toc: false
+format: html
 ---
 
 ```{=html}

@@ -1,6 +1,6 @@
 project:
   type: book
-  output-dir: _book
+  output-dir: ../../../_site/ParticlePhysics/ru/book
 
 book:
   title: "Физика элементарных частиц"
@@ -9,19 +9,68 @@ book:
   repo-url: "https://github.com/NeutrinoHit/particlephysics"
   repo-subdir: "ParticlePhysics/ru/book"
   search: true
+  reader-mode: true
+  page-footer:
+    left: "© Дмитрий В. Наумов"
+    right: "NeutrinoHit · Физика элементарных частиц"
   chapters:
     - index.qmd
 
 lang: ru-RU
 
+filters:
+  - assets/filters/neutrinohit-book.lua
+
+crossref:
+  fig-title: "Рис."
+  fig-prefix: "рис."
+  tbl-title: "Таблица"
+  tbl-prefix: "табл."
+  exr-title: "Задача"
+  exr-prefix: "задаче"
+  exm-title: "Пример"
+  exm-prefix: "примере"
+
 format:
   html:
-    theme: cosmo
     toc: true
+    toc-depth: 3
     number-sections: true
+    grid:
+      sidebar-width: 270px
+      body-width: 1050px
+      margin-width: 230px
+      gutter-width: 1rem
+    css:
+      - assets/styles/neutrinohit-book.css
+    theme: cosmo
     code-copy: true
+    anchor-sections: true
+    smooth-scroll: true
+    link-external-newwindow: true
+    fig-responsive: true
+    include-after-body: ../../../analytics/cloudflare-web-analytics.html
   pdf:
     documentclass: scrbook
-    pdf-engine: lualatex
+    classoption:
+      - open=any
+    papersize: a4
+    fontsize: 11pt
+    geometry:
+      - top=18mm
+      - bottom=20mm
+      - inner=20mm
+      - outer=50mm
+      - marginparwidth=36mm
+      - marginparsep=6mm
+      - headheight=6mm
+      - headsep=5mm
+      - footskip=9mm
     toc: true
+    toc-depth: 2
     number-sections: true
+    colorlinks: true
+    pdf-engine: lualatex
+    include-in-header:
+      - ../../../shared/latex/neutrinohit-book.tex
+      - ../../../shared/latex/ru-lang.tex

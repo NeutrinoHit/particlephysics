@@ -50,7 +50,9 @@ def load_manifest(path: Path) -> tuple[dict, list[dict]]:
 
 
 def rendered_html(course_root: Path, source: str) -> Path:
-    return course_root / "outputs" / Path(source).with_suffix(".html")
+    # The course is rendered by the parent particlephysics website project.
+    site_dir = course_root.parent / "_site" / course_root.name
+    return site_dir / Path(source).with_suffix(".html")
 
 
 def prepare_slide(page, selector: str, startup_ms: int) -> None:
@@ -458,7 +460,7 @@ def main() -> None:
     parser.add_argument(
         "--no-render",
         action="store_true",
-        help="Use existing outputs/slides/*.html instead of running Quarto",
+        help="Use existing ../_site/IntroParticlePhysicsBaikal/slides/*.html instead of running Quarto",
     )
     args = parser.parse_args()
 

@@ -2,6 +2,7 @@
 title: "Физика элементарных частиц · слайды"
 lang: ru-RU
 toc: false
+format: html
 ---
 
 ```{=html}

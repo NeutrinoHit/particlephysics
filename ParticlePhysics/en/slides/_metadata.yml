@@ -1,0 +1,10 @@
+lang: en
+
+# The Reveal format for this folder is added together with the first lecture.
+# Quarto merges a directory `format` with the `format: html` of index.qmd and
+# would render the index page as a deck as well.
+
+execute:
+  echo: false
+  warning: false
+  message: false

@@ -2,10 +2,11 @@ project:
   type: website
   output-dir: _site
   resources:
-    - "assets/**"
-    - "shared/**"
+    - "/assets/**"
+    - "shared/reveal/**"
+    - "shared/styles/**"
     - "analytics/**"
-    - "IntroParticlePhysicsBaikal/assets/**"
+    - "/IntroParticlePhysicsBaikal/assets/**"
     - "IntroParticlePhysicsBaikal/requirements.txt"
     - "IntroParticlePhysicsBaikal/environment.yml"
     - "IntroParticlePhysicsBaikal/references.bib"
@@ -14,11 +15,14 @@ project:
     - "IntroParticlePhysicsBaikal/index.qmd"
     - "IntroParticlePhysicsBaikal/slides/*.qmd"
     - "IntroParticlePhysicsBaikal/handouts/*.qmd"
+    - "IntroParticlePhysicsBaikal/appendices/*.qmd"
     - "ParticlePhysics/index.qmd"
-    - "ParticlePhysics/ru/book/index.qmd"
-    - "ParticlePhysics/ru/slides/index.qmd"
-    - "ParticlePhysics/en/book/index.qmd"
-    - "ParticlePhysics/en/slides/index.qmd"
+    - "ParticlePhysics/ru/slides/*.qmd"
+    - "ParticlePhysics/en/slides/*.qmd"
+    # The books are separate Quarto book projects rendered into _site by
+    # `make site`; "*.qmd" above matches files at every level.
+    - "!ParticlePhysics/ru/book/"
+    - "!ParticlePhysics/en/book/"
 
 lang: ru-RU
 
