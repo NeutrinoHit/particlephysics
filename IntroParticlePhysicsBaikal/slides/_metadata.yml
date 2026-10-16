@@ -6,7 +6,6 @@ format:
     css:
       - ../../shared/reveal/neutrinohit-reveal-quiz.css
     logo: ../../shared/reveal/dvnlogo.png
-    html-math-method: mathjax
     include-after-body:
       - text: |
           <script data-external="1" data-context-home="https://neutrinohit.github.io/particlephysics/IntroParticlePhysicsBaikal/" data-context-home-label="Mini-course home" src="../../shared/reveal/neutrinohit-reveal-footer.js"></script>
