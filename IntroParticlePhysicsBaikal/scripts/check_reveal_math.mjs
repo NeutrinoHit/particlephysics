@@ -125,10 +125,18 @@ async function checkFile(file) {
 
     const expression = `(() => new Promise(async (resolve) => {
       const wait = (ms) => new Promise((r) => setTimeout(r, ms));
+      // MathJax 2 (RevealJS) output: .MathJax (HTML-CSS) or .MathJax_SVG; MathJax 3: mjx-container.
+      const MATH = "mjx-container, .MathJax, .MathJax_SVG, .MathJax_CHTML";
       for (let i = 0; i < 40; i++) {
-        const renderedNow = document.querySelectorAll("mjx-container, .MathJax").length;
+        const renderedNow = document.querySelectorAll(MATH).length;
         if (window.MathJax && renderedNow > 0) break;
         await wait(250);
+      }
+      const hub = window.MathJax && window.MathJax.Hub;
+      if (hub) {
+        // The shared footer sets the MathJax 2 renderer and re-renders; wait for its queue.
+        for (let i = 0; i < 40 && !window.__neutrinohitMathJaxConfigured; i++) await wait(250);
+        await new Promise((r) => hub.Queue(r));
       }
       const horizontal = Array.from(document.querySelectorAll(".reveal .slides > section"));
       const leafSlides = [];
@@ -140,10 +148,17 @@ async function checkFile(file) {
           leafSlides.push({ h, v: 0, section });
         }
       });
-      const rendered = Array.from(document.querySelectorAll("mjx-container, .MathJax"));
+      const rendered = Array.from(document.querySelectorAll(MATH));
       const errors = Array.from(document.querySelectorAll("mjx-merror, .merror"))
         .map((node) => node.textContent.trim())
         .filter(Boolean);
+      if (hub) {
+        const hasError = (node) => !!node && (node.type === "merror" ||
+          (node.type === "mtext" && node.mathcolor === "red") ||
+          (node.data || []).some(hasError));
+        hub.getAllJax().filter((jax) => hasError(jax.root))
+          .forEach((jax) => errors.push(jax.originalText.trim()));
+      }
       const invisible = [];
       let slidesWithMath = 0;
       let checkedMath = 0;
@@ -159,7 +174,7 @@ async function checkFile(file) {
             await wait(40);
           }
         }
-        const renderedOnSlide = Array.from(item.section.querySelectorAll("mjx-container, .MathJax"));
+        const renderedOnSlide = Array.from(item.section.querySelectorAll(MATH));
         checkedMath += renderedOnSlide.length;
         renderedOnSlide.forEach((node) => {
           const rect = node.getBoundingClientRect();
