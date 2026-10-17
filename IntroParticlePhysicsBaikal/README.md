@@ -59,7 +59,8 @@ from `../_site/IntroParticlePhysicsBaikal/slides/`:
 make animations
 ```
 
-The MP4 files are written to `exports/animations/`.
+The MP4 files are written to `exports/animations/`; they are kept in the
+repository and shown on the mini-course page.
 
 ## Running Notebooks
 
