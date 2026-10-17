@@ -11,7 +11,7 @@ https://neutrinohit.github.io/particlephysics/
 ## Structure
 
 - `IntroParticlePhysicsBaikal/` - two-lecture Baikal School mini-course moved from `talks/`.
-- `ParticlePhysics/` - scaffold for the future 16-lecture particle-physics course with RU/EN, slides, and book directories. Each `slides/` folder keeps its Reveal settings in `_metadata.yml`; each `book/` folder is a Quarto book project with the shared NeutrinoHit book design.
+- `ParticlePhysics/` - scaffold for the future 16-lecture particle-physics course with RU/EN, slides, and book directories. Each `slides/` folder keeps its Reveal settings in `_metadata.yml`; each `book/` folder is a Quarto book project with the shared NeutrinoHit book design; the books are not published on the site.
 - `shared/` - synced NeutrinoHit Reveal assets, Reveal theme, and the book LaTeX preamble.
 - `analytics/` - Cloudflare analytics include for published pages.
 
@@ -21,8 +21,8 @@ https://neutrinohit.github.io/particlephysics/
 make site
 ```
 
-The complete site, including the HTML books, is written to `_site/`.
-`make books` renders only the RU/EN books.
+The complete site is written to `_site/`. The RU/EN books are not part of
+it; `make books` renders them locally for preview.
 
 A push to `main` publishes the site automatically. `workflow_dispatch`
 allows the publication to be run manually again.

@@ -19,19 +19,18 @@ check-shared: ## Compare shared assets with ../neutrinohit-map without writing
 	$(PYTHON) $(NEUTRINOHIT_MAP)/scripts/sync_reveal_assets.py --check --target particlephysics
 	$(PYTHON) $(NEUTRINOHIT_MAP)/scripts/sync_book_assets.py --check --target particlephysics
 
-site: ## Render the whole Particle Physics site and the HTML books into _site
+site: ## Render the whole Particle Physics site into _site (the books are not published)
 	rm -rf _site
 	$(QUARTO) render
-	$(MAKE) books
 	test -s _site/index.html
 	test -s _site/IntroParticlePhysicsBaikal/index.html
 	test -s _site/ParticlePhysics/index.html
-	test -s _site/ParticlePhysics/ru/book/index.html
-	test -s _site/ParticlePhysics/en/book/index.html
+	test ! -e _site/ParticlePhysics/ru/book
+	test ! -e _site/ParticlePhysics/en/book
 
 render: site ## Render the whole Particle Physics site
 
-books: ## Render the RU/EN HTML books into _site/ParticlePhysics/*/book
+books: ## Render the RU/EN HTML books locally for preview (not published)
 	for book in $(BOOKS); do $(QUARTO) render $$book --to html || exit 1; done
 
 intro: ## Render the Baikal mini-course through the site project
@@ -43,11 +42,10 @@ intro: ## Render the Baikal mini-course through the site project
 	$(QUARTO) render IntroParticlePhysicsBaikal/handouts/formula_sheet.qmd
 	$(QUARTO) render IntroParticlePhysicsBaikal/appendices/massive_photon_weight.qmd
 
-particle-course: ## Render the 16-lecture course scaffold and its books
+particle-course: ## Render the 16-lecture course scaffold
 	$(QUARTO) render ParticlePhysics/index.qmd
 	$(QUARTO) render ParticlePhysics/ru/slides/index.qmd
 	$(QUARTO) render ParticlePhysics/en/slides/index.qmd
-	$(MAKE) books
 
 math-check: ## Check MathJax rendering in the Baikal mini-course slide decks
 	node IntroParticlePhysicsBaikal/scripts/check_reveal_math.mjs \

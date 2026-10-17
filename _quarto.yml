@@ -20,8 +20,8 @@ project:
     - "ParticlePhysics/index.qmd"
     - "ParticlePhysics/ru/slides/*.qmd"
     - "ParticlePhysics/en/slides/*.qmd"
-    # The books are separate Quarto book projects rendered into _site by
-    # `make site`; "*.qmd" above matches files at every level.
+    # The books are separate Quarto book projects and are not published;
+    # "*.qmd" above matches files at every level.
     - "!ParticlePhysics/ru/book/"
     - "!ParticlePhysics/en/book/"
 
