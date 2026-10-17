@@ -23,7 +23,7 @@ toc: false
     <p>
       Рабочий дом будущего большого курса по физике элементарных частиц.
       Структура уже заведена как самостоятельный сайт: русские и английские
-      слайды, книжные материалы, будущие задачи, applets и экзаменационные
+      слайды, будущие задачи, applets и экзаменационные
       проекты будут расти внутри этого адреса.
     </p>
     <p class="course-author-note">
@@ -46,14 +46,8 @@ toc: false
         <div class="course-links"><a href="en/slides/">Open</a></div>
       </article>
       <article class="course-material">
-        <h3>Книга RU</h3>
-        <p>Будущий конспект или онлайн-книга курса.</p>
-        <div class="course-links"><a href="ru/book/">Открыть</a></div>
-      </article>
-      <article class="course-material">
-        <h3>Book EN</h3>
-        <p>English book scaffold for translated or independent materials.</p>
-        <div class="course-links"><a href="en/book/">Open</a></div>
+        <h3>Книга</h3>
+        <p>Книга к курсу готовится.</p>
       </article>
     </div>
   </section>
@@ -89,7 +83,6 @@ toc: false
       <div class="course-row-body">
         <div class="course-links">
           <a href="ru/slides/">Слайды</a>
-          <a href="ru/book/">Книга</a>
         </div>
       </div>
     </details>
@@ -102,7 +95,6 @@ toc: false
       <div class="course-row-body">
         <div class="course-links">
           <a href="en/slides/">Slides</a>
-          <a href="en/book/">Book</a>
         </div>
       </div>
     </details>
@@ -115,7 +107,6 @@ toc: false
       <div class="course-row-body">
         <p>Эти разделы заведены как часть стандарта курса и будут заполняться по мере подготовки материалов.</p>
         <div class="course-links">
-          <a href="ru/book/">Книга</a>
           <a href="ru/slides/">Слайды</a>
         </div>
       </div>

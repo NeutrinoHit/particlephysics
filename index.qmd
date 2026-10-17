@@ -19,7 +19,7 @@ toc: false
       <p>
         Материалы NeutrinoHit по физике элементарных частиц: вводный
         мини-курс из двух лекций и будущий большой курс с русскими и
-        английскими слайдами и книжными материалами.
+        английскими слайдами.
       </p>
       <nav class="course-profile-links" aria-label="Ссылки раздела">
         <a href="https://neutrinohit.github.io/">NeutrinoHit</a>
@@ -102,8 +102,6 @@ toc: false
           <a href="ParticlePhysics/">Открыть курс</a>
           <a href="ParticlePhysics/ru/slides/">Слайды RU</a>
           <a href="ParticlePhysics/en/slides/">Slides EN</a>
-          <a href="ParticlePhysics/ru/book/">Книга RU</a>
-          <a href="ParticlePhysics/en/book/">Book EN</a>
         </div>
       </div>
     </details>
