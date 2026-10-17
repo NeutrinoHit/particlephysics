@@ -8,7 +8,7 @@ format:
     logo: ../../shared/reveal/dvnlogo.png
     include-after-body:
       - text: |
-          <script data-external="1" data-context-home="https://neutrinohit.github.io/particlephysics/IntroParticlePhysicsBaikal/" data-context-home-label="Mini-course home" src="../../shared/reveal/neutrinohit-reveal-footer.js"></script>
+          <script data-external="1" data-context-home="https://neutrinohit.github.io/en/courses/particle-physics-baikal.html" data-context-home-label="Course page" src="../../shared/reveal/neutrinohit-reveal-footer.js"></script>
           <script data-external="1" src="../../shared/reveal/neutrinohit-timed-captions.js"></script>
       - ../../analytics/cloudflare-web-analytics.html
     embed-resources: false
