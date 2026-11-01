@@ -1,5 +1,3 @@
 ```{=html}
-<video class="slide-video media-width-full media-height-lg" data-autoplay loop muted playsinline controls>
-  <source src="media/radiating_charge_pyqtgraph_3d.mp4" type="video/mp4">
-</video>
+{{< nh-video radiating-charge variant="film-pyqtgraph-3d" class="slide-video media-width-full media-height-lg" data-autoplay=true loop=true muted=true playsinline=true controls=true >}}
 ```

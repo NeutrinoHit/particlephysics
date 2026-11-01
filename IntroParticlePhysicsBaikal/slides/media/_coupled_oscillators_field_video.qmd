@@ -1,8 +1,6 @@
 ```{=html}
 <div class="timed-video has-overlay oscillator-field-video" data-timed-video>
-  <video class="slide-video media-width-full media-height-xl oscillator-field-video-media" data-autoplay loop muted playsinline controls>
-    <source src="media/coupled-oscillators-2d/CoupledOscillators2D.mp4" type="video/mp4">
-  </video>
+  {{< nh-video coupled-oscillators variant="film-baikal" class="slide-video media-width-full media-height-xl oscillator-field-video-media" data-autoplay=true loop=true muted=true playsinline=true controls=true >}}
   <div class="timed-video-overlay oscillator-equations-overlay">
     <div class="timed-video-overlay-title">Normal modes: <span class="math inline">\(w=\omega_{mn}\)</span></div>
     <span class="math display">\[

@@ -1,8 +1,6 @@
 ```{=html}
 <div class="sm-fields-object-overlay">
-  <video class="slide-video media-width-full media-height-xl" data-autoplay muted playsinline controls>
-    <source src="media/sm-field-mattress/StandardModelFieldMattress.mp4" type="video/mp4">
-  </video>
+  {{< nh-video standard-model-field-mattress variant="film-baikal" class="slide-video media-width-full media-height-xl" data-autoplay=true muted=true playsinline=true controls=true >}}
 
   <div class="sm-field-content-box" aria-label="Standard Model field content">
     <div class="sm-field-content-title">SM field content</div>

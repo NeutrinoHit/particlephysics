@@ -9,6 +9,8 @@ __pycache__/
 
 **/*.quarto_ipynb
 IntroParticlePhysicsBaikal/outputs/
+# Animation exports live in the shared media library (scripts/export_animations.py)
+IntroParticlePhysicsBaikal/exports/animations/*.mp4
 IntroParticlePhysicsBaikal/.quarto/
 IntroParticlePhysicsBaikal/slides/*.html
 IntroParticlePhysicsBaikal/slides/*_files/

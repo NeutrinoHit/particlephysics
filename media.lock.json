@@ -1,0 +1,246 @@
+{
+ "schema": 1,
+ "generated_by": "neutrinohit-map/scripts/nh_media.py lock",
+ "media": [
+  {
+   "id": "baikal-minicourse",
+   "variant": "export-lecture-01-cross-section",
+   "version": 1,
+   "url": "/media-particlephysics/baikal-minicourse/export-lecture-01-cross-section-v1.mp4",
+   "sha256": "f87f6faa42aa941e1bc90718a2ac355b690ecf1fd12efb72a0a565ba1fb465f2",
+   "bytes": 485234,
+   "status": "published",
+   "fallback": "IntroParticlePhysicsBaikal/exports/animations/lecture-01-cross-section.mp4"
+  },
+  {
+   "id": "baikal-minicourse",
+   "variant": "export-lecture-01-qcd-bears-spring",
+   "version": 1,
+   "url": "/media-particlephysics/baikal-minicourse/export-lecture-01-qcd-bears-spring-v1.mp4",
+   "sha256": "2bcba17314172d12ce123c48b20bc21899cf1ed94bbad72c41c2b57c59a7c5fd",
+   "bytes": 423945,
+   "status": "published",
+   "fallback": "IntroParticlePhysicsBaikal/exports/animations/lecture-01-qcd-bears-spring.mp4"
+  },
+  {
+   "id": "baikal-minicourse",
+   "variant": "export-lecture-01-scale-ladder",
+   "version": 1,
+   "url": "/media-particlephysics/baikal-minicourse/export-lecture-01-scale-ladder-v1.mp4",
+   "sha256": "3b4c60e898cd4f2b569f3867e38d441c9bd43abdf62eba7a89f2eab7f861318f",
+   "bytes": 146572,
+   "status": "published",
+   "fallback": "IntroParticlePhysicsBaikal/exports/animations/lecture-01-scale-ladder.mp4"
+  },
+  {
+   "id": "baikal-minicourse",
+   "variant": "export-lecture-01-standard-model-particles",
+   "version": 1,
+   "url": "/media-particlephysics/baikal-minicourse/export-lecture-01-standard-model-particles-v1.mp4",
+   "sha256": "6e0581352439c53463b8198721339be8789fb209d61b86be8e0aabd03925864d",
+   "bytes": 77145,
+   "status": "published",
+   "fallback": "IntroParticlePhysicsBaikal/exports/animations/lecture-01-standard-model-particles.mp4"
+  },
+  {
+   "id": "baikal-minicourse",
+   "variant": "export-lecture-01-why-particle-physics",
+   "version": 1,
+   "url": "/media-particlephysics/baikal-minicourse/export-lecture-01-why-particle-physics-v1.mp4",
+   "sha256": "c967c2ce0ac163c30361646dcf32d32d0d50eb5c933e4ee86b3918c2e606b39d",
+   "bytes": 174825,
+   "status": "published",
+   "fallback": "IntroParticlePhysicsBaikal/exports/animations/lecture-01-why-particle-physics.mp4"
+  },
+  {
+   "id": "baikal-minicourse",
+   "variant": "export-lecture-02-accelerating-electron-field",
+   "version": 1,
+   "url": "/media-particlephysics/baikal-minicourse/export-lecture-02-accelerating-electron-field-v1.mp4",
+   "sha256": "bcdee22645a067a52eb2bd04ceb13ba786319dcc1d6fc9093d6abd21b14c5df9",
+   "bytes": 2040164,
+   "status": "published",
+   "fallback": "IntroParticlePhysicsBaikal/exports/animations/lecture-02-accelerating-electron-field.mp4"
+  },
+  {
+   "id": "baikal-minicourse",
+   "variant": "export-lecture-02-chiral-condensate-layer",
+   "version": 1,
+   "url": "/media-particlephysics/baikal-minicourse/export-lecture-02-chiral-condensate-layer-v1.mp4",
+   "sha256": "6660dce728eaad135de52362b9dbf6a2b2d1fed12f7a984fa06a297ea71e0fea",
+   "bytes": 250273,
+   "status": "published",
+   "fallback": "IntroParticlePhysicsBaikal/exports/animations/lecture-02-chiral-condensate-layer.mp4"
+  },
+  {
+   "id": "baikal-minicourse",
+   "variant": "export-lecture-02-chiral-waves-mass-gap",
+   "version": 1,
+   "url": "/media-particlephysics/baikal-minicourse/export-lecture-02-chiral-waves-mass-gap-v1.mp4",
+   "sha256": "0d29602b70186fa3f3adeb667606de9389916d8f137d3bf3da050c5fcc345df6",
+   "bytes": 598085,
+   "status": "published",
+   "fallback": "IntroParticlePhysicsBaikal/exports/animations/lecture-02-chiral-waves-mass-gap.mp4"
+  },
+  {
+   "id": "baikal-minicourse",
+   "variant": "export-lecture-02-coupled-pendulums",
+   "version": 1,
+   "url": "/media-particlephysics/baikal-minicourse/export-lecture-02-coupled-pendulums-v1.mp4",
+   "sha256": "f2d9a5bf91d7e3471e67c61d8ab12ab272e3405d4200a52ae2f98b00df8b8d50",
+   "bytes": 342409,
+   "status": "published",
+   "fallback": "IntroParticlePhysicsBaikal/exports/animations/lecture-02-coupled-pendulums.mp4"
+  },
+  {
+   "id": "baikal-minicourse",
+   "variant": "export-lecture-02-formula-cat",
+   "version": 1,
+   "url": "/media-particlephysics/baikal-minicourse/export-lecture-02-formula-cat-v1.mp4",
+   "sha256": "50883007e55b8f1e207cda3925999e434cc271fade06111b6e24d62668b67184",
+   "bytes": 927603,
+   "status": "published",
+   "fallback": "IntroParticlePhysicsBaikal/exports/animations/lecture-02-formula-cat.mp4"
+  },
+  {
+   "id": "baikal-minicourse",
+   "variant": "export-lecture-02-lagrangian-scroll",
+   "version": 1,
+   "url": "/media-particlephysics/baikal-minicourse/export-lecture-02-lagrangian-scroll-v1.mp4",
+   "sha256": "ce0093b99ff749c65d23bdfc974f9aa2d06a82c6ab47675e7dd4ecefcd6c2199",
+   "bytes": 4300788,
+   "status": "published",
+   "fallback": "IntroParticlePhysicsBaikal/exports/animations/lecture-02-lagrangian-scroll.mp4"
+  },
+  {
+   "id": "baikal-minicourse",
+   "variant": "export-lecture-02-meissner-effect",
+   "version": 1,
+   "url": "/media-particlephysics/baikal-minicourse/export-lecture-02-meissner-effect-v1.mp4",
+   "sha256": "691d8b52abc33c1625064ed998e0183a387a1f50ef3cd6e574d9af862a2658b7",
+   "bytes": 293146,
+   "status": "published",
+   "fallback": "IntroParticlePhysicsBaikal/exports/animations/lecture-02-meissner-effect.mp4"
+  },
+  {
+   "id": "baikal-minicourse",
+   "variant": "export-lecture-02-physicist-rockets",
+   "version": 1,
+   "url": "/media-particlephysics/baikal-minicourse/export-lecture-02-physicist-rockets-v1.mp4",
+   "sha256": "793f053c49e9d5980618e970ad48dea9afe62a097539fc01ec88cf00983e9f74",
+   "bytes": 135060,
+   "status": "published",
+   "fallback": "IntroParticlePhysicsBaikal/exports/animations/lecture-02-physicist-rockets.mp4"
+  },
+  {
+   "id": "baikal-minicourse",
+   "variant": "export-lecture-02-standard-model-finale",
+   "version": 1,
+   "url": "/media-particlephysics/baikal-minicourse/export-lecture-02-standard-model-finale-v1.mp4",
+   "sha256": "73996231e58ff51532bae523f2c6110e0e1b4fbd3db1c51328b379d47a065e96",
+   "bytes": 256188,
+   "status": "published",
+   "fallback": "IntroParticlePhysicsBaikal/exports/animations/lecture-02-standard-model-finale.mp4"
+  },
+  {
+   "id": "coupled-oscillators",
+   "variant": "film-baikal",
+   "version": 1,
+   "url": "/media-neutrino/coupled-oscillators/film-baikal-v1.mp4",
+   "sha256": "f27e9a02d48bc6b4619082c832f4afcb4aef4ed76b3a9cd5d2c471c57c4cbed5",
+   "bytes": 20127015,
+   "status": "published",
+   "fallback": "IntroParticlePhysicsBaikal/slides/media/coupled-oscillators-2d/CoupledOscillators2D.mp4"
+  },
+  {
+   "id": "feynman-scattering",
+   "variant": "film-electron-electron",
+   "version": 1,
+   "url": "/media-neutrino/feynman-scattering/film-electron-electron-v1.mp4",
+   "sha256": "6f09afa8274a2bc08d44f16c794b03e47df7070301136b87d4074cdd2919134a",
+   "bytes": 286813,
+   "status": "published",
+   "fallback": "IntroParticlePhysicsBaikal/slides/media/feynman-scattering/ElectronElectronScattering.mp4"
+  },
+  {
+   "id": "feynman-scattering",
+   "variant": "film-nu-mu-electron",
+   "version": 1,
+   "url": "/media-neutrino/feynman-scattering/film-nu-mu-electron-v1.mp4",
+   "sha256": "1523d0b739fb1ae82a88b225a472a7ab3a3f580d84eeb6182e0742394708b103",
+   "bytes": 302668,
+   "status": "published",
+   "fallback": "IntroParticlePhysicsBaikal/slides/media/feynman-scattering/NuMuElectronToNuEMuonScattering.mp4"
+  },
+  {
+   "id": "feynman-scattering",
+   "variant": "film-nu-mu-z",
+   "version": 1,
+   "url": "/media-neutrino/feynman-scattering/film-nu-mu-z-v1.mp4",
+   "sha256": "8647c4861ce5f6b0af2e7b5c73060b250212da3b93dc9e05fa4e54dc55735c74",
+   "bytes": 301653,
+   "status": "published",
+   "fallback": "IntroParticlePhysicsBaikal/slides/media/feynman-scattering/NuMuMuonScatteringViaZ.mp4"
+  },
+  {
+   "id": "feynman-scattering",
+   "variant": "film-quark-quark",
+   "version": 1,
+   "url": "/media-neutrino/feynman-scattering/film-quark-quark-v1.mp4",
+   "sha256": "4fedb30f230df60509ed5316ef829e37f823159ae3b4063470c3c88c7245e366",
+   "bytes": 311968,
+   "status": "published",
+   "fallback": "IntroParticlePhysicsBaikal/slides/media/feynman-scattering/QuarkQuarkScattering.mp4"
+  },
+  {
+   "id": "neutron-decay",
+   "variant": "film",
+   "version": 1,
+   "url": "/media-particlephysics/neutron-decay/film-v1.mp4",
+   "sha256": "ba2592fa654297bbca169b671cc57cb2254e899bffe3776e91366ca1befe4c4b",
+   "bytes": 1542524,
+   "status": "published",
+   "fallback": "IntroParticlePhysicsBaikal/slides/media/neutron_decay.mov"
+  },
+  {
+   "id": "radiating-charge",
+   "variant": "film-pyqtgraph-3d",
+   "version": 1,
+   "url": "/media-particlephysics/radiating-charge/film-pyqtgraph-3d-v1.mp4",
+   "sha256": "5b56c345b8daf4217d5355025532d141da9c9a3966ad24f0eb50bcd1ae05b893",
+   "bytes": 291593,
+   "status": "published",
+   "fallback": "IntroParticlePhysicsBaikal/slides/media/radiating_charge_pyqtgraph_3d.mp4"
+  },
+  {
+   "id": "rutherford",
+   "variant": "film-geiger-marsden",
+   "version": 1,
+   "url": "/media-particlephysics/rutherford/film-geiger-marsden-v1.mp4",
+   "sha256": "0d14ea85b2d53c8cf815348404ac0797af68c1390a3d21b10f0c308b987fe568",
+   "bytes": 636130,
+   "status": "published",
+   "fallback": "IntroParticlePhysicsBaikal/slides/media/rutherford-geiger-marsden.mp4"
+  },
+  {
+   "id": "spin",
+   "variant": "film-sphere",
+   "version": 1,
+   "url": "/media-neutrino/spin/film-sphere-v1.mp4",
+   "sha256": "749c7aaa0c99d2f556e2f9406b7933026d04f422f3a8ae747b447e3c0f0cebbe",
+   "bytes": 17472348,
+   "status": "published",
+   "fallback": "IntroParticlePhysicsBaikal/slides/media/simplespinwithsphere.mp4"
+  },
+  {
+   "id": "standard-model-field-mattress",
+   "variant": "film-baikal",
+   "version": 1,
+   "url": "/media-particlephysics/standard-model-field-mattress/film-baikal-v1.mp4",
+   "sha256": "b293294e984640e45ffcef969c8562faae773822ff5f9dd5d0864af650a41a1a",
+   "bytes": 92002236,
+   "status": "published",
+   "fallback": "IntroParticlePhysicsBaikal/slides/media/sm-field-mattress/StandardModelFieldMattress.mp4"
+  }
+ ]
+}

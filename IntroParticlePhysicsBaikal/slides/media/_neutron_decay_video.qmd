@@ -1,5 +1,3 @@
 ```{=html}
-<video class="slide-video media-width-full media-height-xl" data-autoplay loop muted playsinline controls>
-  <source src="media/neutron_decay.mov">
-</video>
+{{< nh-video neutron-decay variant="film" class="slide-video media-width-full media-height-xl" data-autoplay=true loop=true muted=true playsinline=true controls=true >}}
 ```

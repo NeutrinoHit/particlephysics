@@ -83,86 +83,86 @@ format:
       <article class="course-card">
         <span class="course-card-status">лекция 1</span>
         <h3>Scale ladder</h3>
-        <video class="course-animation-video" src="exports/animations/lecture-01-scale-ladder.mp4" controls muted loop playsinline preload="metadata"></video>
-        <div class="course-links"><a href="exports/animations/lecture-01-scale-ladder.mp4">MP4</a></div>
+        {{< nh-video baikal-minicourse variant="export-lecture-01-scale-ladder" class="course-animation-video" controls=true muted=true loop=true playsinline=true preload="metadata" >}}
+        <div class="course-links"><a href="{{< nh-url baikal-minicourse variant="export-lecture-01-scale-ladder" >}}">MP4</a></div>
       </article>
       <article class="course-card">
         <span class="course-card-status">лекция 1</span>
         <h3>Standard Model particles</h3>
-        <video class="course-animation-video" src="exports/animations/lecture-01-standard-model-particles.mp4" controls muted loop playsinline preload="metadata"></video>
-        <div class="course-links"><a href="exports/animations/lecture-01-standard-model-particles.mp4">MP4</a></div>
+        {{< nh-video baikal-minicourse variant="export-lecture-01-standard-model-particles" class="course-animation-video" controls=true muted=true loop=true playsinline=true preload="metadata" >}}
+        <div class="course-links"><a href="{{< nh-url baikal-minicourse variant="export-lecture-01-standard-model-particles" >}}">MP4</a></div>
       </article>
       <article class="course-card">
         <span class="course-card-status">лекция 1</span>
         <h3>Why particle physics?</h3>
-        <video class="course-animation-video" src="exports/animations/lecture-01-why-particle-physics.mp4" controls muted loop playsinline preload="metadata"></video>
-        <div class="course-links"><a href="exports/animations/lecture-01-why-particle-physics.mp4">MP4</a></div>
+        {{< nh-video baikal-minicourse variant="export-lecture-01-why-particle-physics" class="course-animation-video" controls=true muted=true loop=true playsinline=true preload="metadata" >}}
+        <div class="course-links"><a href="{{< nh-url baikal-minicourse variant="export-lecture-01-why-particle-physics" >}}">MP4</a></div>
       </article>
       <article class="course-card">
         <span class="course-card-status">лекция 1</span>
         <h3>QCD spring</h3>
-        <video class="course-animation-video" src="exports/animations/lecture-01-qcd-bears-spring.mp4" controls muted loop playsinline preload="metadata"></video>
-        <div class="course-links"><a href="exports/animations/lecture-01-qcd-bears-spring.mp4">MP4</a></div>
+        {{< nh-video baikal-minicourse variant="export-lecture-01-qcd-bears-spring" class="course-animation-video" controls=true muted=true loop=true playsinline=true preload="metadata" >}}
+        <div class="course-links"><a href="{{< nh-url baikal-minicourse variant="export-lecture-01-qcd-bears-spring" >}}">MP4</a></div>
       </article>
       <article class="course-card">
         <span class="course-card-status">лекция 1</span>
         <h3>Cross-section</h3>
-        <video class="course-animation-video" src="exports/animations/lecture-01-cross-section.mp4" controls muted loop playsinline preload="metadata"></video>
-        <div class="course-links"><a href="exports/animations/lecture-01-cross-section.mp4">MP4</a></div>
+        {{< nh-video baikal-minicourse variant="export-lecture-01-cross-section" class="course-animation-video" controls=true muted=true loop=true playsinline=true preload="metadata" >}}
+        <div class="course-links"><a href="{{< nh-url baikal-minicourse variant="export-lecture-01-cross-section" >}}">MP4</a></div>
       </article>
       <article class="course-card">
         <span class="course-card-status">лекция 2</span>
         <h3>Lagrangian scroll</h3>
-        <video class="course-animation-video" src="exports/animations/lecture-02-lagrangian-scroll.mp4" controls muted loop playsinline preload="metadata"></video>
-        <div class="course-links"><a href="exports/animations/lecture-02-lagrangian-scroll.mp4">MP4</a></div>
+        {{< nh-video baikal-minicourse variant="export-lecture-02-lagrangian-scroll" class="course-animation-video" controls=true muted=true loop=true playsinline=true preload="metadata" >}}
+        <div class="course-links"><a href="{{< nh-url baikal-minicourse variant="export-lecture-02-lagrangian-scroll" >}}">MP4</a></div>
       </article>
       <article class="course-card">
         <span class="course-card-status">лекция 2</span>
         <h3>Physicist rockets</h3>
-        <video class="course-animation-video" src="exports/animations/lecture-02-physicist-rockets.mp4" controls muted loop playsinline preload="metadata"></video>
-        <div class="course-links"><a href="exports/animations/lecture-02-physicist-rockets.mp4">MP4</a></div>
+        {{< nh-video baikal-minicourse variant="export-lecture-02-physicist-rockets" class="course-animation-video" controls=true muted=true loop=true playsinline=true preload="metadata" >}}
+        <div class="course-links"><a href="{{< nh-url baikal-minicourse variant="export-lecture-02-physicist-rockets" >}}">MP4</a></div>
       </article>
       <article class="course-card">
         <span class="course-card-status">лекция 2</span>
         <h3>Accelerating electron field</h3>
-        <video class="course-animation-video" src="exports/animations/lecture-02-accelerating-electron-field.mp4" controls muted loop playsinline preload="metadata"></video>
-        <div class="course-links"><a href="exports/animations/lecture-02-accelerating-electron-field.mp4">MP4</a></div>
+        {{< nh-video baikal-minicourse variant="export-lecture-02-accelerating-electron-field" class="course-animation-video" controls=true muted=true loop=true playsinline=true preload="metadata" >}}
+        <div class="course-links"><a href="{{< nh-url baikal-minicourse variant="export-lecture-02-accelerating-electron-field" >}}">MP4</a></div>
       </article>
       <article class="course-card">
         <span class="course-card-status">лекция 2</span>
         <h3>Formula cat</h3>
-        <video class="course-animation-video" src="exports/animations/lecture-02-formula-cat.mp4" controls muted loop playsinline preload="metadata"></video>
-        <div class="course-links"><a href="exports/animations/lecture-02-formula-cat.mp4">MP4</a></div>
+        {{< nh-video baikal-minicourse variant="export-lecture-02-formula-cat" class="course-animation-video" controls=true muted=true loop=true playsinline=true preload="metadata" >}}
+        <div class="course-links"><a href="{{< nh-url baikal-minicourse variant="export-lecture-02-formula-cat" >}}">MP4</a></div>
       </article>
       <article class="course-card">
         <span class="course-card-status">лекция 2</span>
         <h3>Meissner effect</h3>
-        <video class="course-animation-video" src="exports/animations/lecture-02-meissner-effect.mp4" controls muted loop playsinline preload="metadata"></video>
-        <div class="course-links"><a href="exports/animations/lecture-02-meissner-effect.mp4">MP4</a></div>
+        {{< nh-video baikal-minicourse variant="export-lecture-02-meissner-effect" class="course-animation-video" controls=true muted=true loop=true playsinline=true preload="metadata" >}}
+        <div class="course-links"><a href="{{< nh-url baikal-minicourse variant="export-lecture-02-meissner-effect" >}}">MP4</a></div>
       </article>
       <article class="course-card">
         <span class="course-card-status">лекция 2</span>
         <h3>Coupled pendulums</h3>
-        <video class="course-animation-video" src="exports/animations/lecture-02-coupled-pendulums.mp4" controls muted loop playsinline preload="metadata"></video>
-        <div class="course-links"><a href="exports/animations/lecture-02-coupled-pendulums.mp4">MP4</a></div>
+        {{< nh-video baikal-minicourse variant="export-lecture-02-coupled-pendulums" class="course-animation-video" controls=true muted=true loop=true playsinline=true preload="metadata" >}}
+        <div class="course-links"><a href="{{< nh-url baikal-minicourse variant="export-lecture-02-coupled-pendulums" >}}">MP4</a></div>
       </article>
       <article class="course-card">
         <span class="course-card-status">лекция 2</span>
         <h3>Chiral mass gap</h3>
-        <video class="course-animation-video" src="exports/animations/lecture-02-chiral-waves-mass-gap.mp4" controls muted loop playsinline preload="metadata"></video>
-        <div class="course-links"><a href="exports/animations/lecture-02-chiral-waves-mass-gap.mp4">MP4</a></div>
+        {{< nh-video baikal-minicourse variant="export-lecture-02-chiral-waves-mass-gap" class="course-animation-video" controls=true muted=true loop=true playsinline=true preload="metadata" >}}
+        <div class="course-links"><a href="{{< nh-url baikal-minicourse variant="export-lecture-02-chiral-waves-mass-gap" >}}">MP4</a></div>
       </article>
       <article class="course-card">
         <span class="course-card-status">лекция 2</span>
         <h3>Condensate layer</h3>
-        <video class="course-animation-video" src="exports/animations/lecture-02-chiral-condensate-layer.mp4" controls muted loop playsinline preload="metadata"></video>
-        <div class="course-links"><a href="exports/animations/lecture-02-chiral-condensate-layer.mp4">MP4</a></div>
+        {{< nh-video baikal-minicourse variant="export-lecture-02-chiral-condensate-layer" class="course-animation-video" controls=true muted=true loop=true playsinline=true preload="metadata" >}}
+        <div class="course-links"><a href="{{< nh-url baikal-minicourse variant="export-lecture-02-chiral-condensate-layer" >}}">MP4</a></div>
       </article>
       <article class="course-card">
         <span class="course-card-status">лекция 2</span>
         <h3>The Code Runs</h3>
-        <video class="course-animation-video" src="exports/animations/lecture-02-standard-model-finale.mp4" controls muted loop playsinline preload="metadata"></video>
-        <div class="course-links"><a href="exports/animations/lecture-02-standard-model-finale.mp4">MP4</a></div>
+        {{< nh-video baikal-minicourse variant="export-lecture-02-standard-model-finale" class="course-animation-video" controls=true muted=true loop=true playsinline=true preload="metadata" >}}
+        <div class="course-links"><a href="{{< nh-url baikal-minicourse variant="export-lecture-02-standard-model-finale" >}}">MP4</a></div>
       </article>
     </div>
   </section>

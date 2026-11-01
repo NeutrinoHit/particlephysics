@@ -59,8 +59,22 @@ from `../_site/IntroParticlePhysicsBaikal/slides/`:
 make animations
 ```
 
-The MP4 files are written to `exports/animations/`; they are kept in the
-repository and shown on the mini-course page.
+The MP4 files are written to `exports/animations/` and are not tracked by git.
+The mini-course page shows the copies published in the shared NeutrinoHit media
+library (`media-particlephysics`, id `baikal-minicourse`, variant
+`export-<file stem>`), inserted with the `nh-video` shortcode and
+linked with `nh-url`. A new or changed export is registered as a new version
+instead of being committed:
+
+```bash
+cd ../../neutrinohit-map
+python3 scripts/nh_media.py prepare ../particlephysics/IntroParticlePhysicsBaikal/exports/animations/<stem>.mp4 \
+    --id baikal-minicourse --variant export-<stem> --version <N> --home media-particlephysics
+```
+
+After the media project is published, `python3 scripts/nh_media.py lock ../particlephysics`
+pins the new version in `media.lock.json`. The procedure is described in
+`neutrinohit-map/docs/media-library.md`.
 
 ## Running Notebooks
 

@@ -1,16 +1,20 @@
 project:
   type: website
   output-dir: _site
+  post-render:
+    - _extensions/neutrinohit-media/prune.py
+  # A leading "/" anchors a pattern at the project root; without it Quarto also
+  # matches the same folders inside .work/.
+  # The films come from the shared media library (media.lock.json).
   resources:
     - "/assets/**"
-    - "shared/reveal/**"
-    - "shared/styles/**"
-    - "analytics/**"
+    - "/shared/reveal/**"
+    - "/shared/styles/**"
+    - "/analytics/**"
     - "/IntroParticlePhysicsBaikal/assets/**"
-    - "/IntroParticlePhysicsBaikal/exports/animations/*.mp4"
-    - "IntroParticlePhysicsBaikal/requirements.txt"
-    - "IntroParticlePhysicsBaikal/environment.yml"
-    - "IntroParticlePhysicsBaikal/references.bib"
+    - "/IntroParticlePhysicsBaikal/requirements.txt"
+    - "/IntroParticlePhysicsBaikal/environment.yml"
+    - "/IntroParticlePhysicsBaikal/references.bib"
   render:
     - "*.qmd"
     - "IntroParticlePhysicsBaikal/index.qmd"

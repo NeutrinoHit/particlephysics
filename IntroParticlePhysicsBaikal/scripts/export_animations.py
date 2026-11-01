@@ -1,4 +1,18 @@
 #!/usr/bin/env python3
+"""Export the slide animations listed in animation_exports.toml to MP4.
+
+The MP4 files land in exports/animations/ and are not tracked by git: the
+mini-course page shows the copies published in the shared NeutrinoHit media
+library (media-particlephysics, id baikal-minicourse, variant
+export-<file stem>). A new export goes there as a new version:
+
+    python3 ../neutrinohit-map/scripts/nh_media.py prepare \
+        IntroParticlePhysicsBaikal/exports/animations/<stem>.mp4 \
+        --id baikal-minicourse --variant export-<stem> --version <N> \
+        --home media-particlephysics
+
+then publication of the media project and `nh_media.py lock .` here.
+"""
 from __future__ import annotations
 
 import argparse
@@ -444,7 +458,8 @@ def export_one(browser, course_root: Path, defaults: dict, item: dict) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Export committed Reveal/HTML animations to MP4."
+        description="Export committed Reveal/HTML animations to MP4 (not tracked by git; "
+        "register a new export with neutrinohit-map/scripts/nh_media.py prepare)."
     )
     parser.add_argument(
         "--manifest",
@@ -503,6 +518,10 @@ def main() -> None:
                 export_one(browser, course_root, defaults, item)
         finally:
             browser.close()
+    print(
+        "The MP4 files are not tracked by git. Register a changed export as a new "
+        "version with neutrinohit-map/scripts/nh_media.py prepare (see the module docstring)."
+    )
 
 
 if __name__ == "__main__":
